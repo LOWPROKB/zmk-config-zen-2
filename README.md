@@ -1,6 +1,6 @@
 # Corne-ish Zen V2 Custom Configuration
 
-![Corne-ish Zen Logo](zenlogo.png)
+![Corne-ish Zen Logo](img/Zen_R3_sticker.png)
 
 **NOTE: This is not working yet as the Zen code is still in PR with ZMK.**
 
