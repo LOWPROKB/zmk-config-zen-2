@@ -27,7 +27,7 @@ V2 PCBs were only used in the 3rd GB round (R3). To confirm which version you ne
 
 > **Note**
 > 
-> After forking, you can also edit the files directly in the GitHub web interface using the edit button on the top right (with keyboard shortcut `e`) or [GitHub Dev](https://github.com/github/dev) (with keyboard shortcut `.`) and commit your changes.
+> After forking the repo to your own account, you can also edit the files directly using the GitHub web interface via the edit button on the top right (keyboard shortcut `e`) or via the [GitHub Dev](https://github.com/github/dev) interface (keyboard shortcut `.`) and commit your changes.
 
 ## Firmware Files
 
