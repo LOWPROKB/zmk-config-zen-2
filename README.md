@@ -25,6 +25,10 @@ V2 PCBs were only used in the 3rd GB round (R3). To confirm which version you ne
     - Change [the conf file](/config/corneish_zen.conf) to edit configuration settings like changing the deep sleep timeout
 4. Commit and push your changes to your personal repo. Upon pushing it, GitHub Actions will start building a new version of your firmware with the updated keymap.
 
+> **Note**
+> 
+> After forking, you can also edit the files directly in the GitHub web interface using the edit button on the top right (with keyboard shortcut `e`) or [GitHub Dev](https://github.com/github/dev) (with keyboard shortcut `.`) and commit your changes.
+
 ## Firmware Files
 
 To locate your firmware files...
@@ -34,8 +38,8 @@ To locate your firmware files...
 3. Select the desired workflow run in the centre area of the page (based on date and time of the build you wish to use). You can also start a new build from this page by clicking the "Run workflow" button.
 4. After clicking the desired workflow run, you should be presented with a section at the bottom of the page called "Artifacts". This section contains the results of your build, in a file called "firmware.zip"
 5. Download the firmware zip archive and extract the two `.uf2` files. They are named according to which side they need to be flashed to.
-6. Flash the firmware to your keyboard by double-clicking the reset button to put the it in bootloader mode. A window should pop up showing the contents of the storage on the keyboard. Drag and drop the correct .uf2 file into the window. When the upload is complete the window will close and the keyboard will exit bootloader mode.
-    - If you only changed [the keymap file](/config/corneish_zen.keymap) you only need to flash the left side firmware to the left half.
-    - If you changed [the conf file](/config/corneish_zen.conf) you should flash both halves their respective files.
+6. Flash the firmware to your keyboard by double-clicking the reset button to put the it in bootloader mode. A window should pop up showing the contents of the storage on the keyboard. Drag and drop the correct `.uf2` file into the window. When the upload is complete the window will close and the keyboard will exit bootloader mode.
+    - If you only changed [the keymap file](/config/corneish_zen.keymap) you only need to flash the left side firmware to the left side.
+    - If you changed [the conf file](/config/corneish_zen.conf) you should flash both sides their respective files.
 
 Your keyboard is now ready to use.
