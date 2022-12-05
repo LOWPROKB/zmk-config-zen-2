@@ -93,7 +93,7 @@
                 };
 
                 nav_layer {
-                        label = "NAV";
+                        label = "NAVI";
 // -----------------------------------------------------------------------------------------
 // |      |     |     |      |      |     |   | REDO | PASTE | COPY |  CUT | UNDO |      |
 // |      | GUI | ALT | CTRL | SHFT |     |   | LFT  | DWN   |  UP  | RGT  | CAP  |      |
