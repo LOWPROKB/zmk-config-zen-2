@@ -10,25 +10,6 @@
 };
 
 / {
-        behaviors {
-                kp_mo: behavior_kp_mo {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "kp_mo";
-                        #binding-cells = <2>;
-                        flavor = "hold-preferred";
-                        tapping-term-ms = <200>;
-                        bindings = <&kp>, <&mo>;
-                };
-        };
-
-        combos {
-                compatible = "zmk,combos";
-                combo_bksp {
-                        timeout-ms = <50>;
-                        key-positions = <15 16>;
-                        bindings = <&kp BSPC>
-                }
-        };
 
         keymap {
                 compatible = "zmk,keymap";
