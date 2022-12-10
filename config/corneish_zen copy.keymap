@@ -10,6 +10,16 @@
             bindings = <&kp BSPC>;
             key-positions = <15 14>;
         };
+
+        kl_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <20 21>;
+        };
+
+        bothSpace_layer3 {
+            bindings = <&mo 3>;
+            key-positions = <38 39>;
+        };
     };
 
     keymap {
