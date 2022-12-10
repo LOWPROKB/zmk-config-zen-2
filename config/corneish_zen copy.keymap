@@ -6,7 +6,7 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        sd_bkspc {
             bindings = <&kp BSPC>;
             key-positions = <15 14>;
         };
