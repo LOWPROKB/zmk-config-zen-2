@@ -11,9 +11,10 @@
 
 #define DEFAULT 0
 #define LOWER   1
-#define RAISE   2
-#define TRI     3
-#define FUNC    4
+#define FUNC    2
+#define RAISE   3
+#define TRI     4
+
 
 
 / {
@@ -36,7 +37,7 @@
                 };
                 
                 lower_layer {
-                  label = "NUMBER";
+                  label = "NUMPAD";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  =  |  7  |  8  |  9  |    |   |     |     |     |     |     | DEL  |
 // | CTRL |  +  |  4  |  5  |  6  |    |   | LFT | DWN |  UP | RGT |     |      |
@@ -49,6 +50,22 @@
                            &kp LGUI &trans  &trans   &kp SPACE  &mo TRI &kp RALT
                         >;
                 };
+                
+                func_layer {
+                  label = "FUNCTION";
+// -----------------------------------------------------------------------------------------
+// |  TAB |   |  F7 |  F8  | F9  | F10 |   |     |     |     |     |     | DEL  |
+// | CTRL |   |  F4 |  F5  | F6  | F11 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |   |  F1 |  F2  | F3  | F12 |   | HME | END |     |     |     |      |
+//                  | GUI  |     | ENT |   | SPC |     | ALT |
+                        bindings = <
+   &kp TAB   &none &kp F7 &kp F8 &kp F9 &kp F10   &none     &none    &none  &none     &none &kp DEL
+   &kp LCTRL &none &kp F4 &kp F5 &kp F6 &kp F11   &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none &none
+   &kp LSHFT &none &kp F1 &kp F2 &kp F3 &kp F12   &kp HOME  &kp END  &none  &none     &none &none
+                    &kp LGUI &trans &kp RET       &kp SPACE &mo TRI &kp RALT
+                        >;
+                };
+                
 
                 raise_layer {
                   label = "SYMBOL";  
@@ -66,7 +83,7 @@
                 };
 
                 tri_layer {
-                  label = "META";
+                  label = "EXTRA";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |VOL_D|VOL_U|     |     |     |      |
@@ -80,20 +97,7 @@
                         >;
                 };
                 
-                func_layer {
-                  label = "FUNC";
-// -----------------------------------------------------------------------------------------
-// |  TAB |   |  F12 |  F7  | F8  |  F9  |   |     |     |     |     |     | DEL  |
-// | CTRL |   |  F11 |  F4  | F5  |  F6  |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |   |  F10 |  F1  | F2  |  F3  |   | HME | END |     |     |     |      |
-//                   | GUI  |     |  ENT |   | SPC |     | ALT |
-                        bindings = <
-   &kp TAB   &none &kp F12 &kp F7 &kp F8 &kp F9   &none     &none    &none  &none     &none &kp DEL
-   &kp LCTRL &none &kp F11 &kp F4 &kp F5 &kp F6   &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none &none
-   &kp LSHFT &none &kp F10 &kp F1 &kp F2 &kp F3   &kp HOME  &kp END  &none  &none     &none &none
-                    &kp LGUI &trans &kp RET       &kp SPACE &mo TRI &kp RALT
-                        >;
-                };
+                
 
         };
 };
