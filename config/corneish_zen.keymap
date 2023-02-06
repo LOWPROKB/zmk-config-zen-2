@@ -40,13 +40,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  =  |  7  |  8  |  9  |    |   |     |     |     |     |     | DEL  |
 // | CTRL |  +  |  4  |  5  |  6  |    |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |  -  |  1  |  2  |  3  | 0  |   |     |     |     |     |     |      |
+// | SHFT |  -  |  1  |  2  |  3  | 0  |   | HME | END |     |     |     |      |
 //                    | GUI |     | ENT|   | SPC |     | ALT |
                         bindings = <
-   &kp TAB   &kp EQUAL &kp N7 &kp N8 &kp N9 &trans   &tran    &tran     &tran  &tran     &trans &kp DEL
+   &kp TAB   &kp EQUAL &kp N7 &kp N8 &kp N9 &trans   &trans   &trans    &trans &trans    &trans &kp DEL
    &kp LCTRL &kp PLUS  &kp N4 &kp N5 &kp N6 &trans   &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT &kp MINUS &kp N1 &kp N2 &kp N3 &kp N0   &kp F11  &kp F12   &trans &trans    &trans &trans
-                    &kp LGUI &trans &kp RET       &kp SPACE &mo TRI &kp RALT
+   &kp LSHFT &kp MINUS &kp N1 &kp N2 &kp N3 &kp N0   &kp HOME  &kp END   &trans &trans    &trans &trans
+                           &kp LGUI &trans &kp RET   &kp SPACE &mo TRI &kp RALT
                         >;
                 };
 
@@ -85,12 +85,12 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |   |  F12 |  F7  | F8  | F9 |   |     |     |     |     |     | DEL  |
 // | CTRL |   |  F11 |  F4  | F5  | F6 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |   |  F10 |  F1  | F2  | F3 |   |     |     |     |     |     |      |
-//                     | GUI  |     |ENT |   | SPC |     | ALT |
+// | SHFT |   |  F10 |  F1  | F2  | F3 |   | HME | END |     |     |     |      |
+//                     | GUI  |   |ENT |   | SPC |     | ALT |
                         bindings = <
-   &kp TAB   &trans &kp F12 &kp F7 &kp F8 &kp F9   &tran    &tran     &tran  &tran     &trans &kp DEL
-   &kp LCTRL &trans &kp F11 &kp F4 &kp F5 &kp F6   &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT &trans &kp F10 &kp F1 &kp F2 &kp F3   &trans   &trans    &trans &trans    &trans &trans
+   &kp TAB   &trans &kp F12 &kp F7 &kp F8 &kp F9   &trans    &trans    &trans &trans    &trans &kp DEL
+   &kp LCTRL &trans &kp F11 &kp F4 &kp F5 &kp F6   &kp LEFT  &kp DOWN  &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT &trans &kp F10 &kp F1 &kp F2 &kp F3   &kp HOME  &kp END   &trans &trans    &trans &trans
                     &kp LGUI &trans &kp RET       &kp SPACE &mo TRI &kp RALT
                         >;
                 };
