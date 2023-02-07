@@ -6,6 +6,9 @@
     &sk {
     release-after-ms = <2000>;
             };
+    &gresc {
+    keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+            };
 
 / {
   chosen {
