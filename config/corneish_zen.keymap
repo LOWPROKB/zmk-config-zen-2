@@ -54,14 +54,14 @@
                 func_layer {
                   label = "FUNCTION";
 // -----------------------------------------------------------------------------------------
-// |  TAB |   |  F7 |  F8  | F9  | F10 |   |     |     |     |     |     | DEL  |
-// | CTRL |   |  F4 |  F5  | F6  | F11 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |   |  F1 |  F2  | F3  | F12 |   | HME | END |     |     |     |      |
-//                  | GUI  |     | ENT |   | SPC |     | ALT |
+// |  TAB |   |  F12 |  F7  | F9  | F9 |   |     |     |     |     |     | DEL  |
+// | CTRL |   |  F11 |  F4  | F5  | F6 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |   |  F10 |  F1  | F2  | F3 |   | HME | END |     |     |     |      |
+//                   | GUI  |     | ENT|   | SPC |     | ALT |
                         bindings = <
-   &kp TAB   &none &kp F7 &kp F8 &kp F9 &kp F10   &none     &none    &none  &none     &none &kp DEL
-   &kp LCTRL &none &kp F4 &kp F5 &kp F6 &kp F11   &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none &none
-   &kp LSHFT &none &kp F1 &kp F2 &kp F3 &kp F12   &kp HOME  &kp END  &none  &none     &none &none
+   &kp TAB   &none &kp F12 &kp F7 &kp F8 &kp F9   &none     &none    &none  &none     &none &kp DEL
+   &kp LCTRL &none &kp F11 &kp F4 &kp F5 &kp F6   &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none &none
+   &kp LSHFT &none &kp F10 &kp F1 &kp F2 &kp F3   &kp HOME  &kp END  &none  &none     &none &none
                     &kp LGUI &trans &kp RET       &kp SPACE &mo TRI &kp RALT
                         >;
                 };
