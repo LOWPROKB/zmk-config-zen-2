@@ -80,7 +80,7 @@
 
                 combo_adjust {
                         timeout-ms = <50>;
-                        key-positions = <36 37>;
+                        key-positions = <37 38>;
                         bindings = <&mo _ADJUST>;
                 };
     };
