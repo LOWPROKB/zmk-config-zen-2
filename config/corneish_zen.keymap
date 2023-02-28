@@ -54,6 +54,15 @@
                         flavor = "balanced";
                         bindings = <&kp>, <&kp>;
                 };
+                hmip: homerow_interrupt_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        flavor = "tap-unless-interrupted";
+                        tapping-term-ms = <TAPPING_TERM>;   // <---[[produces tap if held longer than tapping-term-ms]]
+                        quick-tap-ms = <200>;
+                        bindings = <&kp>, <&kp>;
+                };
                 qt: quick_tap {
                         compatible = "zmk,behavior-hold-tap";
                         label = "QUICK_TAP";
@@ -68,7 +77,7 @@
                         label = "RIGHT_POSITIONAL_HOLD_TAP";
                         #binding-cells = <2>;
                         flavor = "tap-unless-interrupted";
-                        tapping-term-ms = <100>;   // <---[[produces tap if held longer than tapping-term-ms]]
+                        tapping-term-ms = <TAPPING_TERM>;   // <---[[produces tap if held longer than tapping-term-ms]]
                         quick-tap-ms = <200>;
                         bindings = <&kp>, <&kp>;
                         hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;   // <---[[right-hand keys]]
@@ -105,10 +114,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U           &kp I          &kp O          &kp P              &kp BSPC
-   &qt BSPC TAB &bhm LCTRL A &bhm LALT S &bhm LCMD D  &bhm LSHFT F &kp G         &kp H   &rh_pht RSHFT J &rh_pht RCMD K &rh_pht RALT L &rh_pht RCTRL SEMI &kp SQT
-   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH           &kp ESC
-                                         &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2           &mo 4
+   &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U         &kp I        &kp O        &kp P            &kp BSPC
+   &qt BSPC TAB &bhm LCTRL A &bhm LALT S &bhm LCMD D  &bhm LSHFT F &kp G         &kp H   &hmip RSHFT J &hmip RCMD K &hmip RALT L &hmip RCTRL SEMI &kp SQT
+   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH         &kp ESC
+                                         &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2         &mo 4
                         >;
                 };
 
