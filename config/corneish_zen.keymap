@@ -63,16 +63,15 @@
                         quick-tap-ms = <QUICK_TAP>;
                         bindings = <&kp>, <&kp>;
                 };
-                ptr: positional_hold_tap_right {
+                rh_pht: right_hand_positional_hold_tap {
                         compatible = "zmk,behavior-hold-tap";
-                        label = "POSITIONAL_HOLD_TAP_RIGHT";
+                        label = "RIGHT_POSITIONAL_HOLD_TAP";
                         #binding-cells = <2>;
-                        flavor = "balanced";
-                        tapping-term-ms = <250>;
-                        global-quick-tap;
-                        quick-tap-ms = <150>;
+                        flavor = "tap-unless-interrupted";
+                        tapping-term-ms = <100>;   // <---[[produces tap if held longer than tapping-term-ms]]
+                        quick-tap-ms = <200>;
                         bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;
+                        hold-trigger-key-positions = <1 2 3 4 5 13 14 15 16 17 25 26 27 28 29>;   // <---[[right-hand keys]]
                 };
         };
 
@@ -90,6 +89,7 @@
                 tmux_next1: tmux_next1 {
                         #binding-cells = <0>;
                         compatible = "zmk,behavior-macro";
+                        label = "TMUX_NEXT1";
                         bindings
                                 = <&macro_press &kp LCTRL>
                                 , <&macro_tap &kp B>
@@ -105,10 +105,10 @@
                 default_layer {
                         label = "QWERTY";
                         bindings = <
-   &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U        &kp I       &kp O       &kp P           &kp BSPC
-   &qt BSPC TAB &bhm LCTRL A &bhm LALT S &bhm LCMD D  &bhm LSHFT F &kp G         &kp H   &ptr RSHFT J &ptr RCMD K &ptr RALT L &ptr RCTRL SEMI &kp SQT
-   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M        &kp COMMA   &kp DOT     &kp FSLH        &kp ESC
-                                         &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2        &mo 4
+   &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U           &kp I          &kp O          &kp P              &kp BSPC
+   &qt BSPC TAB &bhm LCTRL A &bhm LALT S &bhm LCMD D  &bhm LSHFT F &kp G         &kp H   &rh_pht RSHFT J &rh_pht RCMD K &rh_pht RALT L &rh_pht RCTRL SEMI &kp SQT
+   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M           &kp COMMA      &kp DOT        &kp FSLH           &kp ESC
+                                         &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2           &mo 4
                         >;
                 };
 
@@ -118,7 +118,7 @@
    &trans     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5         &kp N6   &kp N7   &kp N8     &kp N9         &kp N0   &kp BSPC
    &kp BSPC   &trans &trans &trans &trans &trans         &kp LEFT &kp DOWN &kp UP     &kp RIGHT      &trans   &trans
    &kp LSHFT  &trans &trans &trans &trans &trans         &trans   &trans   &kp KP_DOT &kp LS(KP_DOT) &kp C_PP &kp C_MUTE
-                        &kp LGUI &trans &kp SPACE        &kp RET  &trans   &trans
+                        &kp LGUI &trans &kp SPACE        &kp KP_ENTER  &trans   &trans
                         >;
                 };
 
@@ -128,7 +128,7 @@
    &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT     &kp CARET    &kp AMPS  &kp STAR &kp LPAR &kp RPAR &kp DEL 
    &trans &trans   &trans &trans   &trans   &trans        &kp MINUS    &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
    &trans &trans   &trans &trans   &trans   &trans        &kp UNDER    &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE     &kp KP_ENTER &trans    &trans
+                    	  &kp LGUI &trans   &kp SPACE     &trans       &trans    &trans
                         >;
                 };
 
@@ -147,8 +147,8 @@
                         bindings = <
    &trans  &trans   &trans  &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans  &trans
    &trans  &trans   &trans  &trans   &trans   &trans          &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans  &trans
-   &trans  &trans   &trans  &trans   &trans   &trans          &KP HOME &kp PG_DN &kp PG_UP &kp END   &trans  &trans 
-                            &kp LGUI &trans   &kp SPACE     &kp RET  &trans    &trans
+   &trans  &trans   &trans  &trans   &trans   &trans          &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans  &trans 
+                            &trans   &trans   &trans          &trans   &trans    &trans
                         >;
                 };
         };
