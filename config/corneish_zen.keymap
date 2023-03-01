@@ -24,7 +24,7 @@
          36 37 38   39 40 41     */
 
 
-#define TAPPING_TERM 180 
+#define TAPPING_TERM 100
 #define QUICK_TAP 0
 
 #define _DEFAULT 0
@@ -69,7 +69,7 @@
                         #binding-cells = <2>;
                         flavor = "tap-preferred";
                         tapping-term-ms = <TAPPING_TERM>;
-                        quick-tap-ms = <QUICK_TAP>;
+                        quick-tap-ms = <200>;
                         bindings = <&kp>, <&kp>;
                 };
                 rh_pht: right_hand_positional_hold_tap {
@@ -115,7 +115,7 @@
                         label = "QWERTY";
                         bindings = <
    &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U         &kp I        &kp O        &kp P            &kp BSPC
-   &qt BSPC TAB &hm LCTRL A &hm LALT S &hm LCMD D  &hm LSHFT F &kp G         &kp H   &hm RSHFT J  &hm RCMD K  &hm RALT L  &hm RCTRL SEMI  &kp SQT
+   &qt BSPC TAB &bhm LCTRL A &hm LALT S &hm LCMD D  &hm LSHFT F &kp G         &kp H   &hm RSHFT J  &hm RCMD K  &hm RALT L  &hm RCTRL SEMI  &kp SQT
    &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH         &kp ESC
                                          &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2         &mo 4
                         >;
