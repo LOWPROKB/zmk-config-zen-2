@@ -104,19 +104,19 @@
                         label = "QWERTY";
                         bindings = <
    &gresc       &kp Q        &kp W       &kp E        &kp R        &kp T         &kp Y   &kp U         &kp I        &kp O        &kp P            &kp BSPC
-   &qt BSPC TAB &hm LCTRL A  &hm LALT S &hm LCMD D  &hm LSHFT F &kp G         &kp H   &bhm RSHFT J  &bhm RCMD K  &bhm RALT L  &bhm RCTRL SEMI  &kp SQT
-   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH         &kp ESC
+   &qt BSPC TAB &hm LCTRL A  &hm LALT S  &hm LCMD D   &hm LSHFT F  &kp G         &kp H   &bhm RSHFT J  &bhm RCMD K  &bhm RALT L  &bhm RCTRL SEMI  &kp SQT
+   &kp LSHFT    &kp Z        &kp X       &kp C        &kp V        &kp B         &kp N   &kp M         &kp COMMA    &kp DOT      &kp FSLH         &kp BSLH
                                          &kp LGUI     &mo 1        &kp SPACE     &kp RET &mo 2         &mo 4
                         >;
                 };
 
                 lower_layer {
-                        label = "NUMBER";
+                        label = "LOWER";
                         bindings = <
-   &trans     &kp N1 &kp N2 &kp N3 &kp N4 &kp N5         &kp N6   &kp N7   &kp N8     &kp N9         &kp N0   &kp BSPC
-   &kp BSPC   &trans &trans &trans &trans &trans         &kp LEFT &kp DOWN &kp UP     &kp RIGHT      &trans   &trans
-   &kp LSHFT  &trans &trans &trans &trans &trans         &trans   &trans   &kp KP_DOT &kp LS(KP_DOT) &kp C_PP &kp C_MUTE
-                        &kp LGUI &trans &kp SPACE        &kp KP_ENTER  &trans   &trans
+   &trans     &kp N1    &kp N2   &kp N3   &kp N4    &kp N5         &kp N6   &kp N7   &kp N8     &kp N9         &kp N0   &kp BSPC
+   &kp BSPC   &kp LCTRL &kp LALT &kp LCMD &kp LSHFT &trans         &kp LEFT &kp DOWN &kp UP     &kp RIGHT      &trans   &trans
+   &kp LSHFT  &trans    &trans   &trans   &trans    &trans         &trans   &trans   &kp KP_DOT &kp LS(KP_DOT) &kp C_PP &kp C_MUTE
+                                 &kp LGUI &trans    &kp DEL        &kp KP_ENTER  &trans   &trans
                         >;
                 };
 
