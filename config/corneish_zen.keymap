@@ -78,7 +78,7 @@
                 nav_layer {
                         label = "NAV";
                         bindings = <
-&trans &trans &trans &trans &trans &trans   &trans &trans &up    &trans &trans &trans
+&trans &trans &trans &trans &trans &trans   &to 4  &trans &up    &trans &trans &trans
 &trans &trans &trans &trans &trans &trans   &trans &left  &down  &right &trans &trans 
 &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans 
                      &to 0  &trans &trans   &trans &trans &trans
