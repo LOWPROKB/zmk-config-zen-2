@@ -113,6 +113,24 @@
                 bindings = <&as LS(APOS) APOS>, <&as LS(SEMI) SEMI>;
             };
         };
+        
+        tdse: Space-Enter {
+                compatible = "zmk,behavior-tap-dance";
+                label = "Tap Dance Space Enter";
+                #binding-cells = <0>;
+                tapping-term-ms = <170>;
+                bindings = <&lt 1 SPC>, <&lt 2 RET>;
+            };
+        };
+        
+        tdes: Enter-Space {
+                compatible = "zmk,behavior-tap-dance";
+                label = "Tap Dance Space Enter";
+                #binding-cells = <0>;
+                tapping-term-ms = <170>;
+                bindings = <&lt 2 RET>, <&lt 1 SPC>;
+            };
+        };
 
         combos {
         compatible = "zmk,combos";
@@ -138,59 +156,59 @@
             layers = <0>;
         };
         combo_bspc {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <8 9>;
             bindings = <&kp BKSP>;
             layers = <0 1>;
         };
         combo_tab {
-            timeout-ms = <50>;
+            timeout-ms = <60>;
             key-positions = <0 1>;
             bindings = <&kp TAB>;
             layers = <0 1>;
         };
         combo_esc {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <1 2>;
             bindings = <&gresc>;
             layers = <0 1>;
         };
         combo_wordleft {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <16 17>;
             bindings = <&kp LC(LEFT)>;
             layers = <0>;
         };    
         combo_wordright {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <17 18>;
             bindings = <&kp LC(RIGHT)>;
             layers = <0>;            
         };
         
         combo_home {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <7 16>;
             bindings = <&kp HOME>;
             layers = <0>;            
         };     
         
         combo_end {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <7 18>;
             bindings = <&kp END>;
             layers = <0>;            
         };         
         
         combo_pgup {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <7 16 18>;
             bindings = <&kp PG_UP>;
             layers = <0>;            
         };   
         
         combo_pgdown {
-            timeout-ms = <30>;
+            timeout-ms = <60>;
             key-positions = <16 17 18>;
             bindings = <&kp PG_DN>;
             layers = <0>;            
@@ -211,7 +229,7 @@
    &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y &kp U         &kp I        &kp O       &kp P
    &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G          &kp H &hm RSHFT J   &hm RCTRL K  &hm LALT L  &tdhmbkt
    &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N &kp M         &tdcb        &tdds       &tdqs
-                   &to 0 &mo 2 &lt 1 SPC                                     &lt 3 RET &mo 2 &to 0
+                   &to 0 &mo 3 &tdse                                    &tdes &mo 3 &to 0
                         >;
                 };
                 numnav_layer {
