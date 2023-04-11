@@ -263,7 +263,7 @@
                 sys_layer {
                         label = "SYS";
                         bindings = <
-   &bt BT_CLR   &reset        &bootloader    &none  &none               &none  &none  &kp C_VOL_DN  &kp C_MUTE &kp C_VOL_UP
+   &bt BT_CLR   &sys_reset    &bootloader    &none  &none               &none  &none  &kp C_VOL_DN  &kp C_MUTE &kp C_VOL_UP
    &bt BT_SEL 3 &bt BT_SEL 4  &out OUT_TOG   &none  &none               &none  &none  &kp C_PREV    &kp C_PP   &kp C_NEXT
    &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2   &none  &none               &none  &none  &kp C_BRI_DN  &none      &kp C_BRI_UP 
                    &trans &trans &trans                                      &trans &trans &to 0
