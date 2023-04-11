@@ -112,7 +112,6 @@
                 tapping-term-ms = <170>;
                 bindings = <&as LS(APOS) APOS>, <&as LS(SEMI) SEMI>;
             };
-        };
         
         tdse: Space-Enter {
                 compatible = "zmk,behavior-tap-dance";
@@ -121,7 +120,6 @@
                 tapping-term-ms = <170>;
                 bindings = <&lt 1 SPC>, <&lt 2 RET>;
             };
-        };
         
         tdes: Enter-Space {
                 compatible = "zmk,behavior-tap-dance";
