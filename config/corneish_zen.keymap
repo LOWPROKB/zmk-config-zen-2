@@ -113,7 +113,7 @@
                 bindings = <&as LS(APOS) APOS>, <&as LS(SEMI) SEMI>;
             };
         
-        tdse: Space-Enter {
+        tdspcret: Space-Enter {
                 compatible = "zmk,behavior-tap-dance";
                 label = "Tap Dance Space Enter";
                 #binding-cells = <0>;
@@ -227,7 +227,7 @@
    &kp Q      &kp W      &kp E       &kp R       &kp T          &kp Y &kp U         &kp I        &kp O       &kp P
    &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F &kp G          &kp H &hm RSHFT J   &hm RCTRL K  &hm LALT L  &tdhmbkt
    &kp Z      &kp X      &kp C       &kp V       &kp B          &kp N &kp M         &tdcb        &tdds       &tdqs
-                   &to 0 &mo 3 &tdse                                    &tdes &mo 3 &to 0
+                   &to 0 &mo 3 &tdspcret                                    &tdes &mo 3 &to 0
                         >;
                 };
                 numnav_layer {
