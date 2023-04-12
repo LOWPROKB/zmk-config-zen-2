@@ -123,7 +123,7 @@
         
         tdes: Enter-Space {
                 compatible = "zmk,behavior-tap-dance";
-                label = "Tap Dance Space Enter";
+                label = "Tap Dance Enter Space";
                 #binding-cells = <0>;
                 tapping-term-ms = <170>;
                 bindings = <&lt 2 RET>, <&lt 1 SPC>;
