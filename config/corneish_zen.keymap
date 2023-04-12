@@ -112,6 +112,7 @@
                 tapping-term-ms = <170>;
                 bindings = <&as LS(APOS) APOS>, <&as LS(SEMI) SEMI>;
             };
+        };
 
         combos {
         compatible = "zmk,combos";
