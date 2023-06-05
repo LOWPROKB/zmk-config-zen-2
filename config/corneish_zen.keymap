@@ -17,6 +17,10 @@
 #define TRI     4
 
 
+&mmv {
+    acceleration-exponent=<1>;
+};
+
 
 / {
         keymap {
@@ -72,13 +76,13 @@
                   label = "SYMBOL";  
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !   |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |
-// | CTRL |SCR_D | M_LC| M_U | M_RC|     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |SCR-U | M_L | M_D | M_R |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+// | CTRL |SCR_U | M_LC| M_U | M_RC|     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |SCR-D | M_L | M_D | M_R |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT         &kp HASH       &kp DLLR        &kp PRCNT     &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp DEL
-   &kp LCTRL &mwh SCROLL_DOWN   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &trans     &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &mwh SCROLL_UP   &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &kp LCTRL &mwh SCROLL_UP   &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &trans     &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &mwh SCROLL_DOWN &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans     &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
                     	     &kp LGUI &mo TRI    &kp RET                            &kp SPACE &trans    &kp RALT
                         >;
                 };
@@ -97,8 +101,7 @@
                           	        &kp LGUI     &trans       &kp RET        &kp SPACE      &trans         &kp RALT
                         >;
                 };
-                
-                
+                         
 
         };
 };
