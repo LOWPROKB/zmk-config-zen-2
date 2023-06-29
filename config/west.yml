@@ -1,25 +1,11 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/LOWPROKB
-    - name: stites
-      url-base: https://github.com/stites
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: stites
-      revision: main+zen-v1+plover
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
-
-# manifest:
-#   remotes:
-#     - name: zmkfirmware
-#      url-base: https://github.com/zmkfirmware
-#  projects:
-#     - name: zmk
-#       remote: zmkfirmware
-#       revision: main
-#       import: app/west.yml
-#   self:
-#     path: config
