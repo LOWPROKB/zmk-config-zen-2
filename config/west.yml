@@ -1,11 +1,13 @@
 manifest:
   remotes:
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    - name: zmkfirmware
+      url-base: https://github.com/LOWPROKB
+    - name: stites
+      url-base: https://github.com/stites
   projects:
     - name: zmk
-      remote: caksoylar
-      revision: caksoylar/zen-v1+v2  # custom branch name
+      remote: stites
+      revision: main+zen-v1+plover
       import: app/west.yml
   self:
     path: config
