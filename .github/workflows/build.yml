@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: stites/zmk/.github/workflows/build-user-config.yml@main+zen-v1+plover
+    uses: LOWPROKB/zmk/.github/workflows/build-user-config.yml@corne-ish-zen-v2
