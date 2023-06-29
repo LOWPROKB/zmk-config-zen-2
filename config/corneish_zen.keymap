@@ -252,6 +252,17 @@
    &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2   &none  &none               &none  &none  &kp C_BRI_DN  &none      &kp C_BRI_UP 
                    &trans &trans &trans                                      &trans &trans &to 0
                         >;
-                };                
+                };
+
+                plover_layer {
+                    label = "Plover";
+                    bindings = <
+                        &to 0   &kp PLV_NM  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST         &kp PLV_ST &kp PLV_FR  &kp PLV_PR  &kp PLV_LR  &kp PLV_TR  &kp PLV_DR
+                        &kp LC(V)   &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST         &kp PLV_ST &kp PLV_RR  &kp PLV_BR  &kp PLV_GR  &kp PLV_SR  &kp PLV_ZR
+                        &kp LC(C)   &kp PLV_X1  &kp PLV_X2  &kp PLV_X3  &kp PLV_X4  &kp PLV_ST         &kp PLV_ST  &kp PLV_X5  &kp PLV_X6  &kp PLV_X7  &kp PLV_X8  &kp PLV_X9
+                                                        &kp PLV_NM   &kp PLV_A  &kp PLV_O           &kp PLV_E  &kp PLV_U &kp  PLV_NM 
+
+                    >;
+                };
         };
 };
