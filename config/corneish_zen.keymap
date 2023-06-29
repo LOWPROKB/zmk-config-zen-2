@@ -26,6 +26,7 @@
 #define NUMNAV 1
 #define FANDM 2
 #define SYS 3
+#define STENO 4
 
 / {
 
@@ -255,7 +256,7 @@
                 };
 
                 plover_layer {
-                    label = "Plover";
+                    label = "STENO";
                     bindings = <
                         &to 0   &kp PLV_NM  &kp PLV_TL  &kp PLV_PL  &kp PLV_HL  &kp PLV_ST         &kp PLV_ST &kp PLV_FR  &kp PLV_PR  &kp PLV_LR  &kp PLV_TR  &kp PLV_DR
                         &kp LC(V)   &kp PLV_SL  &kp PLV_KL  &kp PLV_WL  &kp PLV_RL  &kp PLV_ST         &kp PLV_ST &kp PLV_RR  &kp PLV_BR  &kp PLV_GR  &kp PLV_SR  &kp PLV_ZR
