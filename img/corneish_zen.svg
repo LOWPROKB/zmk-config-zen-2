@@ -1,79 +1,73 @@
-<svg width="900.0" height="1047.959200876839" viewBox="0 0 900.0 1047.959200876839" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="860.0" height="903.9592008768392" viewBox="0 0 860.0 903.9592008768392" class="keymap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>/* start glyphs */
-<svg id="mdi:arrow-up-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
-</svg>
-<svg id="mdi:backspace">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
-</svg>
-<svg id="mdi:keyboard-return">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
-</svg>
-<svg id="mdi:volume-low">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-low" viewBox="0 0 24 24"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-f12">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-f12" viewBox="0 0 24 24"><path d="M2 7H8V9H4V11H7V13H4V17H2V7M16 7H20C21.11 7 22 7.9 22 9V11C22 12.11 21.11 13 20 13H18V15H22V17H16V13C16 11.9 16.9 11 18 11H20V9H16V7M10 7H14V17H12V9H10V7Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-command">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-space">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
-</svg>
-<svg id="mdi:volume-off">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-caps">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-caps" viewBox="0 0 24 24"><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
-</svg>
-<svg id="mdi:brightness-5">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-5" viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
-</svg>
-<svg id="mdi:volume-high">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-high" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-option">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-f2">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-f2" viewBox="0 0 24 24"><path d="M5 7H11V9H7V11H10V13H7V17H5V7M13 7H17C18.11 7 19 7.9 19 9V11C19 12.11 18.11 13 17 13H15V15H19V17H13V13C13 11.9 13.9 11 15 11H17V9H13V7Z" /></svg>
-</svg>
-<svg id="mdi:skip-next">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
-</svg>
-<svg id="mdi:border-none-variant">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-border-none-variant" viewBox="0 0 24 24"><path d="M15,5H17V3H15M15,21H17V19H15M11,5H13V3H11M19,5H21V3H19M19,9H21V7H19M19,21H21V19H19M19,13H21V11H19M19,17H21V15H19M3,5H5V3H3M3,9H5V7H3M3,13H5V11H3M3,17H5V15H3M3,21H5V19H3M11,21H13V19H11M7,21H9V19H7M7,5H9V3H7V5Z" /></svg>
-</svg>
-<svg id="mdi:apple-keyboard-control">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
-</svg>
 <svg id="mdi:apple-keyboard-shift">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-esc">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-esc" viewBox="0 0 24 24"><path d="M1 7H7V9H3V11H7V13H3V15H7V17H1V7M11 7H15V9H11V11H13C14.11 11 15 11.9 15 13V15C15 16.11 14.11 17 13 17H9V15H13V13H11C9.9 13 9 12.11 9 11V9C9 7.9 9.9 7 11 7M19 7H21C22.11 7 23 7.9 23 9V10H21V9H19V15H21V14H23V15C23 16.11 22.11 17 21 17H19C17.9 17 17 16.11 17 15V9C17 7.9 17.9 7 19 7Z" /></svg>
-</svg>
-<svg id="mdi:skip-previous">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
-</svg>
-<svg id="mdi:keyboard-tab">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
-</svg>
-<svg id="mdi:arrow-down-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
-</svg>
-<svg id="mdi:arrow-right-bold">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold" viewBox="0 0 24 24"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" /></svg>
-</svg>
-<svg id="mdi:brightness-7">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-7" viewBox="0 0 24 24"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" /></svg>
 </svg>
 <svg id="mdi:arrow-left-bold">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold" viewBox="0 0 24 24"><path d="M20,9V15H12V19.84L4.16,12L12,4.16V9H20Z" /></svg>
 </svg>
+<svg id="mdi:border-none-variant">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-border-none-variant" viewBox="0 0 24 24"><path d="M15,5H17V3H15M15,21H17V19H15M11,5H13V3H11M19,5H21V3H19M19,9H21V7H19M19,21H21V19H19M19,13H21V11H19M19,17H21V15H19M3,5H5V3H3M3,9H5V7H3M3,13H5V11H3M3,17H5V15H3M3,21H5V19H3M11,21H13V19H11M7,21H9V19H7M7,5H9V3H7V5Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-space">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-space" viewBox="0 0 24 24"><path d="M3 15H5V19H19V15H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V15Z" /></svg>
+</svg>
+<svg id="mdi:brightness-7">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-7" viewBox="0 0 24 24"><path d="M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31L23.31,12L20,8.69Z" /></svg>
+</svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
+</svg>
+<svg id="mdi:keyboard-return">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-return" viewBox="0 0 24 24"><path d="M19,7V11H5.83L9.41,7.41L8,6L2,12L8,18L9.41,16.58L5.83,13H21V7H19Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-command">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-command" viewBox="0 0 24 24"><path d="M6,2A4,4 0 0,1 10,6V8H14V6A4,4 0 0,1 18,2A4,4 0 0,1 22,6A4,4 0 0,1 18,10H16V14H18A4,4 0 0,1 22,18A4,4 0 0,1 18,22A4,4 0 0,1 14,18V16H10V18A4,4 0 0,1 6,22A4,4 0 0,1 2,18A4,4 0 0,1 6,14H8V10H6A4,4 0 0,1 2,6A4,4 0 0,1 6,2M16,18A2,2 0 0,0 18,20A2,2 0 0,0 20,18A2,2 0 0,0 18,16H16V18M14,10H10V14H14V10M6,16A2,2 0 0,0 4,18A2,2 0 0,0 6,20A2,2 0 0,0 8,18V16H6M8,6A2,2 0 0,0 6,4A2,2 0 0,0 4,6A2,2 0 0,0 6,8H8V6M18,8A2,2 0 0,0 20,6A2,2 0 0,0 18,4A2,2 0 0,0 16,6V8H18Z" /></svg>
+</svg>
+<svg id="mdi:volume-high">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-high" viewBox="0 0 24 24"><path d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" /></svg>
+</svg>
+<svg id="mdi:arrow-right-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-right-bold" viewBox="0 0 24 24"><path d="M4,15V9H12V4.16L19.84,12L12,19.84V15H4Z" /></svg>
+</svg>
+<svg id="mdi:volume-low">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-low" viewBox="0 0 24 24"><path d="M7,9V15H11L16,20V4L11,9H7Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-option">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
+</svg>
+<svg id="mdi:volume-off">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-off" viewBox="0 0 24 24"><path d="M12,4L9.91,6.09L12,8.18M4.27,3L3,4.27L7.73,9H3V15H7L12,20V13.27L16.25,17.53C15.58,18.04 14.83,18.46 14,18.7V20.77C15.38,20.45 16.63,19.82 17.68,18.96L19.73,21L21,19.73L12,10.73M19,12C19,12.94 18.8,13.82 18.46,14.64L19.97,16.15C20.62,14.91 21,13.5 21,12C21,7.72 18,4.14 14,3.23V5.29C16.89,6.15 19,8.83 19,12M16.5,12C16.5,10.23 15.5,8.71 14,7.97V10.18L16.45,12.63C16.5,12.43 16.5,12.21 16.5,12Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-tab">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
+</svg>
+<svg id="mdi:skip-previous">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-previous" viewBox="0 0 24 24"><path d="M6,18V6H8V18H6M9.5,12L18,6V18L9.5,12Z" /></svg>
+</svg>
+<svg id="mdi:skip-next">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-next" viewBox="0 0 24 24"><path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-caps">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-caps" viewBox="0 0 24 24"><path d="M15,14V8H17.17L12,2.83L6.83,8H9V14H15M12,0L22,10H17V16H7V10H2L12,0M7,18H17V24H7V18M15,20H9V22H15V20Z" /></svg>
+</svg>
+<svg id="mdi:arrow-up-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-up-bold" viewBox="0 0 24 24"><path d="M15,20H9V12H4.16L12,4.16L19.84,12H15V20Z" /></svg>
+</svg>
+<svg id="mdi:brightness-5">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-brightness-5" viewBox="0 0 24 24"><path d="M12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6A6,6 0 0,1 18,12A6,6 0 0,1 12,18M20,15.31L23.31,12L20,8.69V4H15.31L12,0.69L8.69,4H4V8.69L0.69,12L4,15.31V20H8.69L12,23.31L15.31,20H20V15.31Z" /></svg>
+</svg>
+<svg id="mdi:arrow-down-bold">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
+</svg>
+<svg id="mdi:keyboard-esc">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-esc" viewBox="0 0 24 24"><path d="M1 7H7V9H3V11H7V13H3V15H7V17H1V7M11 7H15V9H11V11H13C14.11 11 15 11.9 15 13V15C15 16.11 14.11 17 13 17H9V15H13V13H11C9.9 13 9 12.11 9 11V9C9 7.9 9.9 7 11 7M19 7H21C22.11 7 23 7.9 23 9V10H21V9H19V15H21V14H23V15C23 16.11 22.11 17 21 17H19C17.9 17 17 16.11 17 15V9C17 7.9 17.9 7 19 7Z" /></svg>
+</svg>
+<svg id="mdi:apple-keyboard-control">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-control" viewBox="0 0 24 24"><path d="M19.78,11.78L18.36,13.19L12,6.83L5.64,13.19L4.22,11.78L12,4L19.78,11.78Z" /></svg>
+</svg>
+<svg id="mdi:backspace">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-backspace" viewBox="0 0 24 24"><path d="M22,3H7C6.31,3 5.77,3.35 5.41,3.88L0,12L5.41,20.11C5.77,20.64 6.31,21 7,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M19,15.59L17.59,17L14,13.41L10.41,17L9,15.59L12.59,12L9,8.41L10.41,7L14,10.59L17.59,7L19,8.41L15.41,12" /></svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags*/
@@ -169,298 +163,298 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g class="layer-ALPHAS">
-<text x="30.0" y="28.0" class="label">ALPHAS:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="79.0" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="51.0" y="98.0" height="14" width="14.0" class="tap glyph mdi:keyboard-esc"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="79.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="105.0" class="tap">Q</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="65.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="91.0" class="tap">W</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="84.0" class="tap">F</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="65.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="91.0" class="tap">P</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="72.0" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="98.0" class="tap">B</text>
-<rect rx="6.0" ry="6.0" x="536.0" y="72.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="98.0" class="tap">J</text>
-<rect rx="6.0" ry="6.0" x="592.0" y="65.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="91.0" class="tap">L</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="58.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="84.0" class="tap">U</text>
-<rect rx="6.0" ry="6.0" x="704.0" y="65.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="91.0" class="tap">Y</text>
-<rect rx="6.0" ry="6.0" x="760.0" y="79.0" width="52.0" height="52.0" class="key"/>
-<text x="786.0" y="105.0" class="tap">&#x27;</text>
-<text x="786.0" y="81.0" class="shifted">&quot;</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="79.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="105.0" class="tap">`</text>
-<text x="842.0" y="81.0" class="shifted">~</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="135.0" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="51.0" y="154.0" height="14" width="14.0" class="tap glyph mdi:backspace"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="135.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="161.0" class="tap">A</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="121.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="147.0" class="tap">R</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="140.0" class="tap">S</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="121.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="147.0" class="tap">T</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="128.0" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="154.0" class="tap">G</text>
-<rect rx="6.0" ry="6.0" x="536.0" y="128.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="154.0" class="tap">M</text>
-<rect rx="6.0" ry="6.0" x="592.0" y="121.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="147.0" class="tap">N</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="114.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="140.0" class="tap">E</text>
-<rect rx="6.0" ry="6.0" x="704.0" y="121.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="147.0" class="tap">I</text>
-<rect rx="6.0" ry="6.0" x="760.0" y="135.0" width="52.0" height="52.0" class="key"/>
-<text x="786.0" y="161.0" class="tap">O</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="135.0" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="835.0" y="154.0" height="14" width="14.0" class="tap glyph mdi:keyboard-return"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="191.0" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="51.0" y="210.0" height="14" width="14.0" class="tap glyph mdi:keyboard-tab"/>
-<text x="58.0" y="241.0" class="hold">Meh</text>
-<rect rx="6.0" ry="6.0" x="88.0" y="191.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="217.0" class="tap">Z</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="108.0" y="229.0" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-control"/>
-<rect rx="6.0" ry="6.0" x="144.0" y="177.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="203.0" class="tap">X</text>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="164.0" y="215.0" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-option"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="196.0" class="tap">C</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="177.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="203.0" class="tap">D</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="184.0" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="210.0" class="tap">V</text>
-<rect rx="6.0" ry="6.0" x="536.0" y="184.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="210.0" class="tap">K</text>
-<rect rx="6.0" ry="6.0" x="592.0" y="177.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="203.0" class="tap">H</text>
-<rect rx="6.0" ry="6.0" x="648.0" y="170.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="196.0" class="tap">,</text>
-<text x="674.0" y="172.0" class="shifted">&lt;</text>
-<rect rx="6.0" ry="6.0" x="704.0" y="177.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="203.0" class="tap">.</text>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="724.0" y="215.0" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-option"/>
-<text x="730.0" y="179.0" class="shifted">&gt;</text>
-<rect rx="6.0" ry="6.0" x="760.0" y="191.0" width="52.0" height="52.0" class="key"/>
-<text x="786.0" y="217.0" class="tap">/</text>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="780.0" y="229.0" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-control"/>
-<text x="786.0" y="193.0" class="shifted">?</text>
-<rect rx="6.0" ry="6.0" x="816.0" y="191.0" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="217.0" class="tap">\</text>
-<text x="842.0" y="241.0" class="hold">Meh</text>
-<text x="842.0" y="193.0" class="shifted">|</text>
-<rect rx="6.0" ry="6.0" x="228.0" y="234.84799999999996" width="52.0" height="52.0" class="key"/>
-<text x="254.0" y="260.84799999999996" class="tap">[</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="248.0" y="272.84799999999996" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-command"/>
-<text x="254.0" y="236.84799999999996" class="shifted">{</text>
-<g transform="rotate(15.0, 315.59999999999997, 269.08000000000004)">
-<rect rx="6.0" ry="6.0" x="289.59999999999997" y="243.08000000000004" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="308.59999999999997" y="262.08000000000004" height="14" width="14.0" class="tap glyph mdi:keyboard-space"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="309.59999999999997" y="281.08000000000004" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-shift"/>
+<g class="layer-L1">
+<text x="10.0" y="10.0" class="label">L1</text>
+<rect rx="3.0" ry="3.0" x="11.0" y="42.0" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="30.0" y="61.0" height="16" width="16.0" class="tap glyph mdi:keyboard-esc"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="42.0" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="69.0" class="tap">Q</text>
+<rect rx="3.0" ry="3.0" x="123.0" y="28.0" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="55.0" class="tap">W</text>
+<rect rx="3.0" ry="3.0" x="179.0" y="21.0" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="48.0" class="tap">F</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="28.0" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="55.0" class="tap">P</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="35.0" width="54.0" height="54.0" class="key"/>
+<text x="318.0" y="62.0" class="tap">B</text>
+<rect rx="3.0" ry="3.0" x="515.0" y="35.0" width="54.0" height="54.0" class="key"/>
+<text x="542.0" y="62.0" class="tap">J</text>
+<rect rx="3.0" ry="3.0" x="571.0" y="28.0" width="54.0" height="54.0" class="key"/>
+<text x="598.0" y="55.0" class="tap">L</text>
+<rect rx="3.0" ry="3.0" x="627.0" y="21.0" width="54.0" height="54.0" class="key"/>
+<text x="654.0" y="48.0" class="tap">U</text>
+<rect rx="3.0" ry="3.0" x="683.0" y="28.0" width="54.0" height="54.0" class="key"/>
+<text x="710.0" y="55.0" class="tap">Y</text>
+<rect rx="3.0" ry="3.0" x="739.0" y="42.0" width="54.0" height="54.0" class="key"/>
+<text x="766.0" y="69.0" class="tap">&#x27;</text>
+<text x="766.0" y="44.0" class="shifted">&quot;</text>
+<rect rx="3.0" ry="3.0" x="795.0" y="42.0" width="54.0" height="54.0" class="key"/>
+<text x="822.0" y="69.0" class="tap">`</text>
+<text x="822.0" y="44.0" class="shifted">~</text>
+<rect rx="3.0" ry="3.0" x="11.0" y="98.0" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="30.0" y="117.0" height="16" width="16.0" class="tap glyph mdi:backspace"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="98.0" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="125.0" class="tap">A</text>
+<rect rx="3.0" ry="3.0" x="123.0" y="84.0" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="111.0" class="tap">R</text>
+<rect rx="3.0" ry="3.0" x="179.0" y="77.0" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="104.0" class="tap">S</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="84.0" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="111.0" class="tap">T</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="91.0" width="54.0" height="54.0" class="key"/>
+<text x="318.0" y="118.0" class="tap">G</text>
+<rect rx="3.0" ry="3.0" x="515.0" y="91.0" width="54.0" height="54.0" class="key"/>
+<text x="542.0" y="118.0" class="tap">M</text>
+<rect rx="3.0" ry="3.0" x="571.0" y="84.0" width="54.0" height="54.0" class="key"/>
+<text x="598.0" y="111.0" class="tap">N</text>
+<rect rx="3.0" ry="3.0" x="627.0" y="77.0" width="54.0" height="54.0" class="key"/>
+<text x="654.0" y="104.0" class="tap">E</text>
+<rect rx="3.0" ry="3.0" x="683.0" y="84.0" width="54.0" height="54.0" class="key"/>
+<text x="710.0" y="111.0" class="tap">I</text>
+<rect rx="3.0" ry="3.0" x="739.0" y="98.0" width="54.0" height="54.0" class="key"/>
+<text x="766.0" y="125.0" class="tap">O</text>
+<rect rx="3.0" ry="3.0" x="795.0" y="98.0" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="814.0" y="117.0" height="16" width="16.0" class="tap glyph mdi:keyboard-return"/>
+<rect rx="3.0" ry="3.0" x="11.0" y="154.0" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="30.0" y="173.0" height="16" width="16.0" class="tap glyph mdi:keyboard-tab"/>
+<text x="38.0" y="206.0" class="hold">Meh</text>
+<rect rx="3.0" ry="3.0" x="67.0" y="154.0" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="181.0" class="tap">Z</text>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="87.0" y="192.0" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-control"/>
+<rect rx="3.0" ry="3.0" x="123.0" y="140.0" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="167.0" class="tap">X</text>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="143.0" y="178.0" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-option"/>
+<rect rx="3.0" ry="3.0" x="179.0" y="133.0" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="160.0" class="tap">C</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="140.0" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="167.0" class="tap">D</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="147.0" width="54.0" height="54.0" class="key"/>
+<text x="318.0" y="174.0" class="tap">V</text>
+<rect rx="3.0" ry="3.0" x="515.0" y="147.0" width="54.0" height="54.0" class="key"/>
+<text x="542.0" y="174.0" class="tap">K</text>
+<rect rx="3.0" ry="3.0" x="571.0" y="140.0" width="54.0" height="54.0" class="key"/>
+<text x="598.0" y="167.0" class="tap">H</text>
+<rect rx="3.0" ry="3.0" x="627.0" y="133.0" width="54.0" height="54.0" class="key"/>
+<text x="654.0" y="160.0" class="tap">,</text>
+<text x="654.0" y="135.0" class="shifted">&lt;</text>
+<rect rx="3.0" ry="3.0" x="683.0" y="140.0" width="54.0" height="54.0" class="key"/>
+<text x="710.0" y="167.0" class="tap">.</text>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="703.0" y="178.0" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-option"/>
+<text x="710.0" y="142.0" class="shifted">&gt;</text>
+<rect rx="3.0" ry="3.0" x="739.0" y="154.0" width="54.0" height="54.0" class="key"/>
+<text x="766.0" y="181.0" class="tap">/</text>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="759.0" y="192.0" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-control"/>
+<text x="766.0" y="156.0" class="shifted">?</text>
+<rect rx="3.0" ry="3.0" x="795.0" y="154.0" width="54.0" height="54.0" class="key"/>
+<text x="822.0" y="181.0" class="tap">\</text>
+<text x="822.0" y="206.0" class="hold">Meh</text>
+<text x="822.0" y="156.0" class="shifted">|</text>
+<rect rx="3.0" ry="3.0" x="207.0" y="197.84799999999998" width="54.0" height="54.0" class="key"/>
+<text x="234.0" y="224.84799999999998" class="tap">[</text>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="227.0" y="235.84799999999998" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-command"/>
+<text x="234.0" y="199.84799999999998" class="shifted">{</text>
+<g transform="rotate(15.0, 295.59999999999997, 233.08)">
+<rect rx="3.0" ry="3.0" x="268.59999999999997" y="206.08" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="287.59999999999997" y="225.08" height="16" width="16.0" class="tap glyph mdi:keyboard-space"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="288.59999999999997" y="244.08000000000004" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-shift"/>
 </g>
-<g transform="rotate(30.0, 381.12, 280.28)">
-<rect rx="6.0" ry="6.0" x="355.12" y="240.27999999999997" width="52.0" height="80.0" class="key"/>
-<text x="381.12" y="280.28" class="tap">]</text>
-<text x="381.12" y="318.28" class="hold">NUMNAV</text>
-<text x="381.12" y="242.27999999999997" class="shifted">}</text>
+<g transform="rotate(30.0, 361.12, 244.28)">
+<rect rx="3.0" ry="3.0" x="334.12" y="203.28" width="54.0" height="82.0" class="key"/>
+<text x="361.12" y="244.28" class="tap">]</text>
+<text x="361.12" y="283.28" class="hold">  L2</text>
+<text x="361.12" y="205.28" class="shifted">}</text>
 </g>
-<g transform="rotate(-30.0, 518.88, 280.28)">
-<rect rx="6.0" ry="6.0" x="492.88" y="240.27999999999997" width="52.0" height="80.0" class="key"/>
-<text x="518.88" y="280.28" class="tap">-</text>
-<text x="518.88" y="318.28" class="hold">NUMNAV</text>
-<text x="518.88" y="242.27999999999997" class="shifted">_</text>
+<g transform="rotate(-30.0, 498.88, 244.28)">
+<rect rx="3.0" ry="3.0" x="471.88" y="203.28" width="54.0" height="82.0" class="key"/>
+<text x="498.88" y="244.28" class="tap">-</text>
+<text x="498.88" y="283.28" class="hold">  L2</text>
+<text x="498.88" y="205.28" class="shifted">_</text>
 </g>
-<g transform="rotate(-15.0, 584.4, 269.08000000000004)">
-<rect rx="6.0" ry="6.0" x="558.4" y="243.08000000000004" width="52.0" height="52.0" class="key"/>
-<text x="584.4" y="269.08000000000004" class="tap">=</text>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="578.4" y="281.08000000000004" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-shift"/>
-<text x="584.4" y="245.08000000000004" class="shifted">+</text>
+<g transform="rotate(-15.0, 564.4, 233.08)">
+<rect rx="3.0" ry="3.0" x="537.4" y="206.08" width="54.0" height="54.0" class="key"/>
+<text x="564.4" y="233.08" class="tap">=</text>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="557.4" y="244.08000000000004" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-shift"/>
+<text x="564.4" y="208.08" class="shifted">+</text>
 </g>
-<rect rx="6.0" ry="6.0" x="620.0" y="234.84799999999996" width="52.0" height="52.0" class="key"/>
-<text x="646.0" y="260.84799999999996" class="tap">;</text>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="640.0" y="272.84799999999996" height="12" width="12.0" class="hold glyph mdi:apple-keyboard-command"/>
-<text x="646.0" y="236.84799999999996" class="shifted">:</text>
+<rect rx="3.0" ry="3.0" x="599.0" y="197.84799999999998" width="54.0" height="54.0" class="key"/>
+<text x="626.0" y="224.84799999999998" class="tap">;</text>
+<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="619.0" y="235.84799999999998" height="14" width="14.0" class="hold glyph mdi:apple-keyboard-command"/>
+<text x="626.0" y="199.84799999999998" class="shifted">:</text>
 </g>
-<g class="layer-NUMNAV">
-<text x="30.0" y="358.6530669589464" class="label">NUMNAV:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="409.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="435.6530669589464" class="tap">SYSTEM</text>
-<rect rx="6.0" ry="6.0" x="88.0" y="409.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="435.6530669589464" class="tap">1</text>
-<text x="114.0" y="411.6530669589464" class="shifted">!</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="395.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="421.6530669589464" class="tap">2</text>
-<text x="170.0" y="397.6530669589464" class="shifted">@</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="388.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="414.6530669589464" class="tap">3</text>
-<text x="226.0" y="390.6530669589464" class="shifted">#</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="395.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="421.6530669589464" class="tap">4</text>
-<text x="282.0" y="397.6530669589464" class="shifted">$</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="402.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="331.0" y="421.6530669589464" height="14" width="14.0" class="tap glyph mdi:apple-keyboard-caps"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="402.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="555.0" y="421.6530669589464" height="14" width="14.0" class="tap glyph mdi:apple-keyboard-caps"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="395.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:volume-low" xlink:href="#mdi:volume-low" x="611.0" y="414.6530669589464" height="14" width="14.0" class="tap glyph mdi:volume-low"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="388.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="667.0" y="407.6530669589464" height="14" width="14.0" class="tap glyph mdi:arrow-up-bold"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="395.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="723.0" y="414.6530669589464" height="14" width="14.0" class="tap glyph mdi:volume-high"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="409.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="779.0" y="428.6530669589464" height="14" width="14.0" class="tap glyph mdi:volume-off"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="409.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="842.0" y="435.6530669589464" class="tap">SYSTEM</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="465.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="51.0" y="484.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="465.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="491.6530669589464" class="tap">5</text>
-<text x="114.0" y="467.6530669589464" class="shifted">%</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="451.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="477.6530669589464" class="tap">6</text>
-<text x="170.0" y="453.6530669589464" class="shifted">^</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="444.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="470.6530669589464" class="tap">7</text>
-<text x="226.0" y="446.6530669589464" class="shifted">&amp;</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="451.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="477.6530669589464" class="tap">8</text>
-<text x="282.0" y="453.6530669589464" class="shifted">*</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="458.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="331.0" y="477.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="458.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="555.0" y="477.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="451.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="611.0" y="470.6530669589464" height="14" width="14.0" class="tap glyph mdi:arrow-left-bold"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="444.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="667.0" y="463.6530669589464" height="14" width="14.0" class="tap glyph mdi:arrow-down-bold"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="451.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="723.0" y="470.6530669589464" height="14" width="14.0" class="tap glyph mdi:arrow-right-bold"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="465.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-f2" xlink:href="#mdi:keyboard-f2" x="779.0" y="484.6530669589464" height="14" width="14.0" class="tap glyph mdi:keyboard-f2"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="465.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="835.0" y="484.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="521.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="51.0" y="540.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="521.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="107.0" y="540.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="144.0" y="507.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="163.0" y="526.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="500.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="526.6530669589464" class="tap">9</text>
-<text x="226.0" y="502.6530669589464" class="shifted">(</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="507.6530669589464" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="533.6530669589464" class="tap">0</text>
-<text x="282.0" y="509.6530669589464" class="shifted">)</text>
-<rect rx="6.0" ry="6.0" x="312.0" y="514.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="331.0" y="533.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="514.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="555.0" y="533.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="507.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="611.0" y="526.6530669589464" height="14" width="14.0" class="tap glyph mdi:skip-previous"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="500.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="667.0" y="519.6530669589464" height="14" width="14.0" class="tap glyph mdi:play-pause"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="507.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="723.0" y="526.6530669589464" height="14" width="14.0" class="tap glyph mdi:skip-next"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="521.6530669589464" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:keyboard-f12" xlink:href="#mdi:keyboard-f12" x="779.0" y="540.6530669589464" height="14" width="14.0" class="tap glyph mdi:keyboard-f12"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="521.6530669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="835.0" y="540.6530669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<rect rx="6.0" ry="6.0" x="228.0" y="565.5010669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="247.0" y="584.5010669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
-<g transform="rotate(15.0, 315.59999999999997, 599.7330669589464)">
-<rect rx="6.0" ry="6.0" x="289.59999999999997" y="573.7330669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="308.59999999999997" y="592.7330669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
+<g class="layer-  L2">
+<text x="10.0" y="304.6530669589464" class="label">  L2</text>
+<rect rx="3.0" ry="3.0" x="11.0" y="336.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="38.0" y="363.6530669589464" class="tap">  L3</text>
+<rect rx="3.0" ry="3.0" x="67.0" y="336.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="363.6530669589464" class="tap">1</text>
+<text x="94.0" y="338.6530669589464" class="shifted">!</text>
+<rect rx="3.0" ry="3.0" x="123.0" y="322.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="349.6530669589464" class="tap">2</text>
+<text x="150.0" y="324.6530669589464" class="shifted">@</text>
+<rect rx="3.0" ry="3.0" x="179.0" y="315.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="342.6530669589464" class="tap">3</text>
+<text x="206.0" y="317.6530669589464" class="shifted">#</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="322.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="349.6530669589464" class="tap">4</text>
+<text x="262.0" y="324.6530669589464" class="shifted">$</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="329.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="310.0" y="348.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="515.0" y="329.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="534.0" y="348.6530669589464" height="16" width="16.0" class="tap glyph mdi:volume-off"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="322.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:volume-low" xlink:href="#mdi:volume-low" x="590.0" y="341.6530669589464" height="16" width="16.0" class="tap glyph mdi:volume-low"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="315.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:volume-high" xlink:href="#mdi:volume-high" x="646.0" y="334.6530669589464" height="16" width="16.0" class="tap glyph mdi:volume-high"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="322.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:brightness-7" xlink:href="#mdi:brightness-7" x="702.0" y="341.6530669589464" height="16" width="16.0" class="tap glyph mdi:brightness-7"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="336.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:brightness-5" xlink:href="#mdi:brightness-5" x="758.0" y="355.6530669589464" height="16" width="16.0" class="tap glyph mdi:brightness-5"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="336.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="822.0" y="363.6530669589464" class="tap">  L3</text>
+<rect rx="3.0" ry="3.0" x="11.0" y="392.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="30.0" y="411.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="392.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="419.6530669589464" class="tap">5</text>
+<text x="94.0" y="394.6530669589464" class="shifted">%</text>
+<rect rx="3.0" ry="3.0" x="123.0" y="378.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="405.6530669589464" class="tap">6</text>
+<text x="150.0" y="380.6530669589464" class="shifted">^</text>
+<rect rx="3.0" ry="3.0" x="179.0" y="371.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="398.6530669589464" class="tap">7</text>
+<text x="206.0" y="373.6530669589464" class="shifted">&amp;</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="378.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="405.6530669589464" class="tap">8</text>
+<text x="262.0" y="380.6530669589464" class="shifted">*</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="385.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="310.0" y="404.6530669589464" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-caps"/>
+<rect rx="3.0" ry="3.0" x="515.0" y="385.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="534.0" y="404.6530669589464" height="16" width="16.0" class="tap glyph mdi:apple-keyboard-caps"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="378.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="590.0" y="397.6530669589464" height="16" width="16.0" class="tap glyph mdi:arrow-left-bold"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="371.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="646.0" y="390.6530669589464" height="16" width="16.0" class="tap glyph mdi:arrow-up-bold"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="378.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:arrow-down-bold" xlink:href="#mdi:arrow-down-bold" x="702.0" y="397.6530669589464" height="16" width="16.0" class="tap glyph mdi:arrow-down-bold"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="392.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="758.0" y="411.6530669589464" height="16" width="16.0" class="tap glyph mdi:arrow-right-bold"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="392.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="814.0" y="411.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="11.0" y="448.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="30.0" y="467.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="448.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="86.0" y="467.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="123.0" y="434.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="142.0" y="453.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="179.0" y="427.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="454.6530669589464" class="tap">9</text>
+<text x="206.0" y="429.6530669589464" class="shifted">(</text>
+<rect rx="3.0" ry="3.0" x="235.0" y="434.6530669589464" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="461.6530669589464" class="tap">0</text>
+<text x="262.0" y="436.6530669589464" class="shifted">)</text>
+<rect rx="3.0" ry="3.0" x="291.0" y="441.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="310.0" y="460.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="515.0" y="441.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:play-pause" xlink:href="#mdi:play-pause" x="534.0" y="460.6530669589464" height="16" width="16.0" class="tap glyph mdi:play-pause"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="434.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:skip-previous" xlink:href="#mdi:skip-previous" x="590.0" y="453.6530669589464" height="16" width="16.0" class="tap glyph mdi:skip-previous"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="427.6530669589464" width="54.0" height="54.0" class="key"/>
+<use href="#mdi:skip-next" xlink:href="#mdi:skip-next" x="646.0" y="446.6530669589464" height="16" width="16.0" class="tap glyph mdi:skip-next"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="434.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="702.0" y="453.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="448.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="758.0" y="467.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="448.6530669589464" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="814.0" y="467.6530669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="207.0" y="492.50106695894635" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="226.0" y="511.50106695894635" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<g transform="rotate(15.0, 295.59999999999997, 527.7330669589464)">
+<rect rx="3.0" ry="3.0" x="268.59999999999997" y="500.73306695894644" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="287.59999999999997" y="519.7330669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
 </g>
-<g transform="rotate(30.0, 381.12, 610.9330669589464)">
-<rect rx="6.0" ry="6.0" x="355.12" y="570.9330669589464" width="52.0" height="80.0" class="held key"/>
-<text x="381.12" y="610.9330669589464" class="held tap">]</text>
-<text x="381.12" y="572.9330669589464" class="held shifted">}</text>
+<g transform="rotate(30.0, 361.12, 538.9330669589464)">
+<rect rx="3.0" ry="3.0" x="334.12" y="497.93306695894637" width="54.0" height="82.0" class="held key"/>
+<text x="361.12" y="538.9330669589464" class="held tap">]</text>
+<text x="361.12" y="499.93306695894637" class="held shifted">}</text>
 </g>
-<g transform="rotate(-30.0, 518.88, 610.9330669589464)">
-<rect rx="6.0" ry="6.0" x="492.88" y="570.9330669589464" width="52.0" height="80.0" class="key"/>
-<text x="518.88" y="610.9330669589464" class="tap">-</text>
-<text x="518.88" y="572.9330669589464" class="shifted">_</text>
+<g transform="rotate(-30.0, 498.88, 538.9330669589464)">
+<rect rx="3.0" ry="3.0" x="471.88" y="497.93306695894637" width="54.0" height="82.0" class="key"/>
+<text x="498.88" y="538.9330669589464" class="tap">-</text>
+<text x="498.88" y="499.93306695894637" class="shifted">_</text>
 </g>
-<g transform="rotate(-15.0, 584.4, 599.7330669589464)">
-<rect rx="6.0" ry="6.0" x="558.4" y="573.7330669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="577.4" y="592.7330669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
+<g transform="rotate(-15.0, 564.4, 527.7330669589464)">
+<rect rx="3.0" ry="3.0" x="537.4" y="500.73306695894644" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="556.4" y="519.7330669589464" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
 </g>
-<rect rx="6.0" ry="6.0" x="620.0" y="565.5010669589464" width="52.0" height="52.0" class="trans key"/>
-<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="639.0" y="584.5010669589464" height="14" width="14.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="599.0" y="492.50106695894635" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="618.0" y="511.50106695894635" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
 </g>
-<g class="layer-SYSTEM">
-<text x="30.0" y="689.3061339178928" class="label">SYSTEM:</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="740.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="766.3061339178928" class="tap">
-<tspan x="58.0" dy="-0.6em">BT</tspan><tspan x="58.0" dy="1.2em">CLR</tspan></text>
-<rect rx="6.0" ry="6.0" x="88.0" y="740.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="766.3061339178928" class="tap">
-<tspan x="114.0" dy="-0.6em">BT</tspan><tspan x="114.0" dy="1.2em">0</tspan></text>
-<rect rx="6.0" ry="6.0" x="144.0" y="726.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="752.3061339178928" class="tap">
-<tspan x="170.0" dy="-0.6em">BT</tspan><tspan x="170.0" dy="1.2em">1</tspan></text>
-<rect rx="6.0" ry="6.0" x="200.0" y="719.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="745.3061339178928" class="tap">
-<tspan x="226.0" dy="-0.6em">BT</tspan><tspan x="226.0" dy="1.2em">2</tspan></text>
-<rect rx="6.0" ry="6.0" x="256.0" y="726.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="752.3061339178928" class="tap">
-<tspan x="282.0" dy="-0.6em">BT</tspan><tspan x="282.0" dy="1.2em">3</tspan></text>
-<rect rx="6.0" ry="6.0" x="312.0" y="733.3061339178928" width="52.0" height="52.0" class="key"/>
-<text x="338.0" y="759.3061339178928" class="tap">
-<tspan x="338.0" dy="-0.6em">BT</tspan><tspan x="338.0" dy="1.2em">4</tspan></text>
-<rect rx="6.0" ry="6.0" x="536.0" y="733.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="726.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="719.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="726.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="740.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="740.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="796.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="796.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="144.0" y="782.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="775.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="782.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="312.0" y="789.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="789.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="782.3061339178928" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:brightness-7" xlink:href="#mdi:brightness-7" x="611.0" y="801.3061339178928" height="14" width="14.0" class="tap glyph mdi:brightness-7"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="775.3061339178928" width="52.0" height="52.0" class="key"/>
-<use href="#mdi:brightness-5" xlink:href="#mdi:brightness-5" x="667.0" y="794.3061339178928" height="14" width="14.0" class="tap glyph mdi:brightness-5"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="782.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="796.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="796.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="32.0" y="852.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="88.0" y="852.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="144.0" y="838.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="200.0" y="831.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="256.0" y="838.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="312.0" y="845.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="536.0" y="845.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="592.0" y="838.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="648.0" y="831.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="704.0" y="838.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="760.0" y="852.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="816.0" y="852.3061339178928" width="52.0" height="52.0" class="key"/>
-<rect rx="6.0" ry="6.0" x="228.0" y="896.1541339178928" width="52.0" height="52.0" class="key"/>
-<g transform="rotate(15.0, 315.59999999999997, 930.3861339178928)">
-<rect rx="6.0" ry="6.0" x="289.59999999999997" y="904.3861339178928" width="52.0" height="52.0" class="key"/>
+<g class="layer-    L3">
+<text x="10.0" y="599.3061339178928" class="label">    L3</text>
+<rect rx="3.0" ry="3.0" x="11.0" y="631.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="38.0" y="658.3061339178928" class="tap">
+<tspan x="38.0" dy="-0.6em">BT</tspan><tspan x="38.0" dy="1.2em">CLR</tspan></text>
+<rect rx="3.0" ry="3.0" x="67.0" y="631.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="94.0" y="658.3061339178928" class="tap">
+<tspan x="94.0" dy="-0.6em">BT</tspan><tspan x="94.0" dy="1.2em">0</tspan></text>
+<rect rx="3.0" ry="3.0" x="123.0" y="617.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="150.0" y="644.3061339178928" class="tap">
+<tspan x="150.0" dy="-0.6em">BT</tspan><tspan x="150.0" dy="1.2em">1</tspan></text>
+<rect rx="3.0" ry="3.0" x="179.0" y="610.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="206.0" y="637.3061339178928" class="tap">
+<tspan x="206.0" dy="-0.6em">BT</tspan><tspan x="206.0" dy="1.2em">2</tspan></text>
+<rect rx="3.0" ry="3.0" x="235.0" y="617.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="262.0" y="644.3061339178928" class="tap">
+<tspan x="262.0" dy="-0.6em">BT</tspan><tspan x="262.0" dy="1.2em">3</tspan></text>
+<rect rx="3.0" ry="3.0" x="291.0" y="624.3061339178928" width="54.0" height="54.0" class="key"/>
+<text x="318.0" y="651.3061339178928" class="tap">
+<tspan x="318.0" dy="-0.6em">BT</tspan><tspan x="318.0" dy="1.2em">4</tspan></text>
+<rect rx="3.0" ry="3.0" x="515.0" y="624.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="617.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="610.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="617.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="631.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="631.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="11.0" y="687.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="687.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="123.0" y="673.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="179.0" y="666.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="235.0" y="673.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="291.0" y="680.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="515.0" y="680.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="673.3061339178928" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="590.0" y="692.3061339178928" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="666.3061339178928" width="54.0" height="54.0" class="trans key"/>
+<use href="#mdi:border-none-variant" xlink:href="#mdi:border-none-variant" x="646.0" y="685.3061339178928" height="16" width="16.0" class="trans tap glyph mdi:border-none-variant"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="673.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="687.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="687.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="11.0" y="743.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="67.0" y="743.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="123.0" y="729.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="179.0" y="722.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="235.0" y="729.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="291.0" y="736.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="515.0" y="736.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="571.0" y="729.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="627.0" y="722.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="683.0" y="729.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="739.0" y="743.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="795.0" y="743.3061339178928" width="54.0" height="54.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="207.0" y="787.1541339178928" width="54.0" height="54.0" class="key"/>
+<g transform="rotate(15.0, 295.59999999999997, 822.3861339178928)">
+<rect rx="3.0" ry="3.0" x="268.59999999999997" y="795.3861339178928" width="54.0" height="54.0" class="key"/>
 </g>
-<g transform="rotate(30.0, 381.12, 941.5861339178928)">
-<rect rx="6.0" ry="6.0" x="355.12" y="901.5861339178928" width="52.0" height="80.0" class="key"/>
-<text x="381.12" y="941.5861339178928" class="tap">ALPHAS</text>
+<g transform="rotate(30.0, 361.12, 833.5861339178928)">
+<rect rx="3.0" ry="3.0" x="334.12" y="792.5861339178928" width="54.0" height="82.0" class="key"/>
+<text x="361.12" y="833.5861339178928" class="tap">L1</text>
 </g>
-<g transform="rotate(-30.0, 518.88, 941.5861339178928)">
-<rect rx="6.0" ry="6.0" x="492.88" y="901.5861339178928" width="52.0" height="80.0" class="key"/>
-<text x="518.88" y="941.5861339178928" class="tap">ALPHAS</text>
+<g transform="rotate(-30.0, 498.88, 833.5861339178928)">
+<rect rx="3.0" ry="3.0" x="471.88" y="792.5861339178928" width="54.0" height="82.0" class="key"/>
+<text x="498.88" y="833.5861339178928" class="tap">L1</text>
 </g>
-<g transform="rotate(-15.0, 584.4, 930.3861339178928)">
-<rect rx="6.0" ry="6.0" x="558.4" y="904.3861339178928" width="52.0" height="52.0" class="key"/>
+<g transform="rotate(-15.0, 564.4, 822.3861339178928)">
+<rect rx="3.0" ry="3.0" x="537.4" y="795.3861339178928" width="54.0" height="54.0" class="key"/>
 </g>
-<rect rx="6.0" ry="6.0" x="620.0" y="896.1541339178928" width="52.0" height="52.0" class="key"/>
+<rect rx="3.0" ry="3.0" x="599.0" y="787.1541339178928" width="54.0" height="54.0" class="key"/>
 </g>
 </svg>
