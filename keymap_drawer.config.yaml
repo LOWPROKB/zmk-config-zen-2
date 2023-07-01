@@ -1,20 +1,20 @@
 draw_config:
-  key_w: 64.0
+  key_w: 72.0
   key_h: 56.0
-  split_gap: 30.0
+  split_gap: 20.0
   combo_w: 28.0
   combo_h: 26.0
-  key_rx: 3.0
-  key_ry: 3.0
+  key_rx: 4.0
+  key_ry: 4.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
   outer_pad_w: 10.0
   outer_pad_h: 20.0
-  line_spacing: 1.2
+  line_spacing: 1.0
   arc_radius: 6.0
   arc_scale: 1.0
   append_colon_to_layer_header: false
-  small_pad: 2.0
+  small_pad: 4.0
   svg_style: |
     /* inherit to force styles through use tags*/
     svg path {
@@ -54,20 +54,20 @@ draw_config:
     text {
         text-anchor: middle;
         dominant-baseline: middle;
+        line-height: 1;
     }
 
     /* styling for layer labels */
     text.label {
         font-weight: bold;
         text-anchor: start;
-        stroke: white;
-        stroke-width: 2;
         paint-order: stroke;
+        fill: #aaa;
     }
 
     /* styling for combo tap, and key hold/shifted label text */
     text.combo, text.hold, text.shifted {
-        font-size: 11px;
+        font-size: 12px;
     }
 
     text.hold {
@@ -110,7 +110,7 @@ draw_config:
     /* End Tabler Icons Cleanup */
   shrink_wide_legends: 5
   glyph_tap_size: 16
-  glyph_hold_size: 14
+  glyph_hold_size: 12
   glyph_shifted_size: 10
   glyphs: {}
   glyph_urls:
