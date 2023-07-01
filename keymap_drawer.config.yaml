@@ -125,7 +125,7 @@ parse_config:
   raw_binding_map: {}
   sticky_label: sticky
   trans_legend:
-    t: ▽
+    t: '$$mdi:border-none-variant$$'
     type: trans
   qmk_keycode_map:
     XXXXXXX: ''
@@ -215,73 +215,129 @@ parse_config:
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
-    EQUAL: '= +'
+    EQUAL:
+      t: '='
+      s: '+'
     PLUS: +
-    MINUS: '- _'
+    MINUS:
+      t: '-'
+      s: '_'
     UNDERSCORE: _
     UNDER: _
-    SLASH: '/ ?'
-    FSLH: '/ ?'
+    SLASH:
+      t: '/'
+      s: '?'
+    FSLH:
+      t: '/'
+      s: '?'
     QUESTION: '?'
     QMARK: '?'
-    BACKSLASH: '\ |'
-    BSLH: '\ |'
+    BACKSLASH:
+      t: '\'
+      s: '|'
+    BSLH:
+      t: '\'
+      s: '|'
     PIPE: '|'
     NON_US_BACKSLASH: \
     PIPE2: '|'
     NON_US_BSLH: '|'
-    SEMICOLON: '; :'
-    SEMI: '; :'
+    SEMICOLON:
+      t: ';'
+      s: ':'
+    SEMI:
+      t: ';'
+      s: ':'
     COLON: ':'
-    SINGLE_QUOTE: ''' "'
-    SQT: ''' "'
+    SINGLE_QUOTE:
+      t: ''''
+      s: '"'
+    SQT:
+      t: ''''
+      s: '"'
     APOSTROPHE: <
     APOS: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA: ', <'
+    COMMA:
+      t: ','
+      s: '<'
     LESS_THAN: <
     LT: <
-    PERIOD: '. >'
-    DOT: '. >'
+    PERIOD:
+      t: '.'
+      s: '>'
+    DOT:
+      t: '.'
+      s: '>'
     GREATER_THAN: '>'
     GT: '>'
-    LEFT_BRACKET: '[ {'
-    LBKT: '[ {'
+    LEFT_BRACKET:
+      t: '['
+      s: '{'
+    LBKT:
+      t: '['
+      s: '{'
     LEFT_BRACE: '{'
     LBRC: '{'
-    RIGHT_BRACKET: '] }'
-    RBKT: '] }'
+    RIGHT_BRACKET:
+      t: ']'
+      s: '}'
+    RBKT:
+      t: ']'
+      s: '}'
     RIGHT_BRACE: '}'
     RBRC: '}'
-    GRAVE: '` ~'
+    GRAVE:
+      t: '`'
+      s: '~'
     TILDE: '~'
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
     # Numbers
-    N1: '1 !'
-    N2: '2 @'
-    N3: '3 #'
-    N4: '4 $'
-    N5: '5 %'
-    N6: '6 ^'
-    N7: '7 &'
-    N8: '8 *'
-    N9: '9 ('
-    N0: '0 )'
+    N1:
+      t: 1
+      s: '!'
+    N2:
+      t: 2
+      s: '@'
+    N3:
+      t: 3
+      s: '#'
+    N4:
+      t: 4
+      s: '$'
+    N5:
+      t: 5
+      s: '%'
+    N6:
+      t: 6
+      s: '^'
+    N7:
+      t: 7
+      s: '&'
+    N8:
+      t: 8
+      s: '*'
+    N9:
+      t: 9
+      s: '('
+    N0:
+      t: 0
+      s: ')'
     # Modifiers
     LCTRL: '$$mdi:apple-keyboard-control$$'
     LALT: '$$mdi:apple-keyboard-option$$'
     LSHIFT: '$$mdi:apple-keyboard-shift$$'
     LSHFT: '$$mdi:apple-keyboard-shift$$'
-    LGUI: '$$mdi:apple-keyboard-command$$'
+    LCMD: '$$mdi:apple-keyboard-command$$'
     RCTRL: '$$mdi:apple-keyboard-control$$'
     RALT: '$$mdi:apple-keyboard-option$$'
     RSHIFT: '$$mdi:apple-keyboard-shift$$'
     RSHFT: '$$mdi:apple-keyboard-shift$$'
-    RGUI: '$$mdi:apple-keyboard-command$$'
-    MEH: '$$mdi:apple-keyboard-control$$ $$mdi:apple-keyboard-option$$ $$mdi:apple-keyboard-shift$$'
+    RCMD: '$$mdi:apple-keyboard-command$$'
+    'LS(LC(LALT))': 'Meh'
     # Arrows
     UP: '$$mdi:arrow-up-bold$$'
     DOWN: '$$mdi:arrow-down-bold$$'
@@ -289,13 +345,13 @@ parse_config:
     RIGHT: '$$mdi:arrow-right-bold$$'
     # Whitespace
     ENTER: '$$mdi:keyboard-return$$'
-    ESC: '$$mdi:keyboard-escape$$'
-    TAB: '$$mdi:tab$$'
+    ESC: '$$mdi:keyboard-esc$$'
+    TAB: '$$mdi:keyboard-tab$$'
     SPACE: '$$mdi:keyboard-space$$'
     BSPC: '$$mdi:backspace$$'
     # Locks
-    CAPS_LOCK: '$$mdi:keyboard-capslock$$'
-    CAPS: '$$mdi:keyboard-capslock$$'
+    CAPS_LOCK: '$$mdi:apple-keyboard-caps$$'
+    CAPS: '$$mdi:apple-keyboard-caps$$'
     # Sound
     C_MUTE: '$$mdi:volume-off$$'
     C_VOL_UP: '$$mdi:volume-high$$'
@@ -304,5 +360,24 @@ parse_config:
     C_NEXT: '$$mdi:skip-next$$'
     C_PREV: '$$mdi:skip-previous$$'
     C_PP: '$$mdi:play-pause$$'
+    # Bluetooth
+    BT_CLR: '$$mdi:bluetooth-off$$'
+    BT_SEL: '$$mdi:bluetooth-connect$$'
+    # Function Keys
+    F1: '$$mdi:keyboard-f1$$'
+    F2: '$$mdi:keyboard-f2$$'
+    F3: '$$mdi:keyboard-f3$$'
+    F4: '$$mdi:keyboard-f4$$'
+    F5: '$$mdi:keyboard-f5$$'
+    F6: '$$mdi:keyboard-f6$$'
+    F7: '$$mdi:keyboard-f7$$'
+    F8: '$$mdi:keyboard-f8$$'
+    F9: '$$mdi:keyboard-f9$$'
+    F10: '$$mdi:keyboard-f10$$'
+    F11: '$$mdi:keyboard-f11$$'
+    F12: '$$mdi:keyboard-f12$$'
+    # Settings
+    C_BRI_UP: '$$mdi:brightness-5$$'
+    C_BRI_DN: '$$mdi:brightness-7$$'
 
   zmk_combos: {}
