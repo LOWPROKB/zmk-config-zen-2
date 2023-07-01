@@ -1,8 +1,6 @@
-# minusfive's Corne-ish Zen V2 Custom Configuration
+<img align="right" src="img/Zen_R3_sticker.png" alt="Corne-ish Zen" width="200"/>
 
-![Corne-ish Zen Logo](img/Zen_R3_sticker.png)
-
-## Keymap
+# Zen ZMK Config
 
 ![minusfive's keymap](img/corneish_zen.svg)
 
@@ -11,6 +9,8 @@
 - The [official ZMK Firmware GitHub](https://github.com/zmkfirmware/zmk) repository. View the keymaps for other boards and shields as a starting point for your keymap.
 - The [official ZMK Documentation](https://zmk.dev/docs) web site. Find the answers to many of your questions about ZMK Firmware.
 - The [official ZMK Discord Server](https://zmk.dev/community/discord/invite). Instant conversations with other ZMK developers and users. Great technical resource!
+- [Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
+- [Display improvements for Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a)
 
 ## Instructions
 
