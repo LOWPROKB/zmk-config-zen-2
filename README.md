@@ -1,4 +1,4 @@
-<img align="right" src="img/Zen_R3_sticker.png" alt="Corne-ish Zen" width="200"/>
+<img align="right" src="img/Zen_R3_sticker.png" alt="Corne-ish Zen" width="160"/>
 
 # ZMK Config
 
