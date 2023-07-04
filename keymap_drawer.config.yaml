@@ -36,14 +36,9 @@ draw_config:
         stroke-width: 1;
     }
 
-    /* color accent for combo boxes */
-    rect.combo {
-        fill: #cdf;
-    }
-
     /* color accent for held keys */
     rect.held, rect.combo.held {
-        fill: #fdd;
+        /* fill: #fdd; */
     }
 
     /* color accent for ghost (optional) keys */
@@ -86,10 +81,21 @@ draw_config:
     }
 
     /* lighter symbol for transparent keys */
+    rect.trans {
+        fill: #f6f8fa;
+        opacity: 0.5;
+        stroke: #c9cccf;
+        stroke-width: 1;
+        stroke-dasharray: 2, 2;
+    }
     text.trans {
         fill: #7b7e81;
     }
 
+    /* color accent for combo boxes */
+    rect.combo {
+        fill: #cdf;
+    }
     /* styling for combo dendrons */
     path.combo {
         stroke-width: 1;

@@ -1,0 +1,40 @@
+/*
+  KEY POSITIONS
+  Copied (modified) from https://github.com/caksoylar/zmk-config
+
+  ╭────────────────────────╮  ╭────────────────────────╮
+  │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
+  │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
+  │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
+  ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
+              ╰────────────╯  ╰────────────╯
+*/
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+        combo_##NAME { \
+            timeout-ms = <TERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+            global-quick-tap-ms = <QUICKTAP>; \
+        };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+COMBO(sl1,    &sl L1,       19 20, L1, 50, 200)
+COMBO(lpar,   &kp LPAR,     15 27, L1 L2, 40, 100)
+COMBO(rpar,   &kp RPAR,     16 28, L1 L2, 40, 100)
+COMBO(capswd, &caps_word,   10 11, L1 L2, 60, 200)
+// COMBO(semi,   &kp SEMI,      6  7, L1 L2, 40, 100)
+// COMBO(lbkt,   &kp LBKT,     11 12, L1 L2, 40, 100)
+// COMBO(rbkt,   &kp RBKT,     17 18, L1 L2, 40, 100)
+// COMBO(tab,    &kp TAB,      11 13, L1 L2, 40, 200)
+// COMBO(bspc,   &kp BSPC,     16 18, L1 L2, 40, 200)
+// COMBO(grave,  &kp GRAVE,    22 23, L1 L2, 40, 100)
+// COMBO(tilde,  &kp TILDE,    21 22, L1 L2, 40, 100)
+// COMBO(bslh,   &kp BSLH,     26 27, L1 L2, 40, 100)
+// COMBO(pipe,   &kp PIPE,     27 28, L1 L2, 40, 100)
+    };
+};
