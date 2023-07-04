@@ -22,7 +22,7 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(sl1,    &sl L1,       19 20, L1, 50)
+COMBO(sl2,    &sl L2,       19 20, L1, 50)
 COMBO(capswd, &caps_word,   10 11, L1, 50)
 COMBO(lpar,   &kp LPAR,     15 27, L1 L2, 50)
 COMBO(rpar,   &kp RPAR,     16 28, L1 L2, 50)
