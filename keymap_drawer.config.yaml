@@ -390,10 +390,11 @@ parse_config:
 
   zmk_combos:
     combo_capswd:
-      k:
-        t: 'WORD'
-        h: '$$mdi:apple-keyboard-caps$$'
+      key:
+        tap: 'WORD'
+        hold: '$$mdi:apple-keyboard-caps$$'
     combo_lm_2_shift:
-      k:
-        t: 'L2'
-        h: '$$mdi:apple-keyboard-shift$$'
+      key:
+        tap: 'L2'
+        hold: '$$mdi:apple-keyboard-shift$$'
+      offset: 1
