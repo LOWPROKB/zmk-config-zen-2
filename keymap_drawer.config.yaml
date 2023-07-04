@@ -353,7 +353,10 @@ parse_config:
     ESC: '$$mdi:keyboard-esc$$'
     TAB: '$$mdi:keyboard-tab$$'
     SPACE: '$$mdi:keyboard-space$$'
+    BACKSPACE: '$$mdi:backspace$$'
     BSPC: '$$mdi:backspace$$'
+    DELETE: '$$mdi:backspace-reverse$$'
+    DEL: '$$mdi:backspace-reverse$$'
     # Locks
     CAPS_LOCK: '$$mdi:apple-keyboard-caps$$'
     CAPS: '$$mdi:apple-keyboard-caps$$'
@@ -385,8 +388,4 @@ parse_config:
     C_BRI_UP: '$$mdi:brightness-5$$'
     C_BRI_DN: '$$mdi:brightness-7$$'
 
-  zmk_combos:
-    combo_sl1:
-      align: top
-    combo_capswd:
-      align: top
+  zmk_combos: {}
