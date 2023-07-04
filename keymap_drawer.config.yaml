@@ -82,10 +82,8 @@ draw_config:
 
     /* lighter symbol for transparent keys */
     rect.trans {
-        fill: #f6f8fa;
-        opacity: 0.5;
-        stroke: #c9cccf;
-        stroke-width: 1;
+        opacity: 0.75;
+        stroke-width: 2;
         stroke-dasharray: 2, 2;
     }
     text.trans {
@@ -125,13 +123,14 @@ draw_config:
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
+
 parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map: {}
   sticky_label: sticky
   trans_legend:
-    t: '$$mdi:border-none-variant$$'
+    t: ''
     type: trans
   qmk_keycode_map:
     XXXXXXX: ''
@@ -389,4 +388,5 @@ parse_config:
   zmk_combos:
     combo_sl1:
       align: top
-      offset: 0.5
+    combo_capswd:
+      align: top
