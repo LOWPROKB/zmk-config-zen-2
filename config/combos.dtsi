@@ -10,13 +10,12 @@
               ╰────────────╯  ╰────────────╯
 */
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM, QUICKTAP) \
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
         combo_##NAME { \
             timeout-ms = <TERM>; \
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
             layers = <LAYERS>; \
-            global-quick-tap-ms = <QUICKTAP>; \
         };
 
 / {

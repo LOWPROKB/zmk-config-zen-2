@@ -386,4 +386,7 @@ parse_config:
     C_BRI_UP: '$$mdi:brightness-5$$'
     C_BRI_DN: '$$mdi:brightness-7$$'
 
-  zmk_combos: {}
+  zmk_combos:
+    combo_sl1:
+      align: top
+      offset: 0.5
