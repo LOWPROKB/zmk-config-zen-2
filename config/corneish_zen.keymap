@@ -11,6 +11,7 @@
 #define MEH LS(LC(LALT))
 
 #include "combos.dtsi"
+#include "macros.dtsi"
 
 &mt {
     flavor = "hold-preferred";

@@ -11,32 +11,34 @@
 */
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
-        combo_##NAME { \
-            timeout-ms = <TERM>; \
-            bindings = <BINDINGS>; \
-            key-positions = <KEYPOS>; \
-            layers = <LAYERS>; \
-        };
+  combo_##NAME { \
+    timeout-ms = <TERM>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
 
 / {
-    combos {
-        compatible = "zmk,combos";
+  combos {
+    compatible = "zmk,combos";
 
-// Layers
-COMBO(sl2, &sl L2, 19 31, L1, 50)
-COMBO(sl3, &sl L3, 7 19, L1, 50)
-// Modifiers
-COMBO(capswd, &caps_word, 10 11, L1, 50)
-// Symbols
-COMBO(excl, &kp EXCL, 1 13, L1 L2, 50)
-COMBO(at, &kp AT, 2 14, L1 L2, 50)
-COMBO(hash, &kp HASH, 3 15, L1 L2, 50)
-COMBO(dollar, &kp DOLLAR, 4 16, L1 L2, 50)
-COMBO(percent, &kp PERCENT, 5 17, L1 L2, 50)
-COMBO(caret, &kp CARET, 13 25, L1 L2, 50)
-COMBO(ampersand, &kp AMPERSAND, 14 26, L1 L2, 50)
-COMBO(star, &kp STAR, 15 27, L1 L2, 50)
-COMBO(lpar, &kp LPAR, 16 28, L1 L2, 50)
-COMBO(rpar, &kp RPAR, 17 29, L1 L2, 50)
-    };
+    // Layers
+    COMBO(lm_2_shift, &lm L2 LSHFT, 19 31, L1, 50)
+    COMBO(sl3, &sl L3, 7 19, L1, 50)
+
+    // Modifiers
+    COMBO(capswd, &caps_word, 10 11, L1, 50)
+
+    // Symbols
+    COMBO(excl, &kp EXCL, 1 13, L1 L2, 50)
+    COMBO(at, &kp AT, 2 14, L1 L2, 50)
+    COMBO(hash, &kp HASH, 3 15, L1 L2, 50)
+    COMBO(dollar, &kp DOLLAR, 4 16, L1 L2, 50)
+    COMBO(percent, &kp PERCENT, 5 17, L1 L2, 50)
+    COMBO(caret, &kp CARET, 13 25, L1 L2, 50)
+    COMBO(ampersand, &kp AMPERSAND, 14 26, L1 L2, 50)
+    COMBO(star, &kp STAR, 15 27, L1 L2, 50)
+    COMBO(lpar, &kp LPAR, 16 28, L1 L2, 50)
+    COMBO(rpar, &kp RPAR, 17 29, L1 L2, 50)
+  };
 };

@@ -2,8 +2,8 @@ draw_config:
   key_w: 72.0
   key_h: 56.0
   split_gap: 20.0
-  combo_w: 28.0
-  combo_h: 26.0
+  combo_w: 40.0
+  combo_h: 30.0
   key_rx: 4.0
   key_ry: 4.0
   inner_pad_w: 1.0
@@ -388,4 +388,12 @@ parse_config:
     C_BRI_UP: '$$mdi:brightness-5$$'
     C_BRI_DN: '$$mdi:brightness-7$$'
 
-  zmk_combos: {}
+  zmk_combos:
+    combo_capswd:
+      k:
+        t: 'WORD'
+        h: '$$mdi:apple-keyboard-caps$$'
+    combo_lm_2_shift:
+      k:
+        t: 'L2'
+        h: '$$mdi:apple-keyboard-shift$$'
