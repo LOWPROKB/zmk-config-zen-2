@@ -22,18 +22,21 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(sl2,    &sl L2,       19 20, L1, 50)
-COMBO(capswd, &caps_word,   10 11, L1, 50)
-COMBO(lpar,   &kp LPAR,     15 27, L1 L2, 50)
-COMBO(rpar,   &kp RPAR,     16 28, L1 L2, 50)
-// COMBO(semi,   &kp SEMI,      6  7, L1 L2, 40, 100)
-// COMBO(lbkt,   &kp LBKT,     11 12, L1 L2, 40, 100)
-// COMBO(rbkt,   &kp RBKT,     17 18, L1 L2, 40, 100)
-// COMBO(tab,    &kp TAB,      11 13, L1 L2, 40, 200)
-// COMBO(bspc,   &kp BSPC,     16 18, L1 L2, 40, 200)
-// COMBO(grave,  &kp GRAVE,    22 23, L1 L2, 40, 100)
-// COMBO(tilde,  &kp TILDE,    21 22, L1 L2, 40, 100)
-// COMBO(bslh,   &kp BSLH,     26 27, L1 L2, 40, 100)
-// COMBO(pipe,   &kp PIPE,     27 28, L1 L2, 40, 100)
+// Layers
+COMBO(sl2, &sl L2, 19 31, L1, 50)
+COMBO(sl3, &sl L3, 7 19, L1, 50)
+// Modifiers
+COMBO(capswd, &caps_word, 10 11, L1, 50)
+// Symbols
+COMBO(excl, &kp EXCL, 1 13, L1 L2, 50)
+COMBO(at, &kp AT, 2 14, L1 L2, 50)
+COMBO(hash, &kp HASH, 3 15, L1 L2, 50)
+COMBO(dollar, &kp DOLLAR, 4 16, L1 L2, 50)
+COMBO(percent, &kp PERCENT, 5 17, L1 L2, 50)
+COMBO(caret, &kp CARET, 13 25, L1 L2, 50)
+COMBO(ampersand, &kp AMPERSAND, 14 26, L1 L2, 50)
+COMBO(star, &kp STAR, 15 27, L1 L2, 50)
+COMBO(lpar, &kp LPAR, 16 28, L1 L2, 50)
+COMBO(rpar, &kp RPAR, 17 29, L1 L2, 50)
     };
 };
