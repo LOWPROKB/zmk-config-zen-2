@@ -40,5 +40,8 @@
     COMBO(star, &kp STAR, 15 27, L1 L2, 50)
     COMBO(lpar, &kp LPAR, 16 28, L1 L2, 50)
     COMBO(rpar, &kp RPAR, 17 29, L1 L2, 50)
+
+    // Bluetooth
+    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, 50)
   };
 };
