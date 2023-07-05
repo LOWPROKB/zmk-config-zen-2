@@ -24,7 +24,7 @@
 
     /* Layers */
     // COMBO(lm_2_shift, &lm L2 LSHFT, 19 31, L1, 50)
-    COMBO(sl_3, &sl L3, 6 18, L1, 50)
+    COMBO(sl_3, &sl L3, 7 8, L1, 50)
 
     /* Whitespace */
     // COMBO(esc, &kp ESC, 0 1, L1 L2, 50)
@@ -59,6 +59,6 @@
 
     /* Media */
     COMBO(mute, &kp C_MUTE, 7 8, L2, 50)
-    COMBO(play, &kp C_PP, 9 10, L2, 50)
+    COMBO(play, &kp C_PP, 8 9, L2, 50)
   };
 };

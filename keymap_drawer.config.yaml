@@ -84,11 +84,11 @@ draw_config:
     rect.trans {
         fill: #e6ebf1;
         opacity: 0.75;
-        stroke-width: 2;
         stroke-dasharray: 2, 2;
     }
     text.trans {
         fill: #7b7e81;
+        opacity: 0.75;
     }
 
     /* color accent for combo boxes */

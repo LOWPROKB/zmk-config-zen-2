@@ -75,5 +75,17 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
       #binding-cells = <0>;
     };
+
+    /*
+      - tap: next track
+      - shift + tap: prev track
+     */
+    next_prev: next_prev {
+      label = "NEXT_PREV_TRACK";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&kp C_NEXT>, <&kp C_PREV>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
   };
 };
