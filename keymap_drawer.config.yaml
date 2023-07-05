@@ -405,3 +405,17 @@ parse_config:
     combo_bt_clear:
       align: top
       offset: 0.3
+    combo_minus:
+      key: "- _"
+    combo_equal:
+      key: = +
+    combo_backslash:
+      key: \ |
+    combo_grave:
+      key: "` ~"
+    combo_lbkt:
+      key: "{ ["
+    combo_rbkt:
+      key: "] }"
+    combo_semi:
+      key: "; :"
