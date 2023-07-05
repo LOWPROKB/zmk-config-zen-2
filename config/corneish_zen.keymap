@@ -10,38 +10,13 @@
 
 #define MEH LS(LC(LALT))
 
-#include "combos.dtsi"
+#include "behaviors.dtsi"
 #include "macros.dtsi"
-
-&mt {
-  flavor = "hold-preferred";
-  tapping-term-ms = <TAPPING_TERM>;
-};
-
-&lt {
-  flavor = "balanced";
-  tapping-term-ms = <TAPPING_TERM>;
-};
-
-&caps_word {
-  continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
-};
+#include "combos.dtsi"
 
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
-  };
-};
-
-/ {
-  behaviors {
-    bspc_del: backspace_delete {
-      compatible = "zmk,behavior-mod-morph";
-      label = "BACKSPACE_DELETE";
-      #binding-cells = <0>;
-      bindings = <&kp BACKSPACE>, <&kp DELETE>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
   };
 };
 
@@ -53,13 +28,13 @@
       label = "L1";
       bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-    &gresc          &kp Q           &kp W           &kp F           &kp P           &kp B               &kp J           &kp L           &kp U           &kp Y           &kp SQT         &sk MEH
+    &kp ESC         &kp Q           &kp W           &kp F           &kp P           &kp B               &kp J           &kp L           &kp U           &kp Y           &kp SQT         &kp GRAVE
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &bspc_del       &kp A           &kp R           &kp S           &kp T           &kp G               &kp M           &kp N           &kp E           &kp I           &kp O           &kp ENTER
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-    &mt LCTRL TAB   &mt LALT Z     &kp  X           &kp C           &kp D           &kp V               &kp K           &kp H           &kp COMMA       &kp DOT         &mt RALT FSLH   &sk RCTRL
+    &ctrl_meh       &mt LALT Z     &kp  X           &kp C           &kp D           &kp V               &kp K           &kp H           &kp COMMA       &kp DOT         &mt RALT FSLH   &ctrl_meh
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
-                                                    &sk LCMD        &mt LSHFT SPACE &sl L2              &sl L2          &sk LSHFT       &sk RCMD
+                                                    &sk LCMD        &mt LSHFT SPACE &sl L2              &sl L2          &smrt_shft      &sk RCMD
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
       >;
     };
@@ -68,11 +43,11 @@
       label = "L2";
       bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-    &trans          &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_MUTE      &kp C_BRI_UP    &trans
+    &trans          &kp N1          &kp N2          &kp N3          &kp N4          &kp N5              &trans          &kp C_VOL_DN    &kp C_VOL_UP    &kp C_NEXT      &kp C_PREV      &brightness
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
     &trans          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0              &trans          &kp LEFT        &kp UP          &kp DOWN        &kp RIGHT       &trans
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-    &sk LCTRL       &sk LALT        &trans          &trans          &trans          &trans              &trans          &kp C_PREV      &kp C_NEXT      &kp C_PP        &sk RALT        &sk RCTRL
+    &trans          &sk LALT        &trans          &trans          &trans          &trans              &trans          &trans          &trans          &trans          &sk RALT        &trans
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
                                                     &trans          &trans          &to L1              &to L1          &trans          &trans
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯

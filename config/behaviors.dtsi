@@ -1,0 +1,79 @@
+&mt {
+  flavor = "hold-preferred";
+  tapping-term-ms = <TAPPING_TERM>;
+};
+
+&lt {
+  flavor = "balanced";
+  tapping-term-ms = <TAPPING_TERM>;
+};
+
+&caps_word {
+  continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
+
+/ {
+  behaviors {
+    /*
+      - tap: sticky shift
+      - double-tap: caps-word (shift + tap mod-morph)
+      - hold: shift
+
+      From: https://github.com/urob/zmk-config/
+     */
+    smrt_shft: smart_shift {
+      label = "SMART_SHIFT";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&sk RSHFT>, <&caps_word>;
+      mods = <(MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
+
+    /*
+      - tap: sticky ctrl
+      - hold: ctrl
+      - double-tap: sticky meh (ctrl + tap mod-morph)
+      - tap + hold: meh (ctrl + hold mod-morph)
+
+      From: https://github.com/urob/zmk-config/
+     */
+    ctrl_meh: ctrl_meh {
+      label = "CTRL_MEH";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&sk LCTRL>, <&sk MEH>;
+      mods = <(MOD_LCTL)>;
+      #binding-cells = <0>;
+    };
+
+    /*
+      - tap: backspace
+      - hold: repeat backspace
+      - shift + tap: delete
+      - shift + hold: repeat delete
+
+      From: https://zmk.dev/docs/behaviors/mod-morph#advanced-configuration
+     */
+    bspc_del: backspace_delete {
+      label = "BACKSPACE_DELETE";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&kp BACKSPACE>, <&kp DELETE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
+
+    /*
+      - tap: brightness up
+      - hold: repeat brightness up
+      - shift + tap: brightness down
+      - shift + hold: repeat brightness down
+     */
+    brightness: brightness {
+      label = "BRIGHTNESS";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&kp C_BRI_UP>, <&kp C_BRI_DN>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
+  };
+};

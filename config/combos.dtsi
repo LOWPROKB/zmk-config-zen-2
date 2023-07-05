@@ -22,17 +22,19 @@
   combos {
     compatible = "zmk,combos";
 
-    // Layers
+    /* Layers */
     // COMBO(lm_2_shift, &lm L2 LSHFT, 19 31, L1, 50)
     COMBO(sl_3, &sl L3, 6 18, L1, 50)
 
-    // Whitespace
+    /* Whitespace */
     // COMBO(esc, &kp ESC, 0 1, L1 L2, 50)
+    COMBO(tab, &kp TAB, 15 16, L1 L2, 50)
 
-    // Modifiers
-    COMBO(caps_word, &caps_word, 18 30, L1, 50)
+    /* Modifiers */
+    // COMBO(caps_word, &caps_word, 18 30, L1, 50)
 
-    // Symbols Left
+    /* Symbols */
+    // Left
     COMBO(excl, &kp EXCL, 1 13, L1 L2, 50)
     COMBO(at, &kp AT, 2 14, L1 L2, 50)
     COMBO(hash, &kp HASH, 3 15, L1 L2, 50)
@@ -43,16 +45,20 @@
     COMBO(star, &kp STAR, 15 27, L1 L2, 50)
     COMBO(lpar, &kp LPAR, 16 28, L1 L2, 50)
     COMBO(rpar, &kp RPAR, 17 29, L1 L2, 50)
-    // Symbols Right
+    // Right
     COMBO(minus, &kp MINUS, 7 19, L1 L2, 50)
     COMBO(equal, &kp EQUAL, 8 20, L1 L2, 50)
     COMBO(backslash, &kp BACKSLASH, 9 21, L1 L2, 50)
-    COMBO(grave, &kp GRAVE, 10 22, L1 L2, 50)
+    // COMBO(grave, &kp GRAVE, 10 22, L1 L2, 50)
     COMBO(lbkt, &kp LBKT, 19 31, L1 L2, 50)
     COMBO(rbkt, &kp RBKT, 20 32, L1 L2, 50)
     COMBO(semi, &kp SEMI, 21 33, L1 L2, 50)
 
-    // Bluetooth
+    /* Bluetooth */
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, 50)
+
+    /* Media */
+    COMBO(mute, &kp C_MUTE, 7 8, L2, 50)
+    COMBO(play, &kp C_PP, 9 10, L2, 50)
   };
 };

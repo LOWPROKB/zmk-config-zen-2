@@ -2,8 +2,8 @@ draw_config:
   key_w: 72.0
   key_h: 56.0
   split_gap: 20.0
-  combo_w: 40.0
-  combo_h: 30.0
+  # combo_w: 40.0
+  # combo_h: 30.0
   key_rx: 4.0
   key_ry: 4.0
   inner_pad_w: 1.0
@@ -125,80 +125,21 @@ draw_config:
   use_local_cache: true
 
 parse_config:
-  preprocess: true
-  skip_binding_parsing: false
-  raw_binding_map: {}
-  sticky_label: sticky
+  # preprocess: true
+  # skip_binding_parsing: false
+  sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    t: ""
+    tap: ""
+    hold: $$mdi:transfer$$
     type: trans
-  qmk_keycode_map:
-    XXXXXXX: ""
-    "NO": ""
-    MINUS: "-"
-    MINS: "-"
-    EQUAL: "="
-    EQL: "="
-    LEFT_BRACKET: "["
-    LBRC: "["
-    RIGHT_BRACKET: "]"
-    RBRC: "]"
-    BACKSLASH: \
-    BSLS: \
-    NONUS_HASH: "#"
-    NUHS: "#"
-    SEMICOLON: ;
-    SCLN: ;
-    QUOTE: "'"
-    QUOT: "'"
-    GRAVE: "`"
-    GRV: "`"
-    COMMA: ","
-    COMM: ","
-    DOT: .
-    SLASH: /
-    SLSH: /
-    TILDE: "~"
-    TILD: "~"
-    EXCLAIM: "!"
-    EXLM: "!"
-    AT: "@"
-    HASH: "#"
-    DOLLAR: $
-    DLR: $
-    PERCENT: "%"
-    PERC: "%"
-    CIRCUMFLEX: ^
-    CIRC: ^
-    AMPERSAND: "&"
-    AMPR: "&"
-    ASTERISK: "*"
-    ASTR: "*"
-    LEFT_PAREN: (
-    LPRN: (
-    RIGHT_PAREN: )
-    RPRN: )
-    UNDERSCORE: _
-    UNDS: _
-    PLUS: +
-    LEFT_CURLY_BRACE: "{"
-    LCBR: "{"
-    RIGHT_CURLY_BRACE: "}"
-    RCBR: "}"
-    PIPE: "|"
-    COLON: ":"
-    COLN: ":"
-    DOUBLE_QUOTE: '"'
-    DQUO: '"'
-    DQT: '"'
-    LEFT_ANGLE_BRACKET: <
-    LABK: <
-    LT: <
-    RIGHT_ANGLE_BRACKET: ">"
-    RABK: ">"
-    GT: ">"
-    QUESTION: "?"
-    QUES: "?"
+
+  raw_binding_map:
+    "&caps_word": $$mdi:alpha-w-box$$
+    "&none":
+      hold: $$mdi:minus-circle-outline$$
+      type: trans
+
+  # ZMK
   zmk_keycode_map:
     EXCLAMATION: "!"
     EXCL: "!"
@@ -332,90 +273,101 @@ parse_config:
       t: 0
       s: ")"
     # Modifiers
-    LCTRL: "$$mdi:apple-keyboard-control$$"
-    LALT: "$$mdi:apple-keyboard-option$$"
-    LSHIFT: "$$mdi:apple-keyboard-shift$$"
-    LSHFT: "$$mdi:apple-keyboard-shift$$"
-    LCMD: "$$mdi:apple-keyboard-command$$"
-    RCTRL: "$$mdi:apple-keyboard-control$$"
-    RALT: "$$mdi:apple-keyboard-option$$"
-    RSHIFT: "$$mdi:apple-keyboard-shift$$"
-    RSHFT: "$$mdi:apple-keyboard-shift$$"
-    RCMD: "$$mdi:apple-keyboard-command$$"
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
     "LS(LC(LALT))": "Meh"
     # Arrows
-    UP: "$$mdi:arrow-up-bold$$"
-    DOWN: "$$mdi:arrow-down-bold$$"
-    LEFT: "$$mdi:arrow-left-bold$$"
-    RIGHT: "$$mdi:arrow-right-bold$$"
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
     # Whitespace
-    ENTER: "$$mdi:keyboard-return$$"
-    ESC: "$$mdi:keyboard-esc$$"
-    TAB: "$$mdi:keyboard-tab$$"
-    SPACE: "$$mdi:keyboard-space$$"
-    BACKSPACE: "$$mdi:backspace$$"
-    BSPC: "$$mdi:backspace$$"
-    DELETE: "$$mdi:backspace-reverse-outline$$"
-    DEL: "$$mdi:backspace-reverse-outline$$"
+    ENTER: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace$$
+    BSPC: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
     # Locks
-    CAPS_LOCK: "$$mdi:apple-keyboard-caps$$"
-    CAPS: "$$mdi:apple-keyboard-caps$$"
+    CAPS_LOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
     # Sound
-    C_MUTE: "$$mdi:volume-off$$"
-    C_VOL_UP: "$$mdi:volume-high$$"
-    C_VOL_DN: "$$mdi:volume-low$$"
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
     # Media
-    C_NEXT: "$$mdi:skip-next$$"
-    C_PREV: "$$mdi:skip-previous$$"
-    C_PP: "$$mdi:play-pause$$"
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
     # Bluetooth
-    BT_CLR: "$$mdi:bluetooth-off$$"
-    BT_SEL: "$$mdi:bluetooth-connect$$"
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
     # Function Keys
-    F1: "$$mdi:keyboard-f1$$"
-    F2: "$$mdi:keyboard-f2$$"
-    F3: "$$mdi:keyboard-f3$$"
-    F4: "$$mdi:keyboard-f4$$"
-    F5: "$$mdi:keyboard-f5$$"
-    F6: "$$mdi:keyboard-f6$$"
-    F7: "$$mdi:keyboard-f7$$"
-    F8: "$$mdi:keyboard-f8$$"
-    F9: "$$mdi:keyboard-f9$$"
-    F10: "$$mdi:keyboard-f10$$"
-    F11: "$$mdi:keyboard-f11$$"
-    F12: "$$mdi:keyboard-f12$$"
+    F1: $$mdi:keyboard-f1$$
+    F2: $$mdi:keyboard-f2$$
+    F3: $$mdi:keyboard-f3$$
+    F4: $$mdi:keyboard-f4$$
+    F5: $$mdi:keyboard-f5$$
+    F6: $$mdi:keyboard-f6$$
+    F7: $$mdi:keyboard-f7$$
+    F8: $$mdi:keyboard-f8$$
+    F9: $$mdi:keyboard-f9$$
+    F10: $$mdi:keyboard-f10$$
+    F11: $$mdi:keyboard-f11$$
+    F12: $$mdi:keyboard-f12$$
     # Settings
-    C_BRI_UP: "$$mdi:brightness-5$$"
-    C_BRI_DN: "$$mdi:brightness-7$$"
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-7$$
 
   zmk_combos:
-    combo_caps_word:
-      key:
-        tap: "$$mdi:alpha-w-box$$"
-    combo_lm_2_shift:
-      key:
-        shifted: L2
-        tap: ""
-        hold: "$$mdi:apple-keyboard-shift$$"
-    combo_sl_3:
-      key:
-        shifted: "L3"
-        tap: ""
-        hold: "$$mdi:gesture-tap-hold$$"
+    # combo_lm_2_shift:
+    #   key:
+    #     shifted: L2
+    #     tap: ""
+    #     hold: $$mdi:apple-keyboard-shift$$
+    # combo_sl_3:
+    #   key:
+    #     shifted: "L3"
+    #     tap: ""
+    #     hold: $$mdi:gesture-tap-hold$$
     combo_bt_clear:
       align: top
-      offset: 0.3
+      offset: 0.2
     combo_minus:
-      key: "- _"
+      key:
+        shifted: "_"
+        hold: "-"
     combo_equal:
-      key: = +
+      key:
+        shifted: "+"
+        hold: "="
     combo_backslash:
-      key: \ |
+      key:
+        shifted: "|"
+        hold: \
     combo_grave:
-      key: "` ~"
+      key:
+        shifted: "~"
+        hold: "`"
     combo_lbkt:
-      key: "{ ["
+      key:
+        shifted: "{"
+        hold: "["
     combo_rbkt:
-      key: "] }"
+      key:
+        shifted: "}"
+        hold: "]"
     combo_semi:
-      key: "; :"
+      key:
+        shifted: ":"
+        hold: ";"

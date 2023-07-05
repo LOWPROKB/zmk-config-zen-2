@@ -1,14 +1,16 @@
 / {
   macros {
-    // Temporarily switches to a layer (&mo) while a modifier is held. This is
-    // an implementation of QMK's `LM()` using ZMK's parameterized macros.
-    //
-    // Params:
-    //    1. Layer to switch to
-    //    2. Modifier to press while layer is active
-    //
-    // Example:
-    //    &lm 1 LSHIFT
+    /*
+      Temporarily switches to a layer (&mo) while a modifier is held. This is
+      an implementation of QMK's `LM()` using ZMK's parameterized macros.
+
+      Params:
+        1. Layer to switch to
+        2. Modifier to press while layer is active
+
+      Example:
+        `&lm 1 LSHIFT`
+     */
     lm: lm {
       label = "Layer Mod";
       wait-ms = <0>;
