@@ -82,6 +82,7 @@ draw_config:
 
     /* lighter symbol for transparent keys */
     rect.trans {
+        fill: #e6ebf1;
         opacity: 0.75;
         stroke-width: 2;
         stroke-dasharray: 2, 2;
@@ -138,6 +139,21 @@ parse_config:
     "&none":
       hold: $$mdi:minus-circle-outline$$
       type: trans
+    "&bt BT_SEL 0":
+      tap: $$mdi:bluetooth-connect$$
+      hold: 1
+    "&bt BT_SEL 1":
+      tap: $$mdi:bluetooth-connect$$
+      hold: 2
+    "&bt BT_SEL 2":
+      tap: $$mdi:bluetooth-connect$$
+      hold: 3
+    "&bt BT_SEL 3":
+      tap: $$mdi:bluetooth-connect$$
+      hold: 4
+    "&bt BT_SEL 4":
+      tap: $$mdi:bluetooth-connect$$
+      hold: 5
 
   # ZMK
   zmk_keycode_map:
@@ -330,19 +346,41 @@ parse_config:
     C_BRI_DN: $$mdi:brightness-7$$
 
   zmk_combos:
-    # combo_lm_2_shift:
-    #   key:
-    #     shifted: L2
-    #     tap: ""
-    #     hold: $$mdi:apple-keyboard-shift$$
-    # combo_sl_3:
-    #   key:
-    #     shifted: "L3"
-    #     tap: ""
-    #     hold: $$mdi:gesture-tap-hold$$
+    combo_lm_2_shift:
+      key:
+        shifted: L2
+        tap: ""
+        hold: $$mdi:apple-keyboard-shift$$
+    combo_sl_3:
+      key:
+        shifted: "L3"
+        tap: ""
+        hold: $$mdi:gesture-tap-hold$$
     combo_bt_clear:
       align: top
-      offset: 0.2
+      # offset: 0.1
+    # Left
+    combo_excl:
+      slide: 0.1
+    combo_at:
+      slide: 0.1
+    combo_hash:
+      slide: 0.1
+    combo_dollar:
+      slide: 0.1
+    combo_percent:
+      slide: 0.1
+    combo_caret:
+      slide: 0.1
+    combo_ampersand:
+      slide: 0.1
+    combo_star:
+      slide: 0.1
+    combo_lpar:
+      slide: 0.1
+    combo_rpar:
+      slide: 0.1
+    # Right
     combo_minus:
       key:
         shifted: "_"
@@ -359,15 +397,17 @@ parse_config:
       key:
         shifted: "~"
         hold: "`"
-    combo_lbkt:
-      key:
-        shifted: "{"
-        hold: "["
-    combo_rbkt:
-      key:
-        shifted: "}"
-        hold: "]"
     combo_semi:
       key:
         shifted: ":"
         hold: ";"
+    combo_lbkt:
+      align: right
+      key:
+        shifted: "{"
+        hold: "["
+    combo_rbkt:
+      align: right
+      key:
+        shifted: "}"
+        hold: "]"
