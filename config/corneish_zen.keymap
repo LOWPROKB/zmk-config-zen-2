@@ -11,20 +11,20 @@
 #define MEH LS(LC(LALT))
 
 #include "combos.dtsi"
-#include "macros.dtsi"
+// #include "macros.dtsi"
 
 &mt {
-    flavor = "hold-preferred";
-    tapping-term-ms = <TAPPING_TERM>;
+  flavor = "hold-preferred";
+  tapping-term-ms = <TAPPING_TERM>;
 };
 
 &lt {
-    flavor = "balanced";
-    tapping-term-ms = <TAPPING_TERM>;
+  flavor = "balanced";
+  tapping-term-ms = <TAPPING_TERM>;
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+  continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
 };
 
 / {
@@ -34,15 +34,26 @@
 };
 
 / {
-    behaviors {
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BACKSPACE_DELETE";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+  behaviors {
+    bspc_del: backspace_delete {
+      compatible = "zmk,behavior-mod-morph";
+      label = "BACKSPACE_DELETE";
+      #binding-cells = <0>;
+      bindings = <&kp BACKSPACE>, <&kp DELETE>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
     };
+
+    slm: sticky_layer_mod {
+      compatible = "zmk,behavior-hold-tap";
+      label = "STICKY_LAYER_MOD";
+      #binding-cells = <2>;
+      // flavor = "tap-preferred";
+      // tapping-term-ms = <200>;
+      // quick-tap-ms = <125>;
+      // global-quick-tap;
+      bindings = <&sl>, <&sk>;
+    };
+  };
 };
 
 / {

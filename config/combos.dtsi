@@ -23,8 +23,8 @@
     compatible = "zmk,combos";
 
     // Layers
-    COMBO(lm_2_shift, &lm L2 LSHFT, 19 31, L1, 50)
-    COMBO(sl3, &sl L3, 7 19, L1, 50)
+    COMBO(slm_2_shift, &slm L2 LSHFT, 19 31, L1, 50)
+    COMBO(sl_3, &sl L3, 7 19, L1, 50)
 
     // Modifiers
     COMBO(capswd, &caps_word, 10 11, L1, 50)
