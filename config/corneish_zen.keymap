@@ -11,7 +11,7 @@
 #define MEH LS(LC(LALT))
 
 #include "combos.dtsi"
-// #include "macros.dtsi"
+#include "macros.dtsi"
 
 &mt {
   flavor = "hold-preferred";
@@ -41,17 +41,6 @@
       #binding-cells = <0>;
       bindings = <&kp BACKSPACE>, <&kp DELETE>;
       mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    slm: sticky_layer_mod {
-      compatible = "zmk,behavior-hold-tap";
-      label = "STICKY_LAYER_MOD";
-      #binding-cells = <2>;
-      // flavor = "tap-preferred";
-      // tapping-term-ms = <200>;
-      // quick-tap-ms = <125>;
-      // global-quick-tap;
-      bindings = <&sl>, <&sk>;
     };
   };
 };

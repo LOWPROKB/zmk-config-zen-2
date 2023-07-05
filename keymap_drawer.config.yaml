@@ -130,50 +130,50 @@ parse_config:
   raw_binding_map: {}
   sticky_label: sticky
   trans_legend:
-    t: ''
+    t: ""
     type: trans
   qmk_keycode_map:
-    XXXXXXX: ''
-    'NO': ''
-    MINUS: '-'
-    MINS: '-'
-    EQUAL: '='
-    EQL: '='
-    LEFT_BRACKET: '['
-    LBRC: '['
-    RIGHT_BRACKET: ']'
-    RBRC: ']'
+    XXXXXXX: ""
+    "NO": ""
+    MINUS: "-"
+    MINS: "-"
+    EQUAL: "="
+    EQL: "="
+    LEFT_BRACKET: "["
+    LBRC: "["
+    RIGHT_BRACKET: "]"
+    RBRC: "]"
     BACKSLASH: \
     BSLS: \
-    NONUS_HASH: '#'
-    NUHS: '#'
+    NONUS_HASH: "#"
+    NUHS: "#"
     SEMICOLON: ;
     SCLN: ;
-    QUOTE: ''''
-    QUOT: ''''
-    GRAVE: '`'
-    GRV: '`'
-    COMMA: ','
-    COMM: ','
+    QUOTE: "'"
+    QUOT: "'"
+    GRAVE: "`"
+    GRV: "`"
+    COMMA: ","
+    COMM: ","
     DOT: .
     SLASH: /
     SLSH: /
-    TILDE: '~'
-    TILD: '~'
-    EXCLAIM: '!'
-    EXLM: '!'
-    AT: '@'
-    HASH: '#'
+    TILDE: "~"
+    TILD: "~"
+    EXCLAIM: "!"
+    EXLM: "!"
+    AT: "@"
+    HASH: "#"
     DOLLAR: $
     DLR: $
-    PERCENT: '%'
-    PERC: '%'
+    PERCENT: "%"
+    PERC: "%"
     CIRCUMFLEX: ^
     CIRC: ^
-    AMPERSAND: '&'
-    AMPR: '&'
-    ASTERISK: '*'
-    ASTR: '*'
+    AMPERSAND: "&"
+    AMPR: "&"
+    ASTERISK: "*"
+    ASTR: "*"
     LEFT_PAREN: (
     LPRN: (
     RIGHT_PAREN: )
@@ -181,220 +181,227 @@ parse_config:
     UNDERSCORE: _
     UNDS: _
     PLUS: +
-    LEFT_CURLY_BRACE: '{'
-    LCBR: '{'
-    RIGHT_CURLY_BRACE: '}'
-    RCBR: '}'
-    PIPE: '|'
-    COLON: ':'
-    COLN: ':'
+    LEFT_CURLY_BRACE: "{"
+    LCBR: "{"
+    RIGHT_CURLY_BRACE: "}"
+    RCBR: "}"
+    PIPE: "|"
+    COLON: ":"
+    COLN: ":"
     DOUBLE_QUOTE: '"'
     DQUO: '"'
     DQT: '"'
     LEFT_ANGLE_BRACKET: <
     LABK: <
     LT: <
-    RIGHT_ANGLE_BRACKET: '>'
-    RABK: '>'
-    GT: '>'
-    QUESTION: '?'
-    QUES: '?'
+    RIGHT_ANGLE_BRACKET: ">"
+    RABK: ">"
+    GT: ">"
+    QUESTION: "?"
+    QUES: "?"
   zmk_keycode_map:
-    EXCLAMATION: '!'
-    EXCL: '!'
-    AT_SIGN: '@'
-    AT: '@'
-    HASH: '#'
-    POUND: '#'
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
     DOLLAR: $
     DLLR: $
-    PERCENT: '%'
-    PRCNT: '%'
+    PERCENT: "%"
+    PRCNT: "%"
     CARET: ^
-    AMPERSAND: '&'
-    AMPS: '&'
-    ASTERISK: '*'
-    ASTRK: '*'
-    STAR: '*'
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
     LEFT_PARENTHESIS: (
     LPAR: (
     RIGHT_PARENTHESIS: )
     RPAR: )
     EQUAL:
-      t: '='
-      s: '+'
+      t: "="
+      s: "+"
     PLUS: +
     MINUS:
-      t: '-'
-      s: '_'
+      t: "-"
+      s: "_"
     UNDERSCORE: _
     UNDER: _
     SLASH:
-      t: '/'
-      s: '?'
+      t: "/"
+      s: "?"
     FSLH:
-      t: '/'
-      s: '?'
-    QUESTION: '?'
-    QMARK: '?'
+      t: "/"
+      s: "?"
+    QUESTION: "?"
+    QMARK: "?"
     BACKSLASH:
       t: '\'
-      s: '|'
+      s: "|"
     BSLH:
       t: '\'
-      s: '|'
-    PIPE: '|'
+      s: "|"
+    PIPE: "|"
     NON_US_BACKSLASH: \
-    PIPE2: '|'
-    NON_US_BSLH: '|'
+    PIPE2: "|"
+    NON_US_BSLH: "|"
     SEMICOLON:
-      t: ';'
-      s: ':'
+      t: ";"
+      s: ":"
     SEMI:
-      t: ';'
-      s: ':'
-    COLON: ':'
+      t: ";"
+      s: ":"
+    COLON: ":"
     SINGLE_QUOTE:
-      t: ''''
+      t: "'"
       s: '"'
     SQT:
-      t: ''''
+      t: "'"
       s: '"'
     APOSTROPHE: <
     APOS: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
     COMMA:
-      t: ','
-      s: '<'
+      t: ","
+      s: "<"
     LESS_THAN: <
     LT: <
     PERIOD:
-      t: '.'
-      s: '>'
+      t: "."
+      s: ">"
     DOT:
-      t: '.'
-      s: '>'
-    GREATER_THAN: '>'
-    GT: '>'
+      t: "."
+      s: ">"
+    GREATER_THAN: ">"
+    GT: ">"
     LEFT_BRACKET:
-      t: '['
-      s: '{'
+      t: "["
+      s: "{"
     LBKT:
-      t: '['
-      s: '{'
-    LEFT_BRACE: '{'
-    LBRC: '{'
+      t: "["
+      s: "{"
+    LEFT_BRACE: "{"
+    LBRC: "{"
     RIGHT_BRACKET:
-      t: ']'
-      s: '}'
+      t: "]"
+      s: "}"
     RBKT:
-      t: ']'
-      s: '}'
-    RIGHT_BRACE: '}'
-    RBRC: '}'
+      t: "]"
+      s: "}"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
     GRAVE:
-      t: '`'
-      s: '~'
-    TILDE: '~'
-    NON_US_HASH: '#'
-    NUHS: '#'
-    TILDE2: '~'
+      t: "`"
+      s: "~"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
     # Numbers
     N1:
       t: 1
-      s: '!'
+      s: "!"
     N2:
       t: 2
-      s: '@'
+      s: "@"
     N3:
       t: 3
-      s: '#'
+      s: "#"
     N4:
       t: 4
-      s: '$'
+      s: "$"
     N5:
       t: 5
-      s: '%'
+      s: "%"
     N6:
       t: 6
-      s: '^'
+      s: "^"
     N7:
       t: 7
-      s: '&'
+      s: "&"
     N8:
       t: 8
-      s: '*'
+      s: "*"
     N9:
       t: 9
-      s: '('
+      s: "("
     N0:
       t: 0
-      s: ')'
+      s: ")"
     # Modifiers
-    LCTRL: '$$mdi:apple-keyboard-control$$'
-    LALT: '$$mdi:apple-keyboard-option$$'
-    LSHIFT: '$$mdi:apple-keyboard-shift$$'
-    LSHFT: '$$mdi:apple-keyboard-shift$$'
-    LCMD: '$$mdi:apple-keyboard-command$$'
-    RCTRL: '$$mdi:apple-keyboard-control$$'
-    RALT: '$$mdi:apple-keyboard-option$$'
-    RSHIFT: '$$mdi:apple-keyboard-shift$$'
-    RSHFT: '$$mdi:apple-keyboard-shift$$'
-    RCMD: '$$mdi:apple-keyboard-command$$'
-    'LS(LC(LALT))': 'Meh'
+    LCTRL: "$$mdi:apple-keyboard-control$$"
+    LALT: "$$mdi:apple-keyboard-option$$"
+    LSHIFT: "$$mdi:apple-keyboard-shift$$"
+    LSHFT: "$$mdi:apple-keyboard-shift$$"
+    LCMD: "$$mdi:apple-keyboard-command$$"
+    RCTRL: "$$mdi:apple-keyboard-control$$"
+    RALT: "$$mdi:apple-keyboard-option$$"
+    RSHIFT: "$$mdi:apple-keyboard-shift$$"
+    RSHFT: "$$mdi:apple-keyboard-shift$$"
+    RCMD: "$$mdi:apple-keyboard-command$$"
+    "LS(LC(LALT))": "Meh"
     # Arrows
-    UP: '$$mdi:arrow-up-bold$$'
-    DOWN: '$$mdi:arrow-down-bold$$'
-    LEFT: '$$mdi:arrow-left-bold$$'
-    RIGHT: '$$mdi:arrow-right-bold$$'
+    UP: "$$mdi:arrow-up-bold$$"
+    DOWN: "$$mdi:arrow-down-bold$$"
+    LEFT: "$$mdi:arrow-left-bold$$"
+    RIGHT: "$$mdi:arrow-right-bold$$"
     # Whitespace
-    ENTER: '$$mdi:keyboard-return$$'
-    ESC: '$$mdi:keyboard-esc$$'
-    TAB: '$$mdi:keyboard-tab$$'
-    SPACE: '$$mdi:keyboard-space$$'
-    BACKSPACE: '$$mdi:backspace$$'
-    BSPC: '$$mdi:backspace$$'
-    DELETE: '$$mdi:backspace-reverse$$'
-    DEL: '$$mdi:backspace-reverse$$'
+    ENTER: "$$mdi:keyboard-return$$"
+    ESC: "$$mdi:keyboard-esc$$"
+    TAB: "$$mdi:keyboard-tab$$"
+    SPACE: "$$mdi:keyboard-space$$"
+    BACKSPACE: "$$mdi:backspace$$"
+    BSPC: "$$mdi:backspace$$"
+    DELETE: "$$mdi:backspace-reverse-outline$$"
+    DEL: "$$mdi:backspace-reverse-outline$$"
     # Locks
-    CAPS_LOCK: '$$mdi:apple-keyboard-caps$$'
-    CAPS: '$$mdi:apple-keyboard-caps$$'
+    CAPS_LOCK: "$$mdi:apple-keyboard-caps$$"
+    CAPS: "$$mdi:apple-keyboard-caps$$"
     # Sound
-    C_MUTE: '$$mdi:volume-off$$'
-    C_VOL_UP: '$$mdi:volume-high$$'
-    C_VOL_DN: '$$mdi:volume-low$$'
+    C_MUTE: "$$mdi:volume-off$$"
+    C_VOL_UP: "$$mdi:volume-high$$"
+    C_VOL_DN: "$$mdi:volume-low$$"
     # Media
-    C_NEXT: '$$mdi:skip-next$$'
-    C_PREV: '$$mdi:skip-previous$$'
-    C_PP: '$$mdi:play-pause$$'
+    C_NEXT: "$$mdi:skip-next$$"
+    C_PREV: "$$mdi:skip-previous$$"
+    C_PP: "$$mdi:play-pause$$"
     # Bluetooth
-    BT_CLR: '$$mdi:bluetooth-off$$'
-    BT_SEL: '$$mdi:bluetooth-connect$$'
+    BT_CLR: "$$mdi:bluetooth-off$$"
+    BT_SEL: "$$mdi:bluetooth-connect$$"
     # Function Keys
-    F1: '$$mdi:keyboard-f1$$'
-    F2: '$$mdi:keyboard-f2$$'
-    F3: '$$mdi:keyboard-f3$$'
-    F4: '$$mdi:keyboard-f4$$'
-    F5: '$$mdi:keyboard-f5$$'
-    F6: '$$mdi:keyboard-f6$$'
-    F7: '$$mdi:keyboard-f7$$'
-    F8: '$$mdi:keyboard-f8$$'
-    F9: '$$mdi:keyboard-f9$$'
-    F10: '$$mdi:keyboard-f10$$'
-    F11: '$$mdi:keyboard-f11$$'
-    F12: '$$mdi:keyboard-f12$$'
+    F1: "$$mdi:keyboard-f1$$"
+    F2: "$$mdi:keyboard-f2$$"
+    F3: "$$mdi:keyboard-f3$$"
+    F4: "$$mdi:keyboard-f4$$"
+    F5: "$$mdi:keyboard-f5$$"
+    F6: "$$mdi:keyboard-f6$$"
+    F7: "$$mdi:keyboard-f7$$"
+    F8: "$$mdi:keyboard-f8$$"
+    F9: "$$mdi:keyboard-f9$$"
+    F10: "$$mdi:keyboard-f10$$"
+    F11: "$$mdi:keyboard-f11$$"
+    F12: "$$mdi:keyboard-f12$$"
     # Settings
-    C_BRI_UP: '$$mdi:brightness-5$$'
-    C_BRI_DN: '$$mdi:brightness-7$$'
+    C_BRI_UP: "$$mdi:brightness-5$$"
+    C_BRI_DN: "$$mdi:brightness-7$$"
 
   zmk_combos:
-    combo_capswd:
+    combo_caps_word:
       key:
-        tap: 'WORD'
-        hold: '$$mdi:apple-keyboard-caps$$'
+        tap: "$$mdi:alpha-w-box$$"
     combo_lm_2_shift:
       key:
-        tap: 'L2'
-        hold: '$$mdi:apple-keyboard-shift$$'
-      offset: 1
+        shifted: L2
+        tap: ""
+        hold: "$$mdi:apple-keyboard-shift$$"
+    combo_sl_3:
+      key:
+        shifted: "L3"
+        tap: ""
+        hold: "$$mdi:gesture-tap-hold$$"
+    combo_bt_clear:
+      align: top
+      offset: 0.3
