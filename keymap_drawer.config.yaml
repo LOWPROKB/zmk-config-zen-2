@@ -135,10 +135,15 @@ parse_config:
     type: trans
 
   raw_binding_map:
+    # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
+
+    # Empty
     "&none":
       hold: $$mdi:minus-circle-outline$$
       type: trans
+
+    # Bluetooth
     "&bt BT_SEL 0":
       tap: $$mdi:bluetooth-connect$$
       hold: 1
@@ -154,6 +159,12 @@ parse_config:
     "&bt BT_SEL 4":
       tap: $$mdi:bluetooth-connect$$
       hold: 5
+
+    # Reset
+    "&sys_reset":
+      tap: $$mdi:backup-restore$$
+    "&bootloader":
+      tap: $$mdi:progress-download$$
 
   # ZMK
   zmk_keycode_map:
