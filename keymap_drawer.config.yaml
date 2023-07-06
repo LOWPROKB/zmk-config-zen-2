@@ -1,15 +1,15 @@
 draw_config:
-  key_w: 72.0
-  key_h: 56.0
-  split_gap: 20.0
+  # key_w: 72.0
+  # key_h: 56.0
+  # split_gap: 20.0
   # combo_w: 40.0
   # combo_h: 30.0
   key_rx: 4.0
   key_ry: 4.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
-  outer_pad_w: 10.0
-  outer_pad_h: 20.0
+  outer_pad_w: 0.0
+  outer_pad_h: 14.0
   line_spacing: 1.0
   arc_radius: 6.0
   arc_scale: 1.0
@@ -117,13 +117,13 @@ draw_config:
   glyph_tap_size: 16
   glyph_hold_size: 12
   glyph_shifted_size: 10
-  glyphs: {}
-  glyph_urls:
-    tabler: https://tabler-icons.io/static/tabler-icons/icons/{}.svg
-    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-  use_local_cache: true
+  # glyphs: {}
+  # glyph_urls:
+  #   tabler: https://tabler-icons.io/static/tabler-icons/icons/{}.svg
+  #   mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+  #   mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+  #   material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  # use_local_cache: true
 
 parse_config:
   # preprocess: true
@@ -358,28 +358,6 @@ parse_config:
         hold: $$mdi:gesture-tap-hold$$
     combo_bt_clear:
       align: top
-      # offset: 0.1
-    # Left
-    combo_excl:
-      slide: 0.1
-    combo_at:
-      slide: 0.1
-    combo_hash:
-      slide: 0.1
-    combo_dollar:
-      slide: 0.1
-    combo_percent:
-      slide: 0.1
-    combo_caret:
-      slide: 0.1
-    combo_ampersand:
-      slide: 0.1
-    combo_star:
-      slide: 0.1
-    combo_lpar:
-      slide: 0.1
-    combo_rpar:
-      slide: 0.1
     # Right
     combo_minus:
       key:
@@ -403,11 +381,13 @@ parse_config:
         hold: ";"
     combo_lbkt:
       align: right
+      offset: -0.07
       key:
         shifted: "{"
         hold: "["
     combo_rbkt:
       align: right
+      offset: -0.07
       key:
         shifted: "}"
         hold: "]"
