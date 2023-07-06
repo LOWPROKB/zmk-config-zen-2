@@ -299,7 +299,7 @@ parse_config:
     RSHIFT: $$mdi:apple-keyboard-shift$$
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
-    "LS(LC(LALT))": "Meh"
+    LS(LC(LALT)): "Meh"
     # Arrows
     UP: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$
@@ -381,13 +381,13 @@ parse_config:
         hold: ";"
     combo_lbkt:
       align: right
-      offset: -0.07
+      offset: -0.1
       key:
         shifted: "{"
         hold: "["
     combo_rbkt:
       align: right
-      offset: -0.07
+      offset: -0.1
       key:
         shifted: "}"
         hold: "]"
