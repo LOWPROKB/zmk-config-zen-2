@@ -24,38 +24,47 @@
 
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, 50)
-    COMBO(sl_3, &sl L3, 4 5, L1, 50)
+    // COMBO(sl_3, &sl L3, 3 4, L1, 50)
 
     /* Whitespace */
-    COMBO(tab, &kp TAB, 16 17, L1 L2, 50)
+    COMBO(tab, &kp TAB, 15 16, L1, 50)
+    COMBO(shift_tab, &kp LS(TAB), 14 15, L1, 50)
 
     /* Symbols */
-    COMBO(excl, &kp EXCL, 1 2, L1, 50)
-    COMBO(at, &kp AT, 2 3, L1, 50)
-    COMBO(dollar, &kp DOLLAR, 3 4, L1, 50)
-    COMBO(ampersand, &kp AMPERSAND, 13 14, L1, 50)
-    COMBO(lpar, &kp LPAR, 14 15, L1, 50)
-    COMBO(rpar, &kp RPAR, 15 16, L1, 50)
-    COMBO(lbkt, &kp LBKT, 26 27, L1, 50)
-    COMBO(rbkt, &kp RBKT, 27 28, L1, 50)
-    COMBO(minus, &kp MINUS, 19 20, L1, 50)
-    COMBO(equal, &kp EQUAL, 20 21, L1, 50)
-    COMBO(semi, &kp SEMI, 21 22, L1, 50)
+       // Left
+    COMBO(excl, &kp EXCL, 1 13, L1, 50)
+    COMBO(at, &kp AT, 2 14, L1, 50)
+    COMBO(hash, &kp HASH, 3 15, L1, 50)
+    COMBO(dollar, &kp DOLLAR, 4 16, L1, 50)
+    COMBO(percent, &kp PERCENT, 5 17, L1, 50)
+    COMBO(caret, &kp CARET, 13 25, L1, 50)
+    COMBO(ampersand, &kp AMPERSAND, 14 26, L1, 50)
+    COMBO(star, &kp STAR, 15 27, L1, 50)
+    COMBO(lpar, &kp LPAR, 16 28, L1, 50)
+    COMBO(rpar, &kp RPAR, 17 29, L1, 50)
+    // Right
+    COMBO(equal, &kp EQUAL, 7 19, L1, 50)
+    COMBO(minus, &kp MINUS, 8 20, L1, 50)
+    COMBO(semi, &kp SEMI, 19 20, L1, 50)
+    // COMBO(backslash, &kp BACKSLASH, 9 21, L1, 50)
+    // COMBO(grave, &kp GRAVE, 10 22, L1, 50)
+    COMBO(lbkt, &kp LBKT, 19 31, L1, 50)
+    COMBO(rbkt, &kp RBKT, 20 32, L1, 50)
 
     /* Bluetooth */
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, 50)
 
     /* Media */
-    COMBO(play, &kp C_PP, 6 7, L1, 50)
-    COMBO(next_prev, &next_prev, 7 8, L1, 50)
-    COMBO(volume, &volume, 8 9, L1, 50)
-    COMBO(mute, &kp C_MUTE, 9 10, L1, 50)
+    COMBO(play, &kp C_PP, 8 9, L2, 50)
+    // COMBO(next_prev, &next_prev, 7 8, L2, 50)
+    // COMBO(volume, &volume, 8 9, L2, 50)
+    COMBO(mute, &kp C_MUTE, 7 8, L2, 50)
 
     /* Fn Keys */
-    COMBO(f2, &kp F2, 18 19, L1, 50)
-    COMBO(f12, &kp F12, 30 31, L1, 50)
+    // COMBO(f2, &kp F2, 18 19, L1, 50)
+    // COMBO(f12, &kp F12, 30 31, L1, 50)
 
     /* System */
-    COMBO(brightness, &brightness, 10 11, L1, 50)
+    // COMBO(brightness, &brightness, 10 11, L1, 50)
   };
 };

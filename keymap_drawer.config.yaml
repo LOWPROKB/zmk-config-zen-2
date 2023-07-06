@@ -309,6 +309,7 @@ parse_config:
     ENTER: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
     SPACE: $$mdi:keyboard-space$$
     BACKSPACE: $$mdi:backspace$$
     BSPC: $$mdi:backspace$$
@@ -349,14 +350,12 @@ parse_config:
     combo_lm_2_shift:
       key:
         shifted: L2
-        tap: ""
         hold: $$mdi:apple-keyboard-shift$$
     combo_to_2:
-      align: top
+      align: bottom
     combo_sl_3:
       key:
         shifted: "L3"
-        tap: ""
         hold: $$mdi:gesture-tap-hold$$
     combo_bt_clear:
       align: top
@@ -387,8 +386,8 @@ parse_config:
         shifted: "{"
         hold: "["
     combo_rbkt:
-      # align: right
-      # offset: -0.1
+      align: right
+      offset: -0.1
       key:
         shifted: "}"
         hold: "]"
@@ -397,7 +396,6 @@ parse_config:
     combo_next_prev:
       key:
         shifted: $$mdi:skip-previous$$
-        tap: ""
         hold: $$mdi:skip-next$$
     combo_brightness:
       key: $$mdi:brightness-7$$
