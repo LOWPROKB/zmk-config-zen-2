@@ -43,8 +43,8 @@
     COMBO(lpar, &kp LPAR, 16 28, L1, 50)
     COMBO(rpar, &kp RPAR, 17 29, L1, 50)
     // Right
-    COMBO(equal, &kp EQUAL, 7 19, L1, 50)
-    COMBO(minus, &kp MINUS, 8 20, L1, 50)
+    COMBO(minus, &kp MINUS, 7 19, L1, 50)
+    COMBO(equal, &kp EQUAL, 8 20, L1, 50)
     COMBO(semi, &kp SEMI, 19 20, L1, 50)
     // COMBO(backslash, &kp BACKSLASH, 9 21, L1, 50)
     // COMBO(grave, &kp GRAVE, 10 22, L1, 50)
