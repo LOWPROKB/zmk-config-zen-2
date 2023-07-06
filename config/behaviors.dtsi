@@ -87,5 +87,17 @@
       mods = <(MOD_LSFT|MOD_RSFT)>;
       #binding-cells = <0>;
     };
+
+    /*
+      - tap: next track
+      - shift + tap: prev track
+     */
+    volume: volume {
+      label = "VOLUME";
+      compatible = "zmk,behavior-mod-morph";
+      bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
+      mods = <(MOD_LSFT|MOD_RSFT)>;
+      #binding-cells = <0>;
+    };
   };
 };

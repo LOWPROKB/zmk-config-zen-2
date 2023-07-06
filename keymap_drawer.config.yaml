@@ -351,6 +351,8 @@ parse_config:
         shifted: L2
         tap: ""
         hold: $$mdi:apple-keyboard-shift$$
+    combo_to_2:
+      align: top
     combo_sl_3:
       key:
         shifted: "L3"
@@ -358,7 +360,6 @@ parse_config:
         hold: $$mdi:gesture-tap-hold$$
     combo_bt_clear:
       align: top
-    # Right
     combo_minus:
       key:
         shifted: "_"
@@ -380,14 +381,23 @@ parse_config:
         shifted: ":"
         hold: ";"
     combo_lbkt:
-      align: right
-      offset: -0.1
+      # align: right
+      # offset: -0.1
       key:
         shifted: "{"
         hold: "["
     combo_rbkt:
-      align: right
-      offset: -0.1
+      # align: right
+      # offset: -0.1
       key:
         shifted: "}"
         hold: "]"
+    combo_volume:
+      key: $$mdi:volume-high$$
+    combo_next_prev:
+      key:
+        shifted: $$mdi:skip-previous$$
+        tap: ""
+        hold: $$mdi:skip-next$$
+    combo_brightness:
+      key: $$mdi:brightness-7$$
