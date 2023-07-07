@@ -18,53 +18,55 @@
     layers = <LAYERS>; \
   };
 
+#define DEFAULT_TERM 30
+
 / {
   combos {
     compatible = "zmk,combos";
 
     /* Layers */
-    COMBO(to_2, &to L2, 38 39, L1, 50)
-    // COMBO(sl_3, &sl L3, 3 4, L1, 50)
+    COMBO(to_2, &to L2, 38 39, L1, DEFAULT_TERM)
+    // COMBO(sl_3, &sl L3, 3 4, L1, DEFAULT_TERM)
 
     /* Whitespace */
-    COMBO(tab, &kp TAB, 15 16, L1, 50)
-    COMBO(shift_tab, &kp LS(TAB), 14 15, L1, 50)
+    COMBO(tab, &kp TAB, 15 16, L1, DEFAULT_TERM)
+    COMBO(shift_tab, &kp LS(TAB), 14 15, L1, DEFAULT_TERM)
 
     /* Symbols */
        // Left
-    COMBO(excl, &kp EXCL, 1 13, L1, 50)
-    COMBO(at, &kp AT, 2 14, L1, 50)
-    COMBO(hash, &kp HASH, 3 15, L1, 50)
-    COMBO(dollar, &kp DOLLAR, 4 16, L1, 50)
-    COMBO(percent, &kp PERCENT, 5 17, L1, 50)
-    COMBO(caret, &kp CARET, 13 25, L1, 50)
-    COMBO(ampersand, &kp AMPERSAND, 14 26, L1, 50)
-    COMBO(star, &kp STAR, 15 27, L1, 50)
-    COMBO(lpar, &kp LPAR, 16 28, L1, 50)
-    COMBO(rpar, &kp RPAR, 17 29, L1, 50)
+    COMBO(excl, &kp EXCL, 1 13, L1, DEFAULT_TERM)
+    COMBO(at, &kp AT, 2 14, L1, DEFAULT_TERM)
+    COMBO(hash, &kp HASH, 3 15, L1, DEFAULT_TERM)
+    COMBO(dollar, &kp DOLLAR, 4 16, L1, DEFAULT_TERM)
+    COMBO(percent, &kp PERCENT, 5 17, L1, DEFAULT_TERM)
+    COMBO(caret, &kp CARET, 13 25, L1, DEFAULT_TERM)
+    COMBO(ampersand, &kp AMPERSAND, 14 26, L1, DEFAULT_TERM)
+    COMBO(star, &kp STAR, 15 27, L1, DEFAULT_TERM)
+    COMBO(lpar, &kp LPAR, 16 28, L1, DEFAULT_TERM)
+    COMBO(rpar, &kp RPAR, 17 29, L1, DEFAULT_TERM)
     // Right
-    COMBO(minus, &kp MINUS, 7 19, L1, 50)
-    COMBO(equal, &kp EQUAL, 8 20, L1, 50)
-    COMBO(semi, &kp SEMI, 19 20, L1, 50)
-    // COMBO(backslash, &kp BACKSLASH, 9 21, L1, 50)
-    // COMBO(grave, &kp GRAVE, 10 22, L1, 50)
-    COMBO(lbkt, &kp LBKT, 19 31, L1, 50)
-    COMBO(rbkt, &kp RBKT, 20 32, L1, 50)
+    COMBO(minus, &kp MINUS, 7 19, L1, DEFAULT_TERM)
+    COMBO(equal, &kp EQUAL, 8 20, L1, DEFAULT_TERM)
+    // COMBO(backslash, &kp BACKSLASH, 9 21, L1, DEFAULT_TERM)
+    // COMBO(grave, &kp GRAVE, 10 22, L1, DEFAULT_TERM)
+    COMBO(lbkt, &kp LBKT, 19 31, L1, DEFAULT_TERM)
+    COMBO(rbkt, &kp RBKT, 20 32, L1, DEFAULT_TERM)
+    COMBO(semi, &kp SEMI, 21 33, L1, DEFAULT_TERM)
 
     /* Bluetooth */
-    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, 50)
+    COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, DEFAULT_TERM)
 
     /* Media */
-    COMBO(play, &kp C_PP, 8 9, L2, 50)
-    // COMBO(next_prev, &next_prev, 7 8, L2, 50)
-    // COMBO(volume, &volume, 8 9, L2, 50)
-    COMBO(mute, &kp C_MUTE, 7 8, L2, 50)
+    COMBO(play, &kp C_PP, 8 9, L2, DEFAULT_TERM)
+    // COMBO(next_prev, &next_prev, 7 8, L2, DEFAULT_TERM)
+    // COMBO(volume, &volume, 8 9, L2, DEFAULT_TERM)
+    COMBO(mute, &kp C_MUTE, 7 8, L2, DEFAULT_TERM)
 
     /* Fn Keys */
-    // COMBO(f2, &kp F2, 18 19, L1, 50)
-    // COMBO(f12, &kp F12, 30 31, L1, 50)
+    // COMBO(f2, &kp F2, 18 19, L1, DEFAULT_TERM)
+    // COMBO(f12, &kp F12, 30 31, L1, DEFAULT_TERM)
 
     /* System */
-    // COMBO(brightness, &brightness, 10 11, L1, 50)
+    // COMBO(brightness, &brightness, 10 11, L1, DEFAULT_TERM)
   };
 };

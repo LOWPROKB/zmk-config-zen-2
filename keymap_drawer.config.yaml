@@ -387,6 +387,8 @@ parse_config:
         shifted: "~"
         hold: "`"
     combo_semi:
+      align: right
+      offset: -0.1
       key:
         shifted: ":"
         hold: ";"
