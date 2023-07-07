@@ -1,11 +1,21 @@
+#define TAPPING_TERM_MS 200
+#define QUICK_TAP_MS 120
+
 &mt {
-  flavor = "hold-preferred";
-  tapping-term-ms = <TAPPING_TERM>;
+  flavor = "tap-preferred";
+  tapping-term-ms = <TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  global-quick-tap;
 };
 
 &lt {
   flavor = "balanced";
-  tapping-term-ms = <TAPPING_TERM>;
+  tapping-term-ms = <TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+};
+
+&sk {
+  quick-release;
 };
 
 &caps_word {
@@ -16,11 +26,11 @@
 / {
   behaviors {
     /*
-      - tap: sticky shift
-      - double-tap: caps-word (shift + tap mod-morph)
-      - hold: shift
+    - tap: sticky shift
+    - double-tap: caps-word (shift + tap mod-morph)
+    - hold: shift
 
-      From: https://github.com/urob/zmk-config/
+    From: https: //github.com/urob/zmk-config/
      */
     smrt_shft: smart_shift {
       label = "SMART_SHIFT";
@@ -31,12 +41,12 @@
     };
 
     /*
-      - tap: sticky ctrl
-      - hold: ctrl
-      - double-tap: sticky meh (ctrl + tap mod-morph)
-      - tap + hold: meh (ctrl + hold mod-morph)
+    - tap: sticky ctrl
+    - hold: ctrl
+    - double-tap: sticky meh (ctrl + tap mod-morph)
+    - tap + hold: meh (ctrl + hold mod-morph)
 
-      From: https://github.com/urob/zmk-config/
+    From: https: //github.com/urob/zmk-config/
      */
     ctrl_meh: ctrl_meh {
       label = "CTRL_MEH";
@@ -47,12 +57,12 @@
     };
 
     /*
-      - tap: backspace
-      - hold: repeat backspace
-      - shift + tap: delete
-      - shift + hold: repeat delete
+    - tap: backspace
+    - hold: repeat backspace
+    - shift + tap: delete
+    - shift + hold: repeat delete
 
-      From: https://zmk.dev/docs/behaviors/mod-morph#advanced-configuration
+    From: https: //zmk.dev/docs/behaviors/mod-morph#advanced-configuration
      */
     bspc_del: backspace_delete {
       label = "BACKSPACE_DELETE";
@@ -63,10 +73,10 @@
     };
 
     /*
-      - tap: brightness up
-      - hold: repeat brightness up
-      - shift + tap: brightness down
-      - shift + hold: repeat brightness down
+    - tap: brightness up
+    - hold: repeat brightness up
+    - shift + tap: brightness down
+    - shift + hold: repeat brightness down
      */
     brightness: brightness {
       label = "BRIGHTNESS";
@@ -77,8 +87,8 @@
     };
 
     /*
-      - tap: next track
-      - shift + tap: prev track
+    - tap: next track
+    - shift + tap: prev track
      */
     next_prev: next_prev {
       label = "NEXT_PREV_TRACK";
@@ -89,8 +99,8 @@
     };
 
     /*
-      - tap: next track
-      - shift + tap: prev track
+    - tap: next track
+    - shift + tap: prev track
      */
     volume: volume {
       label = "VOLUME";
