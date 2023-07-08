@@ -364,10 +364,8 @@ parse_config:
         hold: $$mdi:apple-keyboard-shift$$
     combo_to_2:
       align: bottom
-    combo_sl_3:
-      key:
-        shifted: "L3"
-        hold: $$mdi:gesture-tap-hold$$
+    combo_to_3:
+      align: bottom
     combo_bt_clear:
       align: top
     combo_minus:
@@ -379,6 +377,8 @@ parse_config:
         shifted: "+"
         hold: "="
     combo_backslash:
+      align: right
+      offset: -0.1
       key:
         shifted: "|"
         hold: \
@@ -399,8 +399,8 @@ parse_config:
         shifted: "{"
         hold: "["
     combo_rbkt:
-      align: right
-      offset: -0.1
+      # align: right
+      # offset: -0.1
       key:
         shifted: "}"
         hold: "]"
