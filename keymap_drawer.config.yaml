@@ -358,10 +358,10 @@ parse_config:
     C_BRI_DN: $$mdi:brightness-7$$
 
   zmk_combos:
-    combo_lm_2_shift:
-      key:
-        shifted: L2
-        hold: $$mdi:apple-keyboard-shift$$
+    # combo_lm_2_shift:
+    #   key:
+    #     shifted: L2
+    #     hold: $$mdi:apple-keyboard-shift$$
     combo_to_2:
       align: bottom
     combo_to_3:
