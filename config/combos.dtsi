@@ -27,6 +27,7 @@
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT)
     COMBO(to_3, &to L3, 38 39, L2, COMBO_TERM_DEFAULT)
+    COMBO(lm_2_shift, &lm L2 LSHFT, 39 40, L1, COMBO_TERM_DEFAULT)
 
     /* Whitespace */
     // Left

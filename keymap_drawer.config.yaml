@@ -358,16 +358,22 @@ parse_config:
     C_BRI_DN: $$mdi:brightness-7$$
 
   zmk_combos:
-    # combo_lm_2_shift:
-    #   key:
-    #     shifted: L2
-    #     hold: $$mdi:apple-keyboard-shift$$
+    combo_lm_2_shift:
+      key:
+        shifted: L2
+        hold: $$mdi:apple-keyboard-shift$$
     combo_to_2:
       align: bottom
     combo_to_3:
       align: bottom
     combo_bt_clear:
       align: top
+    combo_ampersand:
+      align: left
+      offset: -0.1
+    combo_star:
+      align: left
+      offset: -0.1
     combo_minus:
       key:
         shifted: "_"
@@ -377,7 +383,7 @@ parse_config:
         shifted: "+"
         hold: "="
     combo_backslash:
-      align: left
+      align: right
       offset: -0.1
       key:
         shifted: "|"
@@ -387,7 +393,7 @@ parse_config:
         shifted: "~"
         hold: "`"
     combo_semi:
-      align: left
+      align: right
       offset: -0.1
       key:
         shifted: ":"
