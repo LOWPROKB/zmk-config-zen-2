@@ -29,8 +29,14 @@
     COMBO(to_3, &to L3, 38 39, L2, COMBO_TERM_DEFAULT)
 
     /* Whitespace */
-    COMBO(tab, &kp TAB, 15 16, L1, COMBO_TERM_DEFAULT)
-    COMBO(enter, &kp ENTER, 19 20, L1, COMBO_TERM_DEFAULT)
+    // Left
+    COMBO(esc, &kp ESC, 2 3, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(backspace, &kp BACKSPACE, 13 14, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(shift_tab, &kp LS(TAB), 14 15, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(tab, &kp TAB, 15 16, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(delete, &kp DELETE, 16 17, L1 L2, COMBO_TERM_DEFAULT)
+    // Right
+    COMBO(enter, &kp ENTER, 21 22, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Symbols */
        // Left
@@ -57,11 +63,8 @@
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(next, &kp C_NEXT, 8 20, L2, COMBO_TERM_DEFAULT)
-    COMBO(prev, &kp C_PREV, 7 19, L2, COMBO_TERM_DEFAULT)
-    COMBO(next_prev, &next_prev, 7 8, L2, COMBO_TERM_DEFAULT)
-    // COMBO(volume, &volume, 8 9, L2, COMBO_TERM_DEFAULT)
-    COMBO(mute, &kp C_MUTE, 7 8, L2, COMBO_TERM_DEFAULT)
+    COMBO(play, &kp C_PP, 6 18, L2, COMBO_TERM_DEFAULT)
+    COMBO(mute, &kp C_MUTE, 7 9, L2, COMBO_TERM_DEFAULT)
 
     /* Fn Keys */
     // COMBO(f2, &kp F2, 18 19, L1, COMBO_TERM_DEFAULT)
