@@ -368,12 +368,12 @@ parse_config:
       align: bottom
     combo_bt_clear:
       align: top
-    combo_ampersand:
-      align: left
-      offset: -0.1
-    combo_star:
-      align: left
-      offset: -0.1
+    # combo_ampersand:
+    #   align: left
+    #   offset: -0.1
+    # combo_star:
+    #   align: left
+    #   offset: -0.1
     combo_minus:
       key:
         shifted: "_"
@@ -410,9 +410,9 @@ parse_config:
       key:
         shifted: "}"
         hold: "]"
-    combo_mute:
-      align: top
-      offset: 0.2
+    # combo_mute:
+    #   align: top
+    #   offset: 0.2
     combo_volume:
       key: $$mdi:volume-high$$
     combo_next_prev:

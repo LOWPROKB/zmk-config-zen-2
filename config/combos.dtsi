@@ -26,8 +26,8 @@
 
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT)
-    COMBO(to_3, &to L3, 38 39, L2, COMBO_TERM_DEFAULT)
-    COMBO(lm_2_shift, &lm L2 LSHFT, 39 40, L1, COMBO_TERM_DEFAULT)
+    // COMBO(to_3, &to L3, 38 39, L2, COMBO_TERM_DEFAULT)
+    // COMBO(lm_2_shift, &lm L2 LSHFT, 39 40, L1, COMBO_TERM_DEFAULT)
 
     /* Whitespace */
     // Left
@@ -64,8 +64,8 @@
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(play, &kp C_PP, 6 18, L2, COMBO_TERM_DEFAULT)
-    COMBO(mute, &kp C_MUTE, 7 9, L2, COMBO_TERM_DEFAULT)
+    COMBO(play, &kp C_PP, 6 7, L2, COMBO_TERM_DEFAULT)
+    COMBO(mute, &kp C_MUTE, 8 9, L2, COMBO_TERM_DEFAULT)
 
     /* Fn Keys */
     // COMBO(f2, &kp F2, 18 19, L1, COMBO_TERM_DEFAULT)
