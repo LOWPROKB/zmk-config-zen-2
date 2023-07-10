@@ -88,9 +88,11 @@ draw_config:
         stroke-dasharray: 2, 2;
     }
     text.trans,
-    text.none {
+    text.none,
+    use.trans,
+    use.none {
         fill: #7b7e81;
-        opacity: 0.75;
+        opacity: 0.5;
     }
 
     /* color accent for combo boxes */
@@ -132,8 +134,7 @@ parse_config:
   # skip_binding_parsing: false
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
-    tap: ""
-    hold: $$mdi:transfer$$
+    tap: $$mdi:transfer$$
     type: trans
 
   raw_binding_map:
@@ -142,7 +143,7 @@ parse_config:
 
     # Empty
     "&none":
-      hold: $$mdi:minus-circle-outline$$
+      tap: $$mdi:minus-circle-outline$$
       type: none
 
     # Bluetooth
@@ -331,8 +332,8 @@ parse_config:
     SPACE: $$mdi:keyboard-space$$
     BACKSPACE: $$mdi:backspace$$
     BSPC: $$mdi:backspace$$
-    DELETE: $$mdi:backspace-reverse$$
-    DEL: $$mdi:backspace-reverse$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
     # Locks
     CAPS_LOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
@@ -373,6 +374,7 @@ parse_config:
       align: bottom
     combo_to_3:
       align: bottom
+      offset: 1.1
     combo_bt_clear:
       align: top
     # combo_ampersand:

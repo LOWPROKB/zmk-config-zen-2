@@ -26,7 +26,7 @@
 
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT)
-    // COMBO(to_3, &to L3, 38 39, L2, COMBO_TERM_DEFAULT)
+    COMBO(to_3, &to L3, 36 41, L1, COMBO_TERM_DEFAULT)
     // COMBO(lm_2_shift, &lm L2 LSHFT, 39 40, L1, COMBO_TERM_DEFAULT)
 
     /* Whitespace */
@@ -37,10 +37,10 @@
     COMBO(shift_tab, &kp LS(TAB), 16 17, L1 L2, COMBO_TERM_DEFAULT)
     // COMBO(delete, &kp DELETE, 16 17, L1 L2, COMBO_TERM_DEFAULT)
     // Right
-    COMBO(enter, &kp ENTER, 19 20, L1 L2, COMBO_TERM_DEFAULT)
+    // COMBO(enter, &kp ENTER, 19 20, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Symbols */
-       // Left
+    // Left
     COMBO(excl, &kp EXCL, 1 13, L1, COMBO_TERM_DEFAULT)
     COMBO(at, &kp AT, 2 14, L1, COMBO_TERM_DEFAULT)
     COMBO(hash, &kp HASH, 3 15, L1, COMBO_TERM_DEFAULT)
@@ -69,8 +69,8 @@
     COMBO(bt_sel_4, &bt BT_SEL 4, 5 17, L3, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(play, &kp C_PP, 6 7, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(mute, &kp C_MUTE, 7 8, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(play, &kp C_PP, 8 9, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Fn Keys */
     // COMBO(f2, &kp F2, 18 19, L1, COMBO_TERM_DEFAULT)
@@ -78,5 +78,10 @@
 
     /* System */
     // COMBO(brightness, &brightness, 10 11, L1, COMBO_TERM_DEFAULT)
+    COMBO(sys_reset_l, &sys_reset, 14 26, L3, COMBO_TERM_DEFAULT)
+    COMBO(bootloader_l, &bootloader, 17 29, L3, COMBO_TERM_DEFAULT)
+    // Right
+    COMBO(bootloader_r, &bootloader, 18 30, L3, COMBO_TERM_DEFAULT)
+    COMBO(sys_reset_r, &sys_reset, 21 33, L3, COMBO_TERM_DEFAULT)
   };
 };
