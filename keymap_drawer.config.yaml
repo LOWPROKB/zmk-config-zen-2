@@ -102,8 +102,10 @@ draw_config:
     /* styling for combo dendrons */
     path.combo {
         stroke-width: 1;
-        stroke: gray;
+        stroke: #7b7e81;
+        stroke-dasharray: 2, 2;
         fill: none;
+        opacity: 0.75;
     }
 
     /* Start Tabler Icons Cleanup */
@@ -371,10 +373,10 @@ parse_config:
         shifted: L2
         hold: $$mdi:apple-keyboard-shift$$
     combo_to_2:
-      align: bottom
+      align: top
     combo_to_3:
       align: bottom
-      offset: 1.1
+      offset: 0.5
     combo_bt_clear:
       align: top
     # combo_ampersand:
