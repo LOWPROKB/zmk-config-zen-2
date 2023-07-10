@@ -80,13 +80,15 @@ draw_config:
         font-size: 8px;
     }
 
-    /* lighter symbol for transparent keys */
-    rect.trans {
+    /* lighter symbol for transparent and none keys */
+    rect.trans,
+    rect.none {
         fill: #e6ebf1;
         opacity: 0.75;
         stroke-dasharray: 2, 2;
     }
-    text.trans {
+    text.trans,
+    text.none {
         fill: #7b7e81;
         opacity: 0.75;
     }
@@ -141,23 +143,28 @@ parse_config:
     # Empty
     "&none":
       hold: $$mdi:minus-circle-outline$$
-      type: trans
+      type: none
 
     # Bluetooth
     "&bt BT_SEL 0":
-      tap: $$mdi:bluetooth-connect$$
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
       hold: 1
     "&bt BT_SEL 1":
-      tap: $$mdi:bluetooth-connect$$
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
       hold: 2
     "&bt BT_SEL 2":
-      tap: $$mdi:bluetooth-connect$$
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
       hold: 3
     "&bt BT_SEL 3":
-      tap: $$mdi:bluetooth-connect$$
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
       hold: 4
     "&bt BT_SEL 4":
-      tap: $$mdi:bluetooth-connect$$
+      shifted: $$mdi:bluetooth-connect$$
+      tap: ""
       hold: 5
 
     # Reset
@@ -324,8 +331,8 @@ parse_config:
     SPACE: $$mdi:keyboard-space$$
     BACKSPACE: $$mdi:backspace$$
     BSPC: $$mdi:backspace$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    DEL: $$mdi:backspace-reverse-outline$$
+    DELETE: $$mdi:backspace-reverse$$
+    DEL: $$mdi:backspace-reverse$$
     # Locks
     CAPS_LOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$

@@ -37,7 +37,7 @@
     COMBO(shift_tab, &kp LS(TAB), 16 17, L1 L2, COMBO_TERM_DEFAULT)
     // COMBO(delete, &kp DELETE, 16 17, L1 L2, COMBO_TERM_DEFAULT)
     // Right
-    // COMBO(enter, &kp ENTER, 21 22, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(enter, &kp ENTER, 19 20, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Symbols */
        // Left
@@ -62,10 +62,15 @@
 
     /* Bluetooth */
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, COMBO_TERM_DEFAULT)
+    COMBO(bt_sel_0, &bt BT_SEL 0, 1 13, L3, COMBO_TERM_DEFAULT)
+    COMBO(bt_sel_1, &bt BT_SEL 1, 2 14, L3, COMBO_TERM_DEFAULT)
+    COMBO(bt_sel_2, &bt BT_SEL 2, 3 15, L3, COMBO_TERM_DEFAULT)
+    COMBO(bt_sel_3, &bt BT_SEL 3, 4 16, L3, COMBO_TERM_DEFAULT)
+    COMBO(bt_sel_4, &bt BT_SEL 4, 5 17, L3, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(play, &kp C_PP, 6 7, L2, COMBO_TERM_DEFAULT)
-    COMBO(mute, &kp C_MUTE, 8 9, L2, COMBO_TERM_DEFAULT)
+    COMBO(play, &kp C_PP, 6 7, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(mute, &kp C_MUTE, 7 8, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Fn Keys */
     // COMBO(f2, &kp F2, 18 19, L1, COMBO_TERM_DEFAULT)
