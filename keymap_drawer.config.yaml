@@ -321,6 +321,14 @@ parse_config:
     RSHFT: $$mdi:apple-keyboard-shift$$
     RCMD: $$mdi:apple-keyboard-command$$
     LS(LC(LALT)): "Meh"
+    RG(RS(A)):
+      shifted: $$mdi:microphone$$
+      tap: zoom
+      hold: $$mdi:microphone-off$$
+    RG(RS(V)):
+      shifted: $$mdi:video$$
+      tap: zoom
+      hold: $$mdi:video-off$$
     # Arrows
     UP: $$mdi:arrow-up-bold$$
     DOWN: $$mdi:arrow-down-bold$$

@@ -78,10 +78,5 @@
 
     /* System */
     // COMBO(brightness, &brightness, 10 11, L1, COMBO_TERM_DEFAULT)
-    COMBO(sys_reset_l, &sys_reset, 14 26, L3, COMBO_TERM_DEFAULT)
-    COMBO(bootloader_l, &bootloader, 17 29, L3, COMBO_TERM_DEFAULT)
-    // Right
-    COMBO(bootloader_r, &bootloader, 18 30, L3, COMBO_TERM_DEFAULT)
-    COMBO(sys_reset_r, &sys_reset, 21 33, L3, COMBO_TERM_DEFAULT)
   };
 };
