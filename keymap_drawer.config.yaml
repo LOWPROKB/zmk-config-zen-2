@@ -11,8 +11,8 @@ draw_config:
   outer_pad_w: 0.0
   outer_pad_h: 14.0
   line_spacing: 1.0
-  arc_radius: 6.0
-  arc_scale: 1.0
+  arc_radius: 4.0
+  arc_scale: 0.9
   append_colon_to_layer_header: false
   small_pad: 4.0
   svg_style: |
@@ -178,6 +178,7 @@ parse_config:
 
   # ZMK
   zmk_keycode_map:
+    # Symbols
     EXCLAMATION: "!"
     EXCL: "!"
     AT_SIGN: "@"
@@ -345,7 +346,7 @@ parse_config:
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
     # Locks
-    CAPS_LOCK: $$mdi:apple-keyboard-caps$$
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
     # Sound
     C_MUTE: $$mdi:volume-off$$
@@ -387,12 +388,6 @@ parse_config:
       offset: 0.5
     combo_bt_clear:
       align: top
-    # combo_ampersand:
-    #   align: left
-    #   offset: -0.1
-    # combo_star:
-    #   align: left
-    #   offset: -0.1
     combo_minus:
       key:
         shifted: "_"
@@ -402,8 +397,6 @@ parse_config:
         shifted: "+"
         hold: "="
     combo_backslash:
-      align: right
-      offset: -0.1
       key:
         shifted: "|"
         hold: \
@@ -417,21 +410,32 @@ parse_config:
       key:
         shifted: ":"
         hold: ";"
+    combo_slash:
+      align: right
+      offset: -0.15
+      # slide: 0.1
+      key:
+        shifted: "?"
+        hold: "/"
     combo_lbkt:
-      # align: right
-      # offset: -0.1
       key:
         shifted: "{"
         hold: "["
     combo_rbkt:
-      # align: right
-      # offset: -0.1
+      align: right
+      offset: -0.15
+      slide: 0.15
       key:
         shifted: "}"
         hold: "]"
-    # combo_mute:
-    #   align: top
-    #   offset: 0.2
+    combo_opt_l:
+      key:
+        hold: "$$mdi:arrow-left-bold$$"
+        shifted: "$$mdi:apple-keyboard-option$$"
+    combo_opt_r:
+      key:
+        hold: "$$mdi:arrow-right-bold$$"
+        shifted: "$$mdi:apple-keyboard-option$$"
     combo_volume:
       key: $$mdi:volume-high$$
     combo_next_prev:
