@@ -1,14 +1,3 @@
-/*
-  KEY POSITIONS
-  Copied (modified) from https://github.com/caksoylar/zmk-config
-
-  ╭────────────────────────╮  ╭────────────────────────╮
-  │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
-  │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
-  │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
-  ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
-              ╰────────────╯  ╰────────────╯
-*/
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TERM) \
   combo_##NAME { \
@@ -23,27 +12,26 @@
 / {
   combos {
     compatible = "zmk,combos";
+    /*
+      KEY POSITIONS
+      Copied (modified) from https://github.com/caksoylar/zmk-config
+
+      ╭────────────────────────╮  ╭────────────────────────╮
+      │ 0   1   2   3   4   5  │  │ 6   7   8   9   10  11 │
+      │ 12  13  14  15  16  17 │  │ 18  19  20  21  22  23 │
+      │ 24  25  26  27  28  29 │  │ 30  31  32  33  34  35 │
+      ╰───────────╮ 36  37  38 │  │ 39  40  41 ╭───────────╯
+                  ╰────────────╯  ╰────────────╯
+    */
 
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT)
     COMBO(to_3, &to L3, 36 41, L1, COMBO_TERM_DEFAULT)
-    // COMBO(lm_2_shift, &lm L2 LSHFT, 39 40, L1, COMBO_TERM_DEFAULT)
 
     /* Whitespace */
     // Left
-    // COMBO(esc, &kp ESC, 2 3, L1 L2, COMBO_TERM_DEFAULT)
-    // COMBO(backspace, &kp BACKSPACE, 13 14, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(tab, &kp TAB, 15 16, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(shift_tab, &kp LS(TAB), 14 15, L1 L2, COMBO_TERM_DEFAULT)
-    // COMBO(delete, &kp DELETE, 16 17, L1 L2, COMBO_TERM_DEFAULT)
     // Right
-    // COMBO(enter, &kp ENTER, 19 20, L1 L2, COMBO_TERM_DEFAULT)
-
-    /* Navigation */
-    // Left
-    // Right
-    // COMBO(opt_l, &kp RA(LEFT), 19 20, L1, COMBO_TERM_DEFAULT)
-    // COMBO(opt_r, &kp RA(RIGHT), 20 21, L1, COMBO_TERM_DEFAULT)
 
     /* Symbols */
     // Left
@@ -61,10 +49,10 @@
     COMBO(minus, &kp MINUS, 7 19, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(equal, &kp EQUAL, 8 20, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(grave, &kp GRAVE, 6 18, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(lbkt, &kp LBKT, 19 31, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(rbkt, &kp RBKT, 20 32, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(slash, &kp SLASH, 21 33, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(backslash, &kp BACKSLASH, 9 21, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(lbkt, &kp LBKT, 18 30, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(rbkt, &kp RBKT, 19 31, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(semi, &kp SEMI, 20 32, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(backslash, &kp BACKSLASH, 21 33, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Bluetooth */
     COMBO(bt_clear, &bt BT_CLR, 1 2 3 4, L3, COMBO_TERM_DEFAULT)
@@ -77,12 +65,5 @@
     /* Media */
     COMBO(mute, &kp C_MUTE, 7 8, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(play, &kp C_PP, 8 9, L1 L2, COMBO_TERM_DEFAULT)
-
-    /* Fn Keys */
-    // COMBO(f2, &kp F2, 18 19, L1, COMBO_TERM_DEFAULT)
-    // COMBO(f12, &kp F12, 30 31, L1, COMBO_TERM_DEFAULT)
-
-    /* System */
-    // COMBO(brightness, &brightness, 10 11, L1, COMBO_TERM_DEFAULT)
   };
 };

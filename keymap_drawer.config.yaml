@@ -1,9 +1,4 @@
 draw_config:
-  # key_w: 72.0
-  # key_h: 56.0
-  # split_gap: 20.0
-  # combo_w: 40.0
-  # combo_h: 30.0
   key_rx: 4.0
   key_ry: 4.0
   inner_pad_w: 1.0
@@ -12,7 +7,6 @@ draw_config:
   outer_pad_h: 14.0
   line_spacing: 1.0
   arc_radius: 4.0
-  arc_scale: 0.9
   append_colon_to_layer_header: false
   small_pad: 4.0
   svg_style: |
@@ -119,21 +113,18 @@ draw_config:
         visibility: collapse;
     }
     /* End Tabler Icons Cleanup */
+
+    /* Special Overrides */
+    .tap + .hold.mdi\:apple-keyboard-command + .shifted,
+    .tap + .hold.mdi\:apple-keyboard-option + .shifted {
+        transform: translateY(8px);
+    }
   shrink_wide_legends: 5
   glyph_tap_size: 16
   glyph_hold_size: 12
   glyph_shifted_size: 10
-  # glyphs: {}
-  # glyph_urls:
-  #   tabler: https://tabler-icons.io/static/tabler-icons/icons/{}.svg
-  #   mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
-  #   mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
-  #   material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
-  # use_local_cache: true
 
 parse_config:
-  # preprocess: true
-  # skip_binding_parsing: false
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     tap: $$mdi:transfer$$
@@ -200,116 +191,114 @@ parse_config:
     RIGHT_PARENTHESIS: )
     RPAR: )
     EQUAL:
-      t: "="
-      s: "+"
+      tap: "="
+      shifted: "+"
     PLUS: +
     MINUS:
-      t: "-"
-      s: "_"
+      tap: "-"
+      shifted: "_"
     UNDERSCORE: _
     UNDER: _
     SLASH:
-      t: "/"
-      s: "?"
+      tap: "/"
+      shifted: "?"
     FSLH:
-      t: "/"
-      s: "?"
+      tap: "/"
+      shifted: "?"
     QUESTION: "?"
     QMARK: "?"
     BACKSLASH:
-      t: '\'
-      s: "|"
+      tap: '\'
+      shifted: "|"
     BSLH:
-      t: '\'
-      s: "|"
+      tap: '\'
+      shifted: "|"
     PIPE: "|"
     NON_US_BACKSLASH: \
     PIPE2: "|"
     NON_US_BSLH: "|"
     SEMICOLON:
-      t: ";"
-      s: ":"
+      tap: ";"
+      shifted: ":"
     SEMI:
-      t: ";"
-      s: ":"
+      tap: ";"
+      shifted: ":"
     COLON: ":"
     SINGLE_QUOTE:
-      t: "'"
-      s: '"'
+      tap: "'"
+      shifted: '"'
     SQT:
-      t: "'"
-      s: '"'
+      tap: "'"
+      shifted: '"'
     APOSTROPHE: <
     APOS: .
     DOUBLE_QUOTES: '"'
     DQT: '"'
-    COMMA:
-      t: ","
-      s: "<"
+
     LESS_THAN: <
     LT: <
-    PERIOD:
-      t: "."
-      s: ">"
     DOT:
-      t: "."
-      s: ">"
+      tap: "."
+      shifted: ">"
+    COMMA:
+      tap: ","
+      shifted: "<"
     GREATER_THAN: ">"
     GT: ">"
     LEFT_BRACKET:
-      t: "["
-      s: "{"
+      tap: "["
+      shifted: "{"
     LBKT:
-      t: "["
-      s: "{"
+      tap: "["
+      shifted: "{"
     LEFT_BRACE: "{"
     LBRC: "{"
     RIGHT_BRACKET:
-      t: "]"
-      s: "}"
+      tap: "]"
+      shifted: "}"
     RBKT:
-      t: "]"
-      s: "}"
+      tap: "]"
+      shifted: "}"
     RIGHT_BRACE: "}"
     RBRC: "}"
     GRAVE:
-      t: "`"
-      s: "~"
+      tap: "`"
+      shifted: "~"
     TILDE: "~"
     NON_US_HASH: "#"
     NUHS: "#"
     TILDE2: "~"
     # Numbers
     N1:
-      t: 1
-      s: "!"
+      tap: 1
+      shifted: "!"
     N2:
-      t: 2
-      s: "@"
+      tap: 2
+      shifted: "@"
     N3:
-      t: 3
-      s: "#"
+      tap: 3
+      shifted: "#"
     N4:
-      t: 4
-      s: "$"
+      tap: 4
+      shifted: "$"
     N5:
-      t: 5
-      s: "%"
+      tap: 5
+      shifted: "%"
     N6:
-      t: 6
-      s: "^"
+      tap: 6
+      shifted: "^"
     N7:
-      t: 7
-      s: "&"
+      tap: 7
+      shifted: "&"
     N8:
-      t: 8
-      s: "*"
+      tap: 8
+      shifted: "*"
     N9:
-      t: 9
-      s: "("
+      tap: 9
+      shifted: "("
     N0:
-      t: 0
-      s: ")"
+      tap: 0
+      shifted: ")"
     # Modifiers
     LCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
@@ -405,26 +394,14 @@ parse_config:
         shifted: "~"
         hold: "`"
     combo_semi:
-      align: right
-      offset: -0.1
       key:
         shifted: ":"
         hold: ";"
-    combo_slash:
-      align: right
-      offset: -0.15
-      # slide: 0.1
-      key:
-        shifted: "?"
-        hold: "/"
     combo_lbkt:
       key:
         shifted: "{"
         hold: "["
     combo_rbkt:
-      align: right
-      offset: -0.15
-      slide: 0.15
       key:
         shifted: "}"
         hold: "]"
