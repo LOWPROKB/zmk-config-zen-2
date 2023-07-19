@@ -1,0 +1,220 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  L1:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - {t: '''', s: '"'}
+  - {t: zoom, h: '$$mdi:video-off$$', s: '$$mdi:video$$'}
+  - $$mdi:backspace$$
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace-reverse-outline$$
+  - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: Meh}
+  - V
+  - K
+  - {t: H, h: Meh}
+  - {t: ',', h: '$$mdi:apple-keyboard-command$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
+  - {t: zoom, h: '$$mdi:microphone-off$$', s: '$$mdi:microphone$$'}
+  - {t: Fn, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L2, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: L2, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: Fn, h: '$$mdi:gesture-tap-hold$$'}
+  L2:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: Meh, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: Meh, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: L1, type: held}
+  - L1
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  Fn:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
+  - $$mdi:keyboard-f4$$
+  - $$mdi:keyboard-f5$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backup-restore$$
+  - $$mdi:keyboard-f6$$
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
+  - $$mdi:keyboard-f9$$
+  - $$mdi:keyboard-f10$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backup-restore$$
+  - $$mdi:progress-download$$
+  - $$mdi:keyboard-f11$$
+  - $$mdi:keyboard-f12$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
+  - {t: L1, type: held}
+  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
+  - L1
+combos:
+- p: [38, 39]
+  k: L2
+  l: [L1]
+  a: top
+- p: [36, 41]
+  k: Fn
+  l: [L1]
+  a: bottom
+  o: 0.5
+- p: [15, 16]
+  k: $$mdi:keyboard-tab$$
+  l: [L1, L2]
+- p: [1, 13]
+  k: '!'
+  l: [L1]
+- p: [2, 14]
+  k: '@'
+  l: [L1]
+- p: [3, 15]
+  k: '#'
+  l: [L1]
+- p: [4, 16]
+  k: $
+  l: [L1]
+- p: [5, 17]
+  k: '%'
+  l: [L1]
+- p: [13, 25]
+  k: ^
+  l: [L1]
+- p: [14, 26]
+  k: '&'
+  l: [L1]
+- p: [15, 27]
+  k: '*'
+  l: [L1]
+- p: [16, 28]
+  k: (
+  l: [L1]
+- p: [17, 29]
+  k: )
+  l: [L1]
+- p: [7, 19]
+  k: {h: '-', s: _}
+  l: [L1, L2]
+- p: [8, 20]
+  k: {h: '=', s: +}
+  l: [L1, L2]
+- p: [6, 18]
+  k: {h: '`', s: '~'}
+  l: [L1, L2]
+- p: [18, 30]
+  k: {h: '[', s: '{'}
+  l: [L1, L2]
+- p: [19, 31]
+  k: {h: ']', s: '}'}
+  l: [L1, L2]
+- p: [20, 32]
+  k: {h: ;, s: ':'}
+  l: [L1, L2]
+- p: [21, 33]
+  k: {h: \, s: '|'}
+  l: [L1, L2]
+- p: [1, 2, 3, 4]
+  k: $$mdi:bluetooth-off$$
+  l: [Fn]
+  a: top
+- p: [1, 13]
+  k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  l: [Fn]
+- p: [2, 14]
+  k: {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  l: [Fn]
+- p: [3, 15]
+  k: {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  l: [Fn]
+- p: [4, 16]
+  k: {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  l: [Fn]
+- p: [5, 17]
+  k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  l: [Fn]
+- p: [7, 8]
+  k: $$mdi:volume-off$$
+  l: [L1, L2]
+- p: [8, 9]
+  k: $$mdi:play-pause$$
+  l: [L1, L2]
