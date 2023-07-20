@@ -32,7 +32,7 @@
 
     From: https: //github.com/urob/zmk-config/
      */
-    smrt_shft: smart_shift {
+    smart_shift: smart_shift {
       label = "SMART_SHIFT";
       compatible = "zmk,behavior-mod-morph";
       bindings = <&sk RSHFT>, <&caps_word>;

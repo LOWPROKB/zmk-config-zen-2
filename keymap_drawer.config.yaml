@@ -32,7 +32,7 @@ draw_config:
 
     /* color accent for held keys */
     rect.held, rect.combo.held {
-        /* fill: #fdd; */
+        fill: #fdd;
     }
 
     /* color accent for ghost (optional) keys */
@@ -125,6 +125,7 @@ draw_config:
   glyph_shifted_size: 10
 
 parse_config:
+  mark_alternate_layer_activators: true
   sticky_label: $$mdi:gesture-tap-hold$$
   trans_legend:
     tap: $$mdi:transfer$$
@@ -373,8 +374,7 @@ parse_config:
     combo_to_2:
       align: top
     combo_to_3:
-      align: bottom
-      offset: 0.5
+      align: top
     combo_bt_clear:
       align: top
     combo_minus:
@@ -405,19 +405,6 @@ parse_config:
       key:
         shifted: "}"
         hold: "]"
-    combo_opt_l:
-      key:
-        hold: "$$mdi:arrow-left-bold$$"
-        shifted: "$$mdi:apple-keyboard-option$$"
-    combo_opt_r:
-      key:
-        hold: "$$mdi:arrow-right-bold$$"
-        shifted: "$$mdi:apple-keyboard-option$$"
-    combo_volume:
-      key: $$mdi:volume-high$$
-    combo_next_prev:
-      key:
-        shifted: $$mdi:skip-previous$$
-        hold: $$mdi:skip-next$$
-    combo_brightness:
-      key: $$mdi:brightness-7$$
+    combo_mute:
+      align: top
+      offset: 0.15

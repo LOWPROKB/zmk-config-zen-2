@@ -9,7 +9,7 @@ on:
 
 jobs:
   draw:
-    uses: minusfive/keymap-drawer/.github/workflows/draw-zmk.yml@commit-options
+    uses: minusfive/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write
     with:
