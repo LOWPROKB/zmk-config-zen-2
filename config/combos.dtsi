@@ -48,7 +48,6 @@
     // Right
     COMBO(minus, &kp MINUS, 7 19, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(equal, &kp EQUAL, 8 20, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(grave, &kp GRAVE, 9 21, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(lbkt, &kp LBKT, 19 31, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(rbkt, &kp RBKT, 20 32, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(semi, &kp SEMI, 19 20, L1 L2, COMBO_TERM_DEFAULT)
@@ -63,7 +62,6 @@
     COMBO(bt_sel_4, &bt BT_SEL 4, 5 17, Fn, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(mute, &kp C_MUTE, 6 9, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(play, &kp C_PP, 7 8, L1 L2, COMBO_TERM_DEFAULT)
   };
 };
