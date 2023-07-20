@@ -134,6 +134,7 @@ parse_config:
   raw_binding_map:
     # Modifiers
     "&caps_word": $$mdi:alpha-w-box$$
+    "&kt RSHIFT": $$mdi:select-compare$$
 
     # Empty
     "&none":
