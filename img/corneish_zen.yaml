@@ -11,8 +11,8 @@ layers:
   - L
   - U
   - Y
+  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '`', s: '~'}
   - $$mdi:backspace$$
   - A
   - R
@@ -29,20 +29,20 @@ layers:
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: D, h: Meh}
+  - {t: D, h: '$$mdi:star-three-points$$'}
   - V
   - K
-  - {t: H, h: Meh}
+  - {t: H, h: '$$mdi:star-three-points$$'}
   - {t: ',', h: '$$mdi:apple-keyboard-command$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - $$mdi:apple-keyboard-caps$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
-  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L2, h: '$$mdi:gesture-tap-hold$$'}
   - {t: L2, h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
+  - {t: '`', s: '~'}
   L2:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -50,10 +50,10 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:volume-low$$
   - $$mdi:skip-previous$$
-  - $$mdi:skip-next$$
+  - $$mdi:volume-low$$
   - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -66,16 +66,16 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:select-compare$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:toggle-switch$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
-  - {t: Meh, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:star-three-points$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Meh, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:star-three-points$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -87,7 +87,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:toggle-switch-outline$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - $$mdi:keyboard-f1$$
   - $$mdi:keyboard-f2$$
   - $$mdi:keyboard-f3$$
@@ -115,9 +115,9 @@ layers:
   - $$mdi:keyboard-f11$$
   - $$mdi:keyboard-f12$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: zoom, h: '$$mdi:video-off$$', s: '$$mdi:video$$'}
   - {t: zoom, h: '$$mdi:microphone-off$$', s: '$$mdi:microphone$$'}
+  - {t: zoom, h: '$$mdi:video-off$$', s: '$$mdi:video$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -138,9 +138,6 @@ combos:
   k: Fn
   l: [L2]
   a: top
-- p: [15, 16]
-  k: $$mdi:keyboard-tab$$
-  l: [L1, L2]
 - p: [1, 13]
   k: '!'
   l: [L1]
@@ -183,9 +180,6 @@ combos:
 - p: [20, 32]
   k: {h: ']', s: '}'}
   l: [L1, L2]
-- p: [19, 20]
-  k: {h: ;, s: ':'}
-  l: [L1, L2]
 - p: [21, 33]
   k: {h: \, s: '|'}
   l: [L1, L2]
@@ -208,6 +202,6 @@ combos:
 - p: [5, 17]
   k: {h: '5', s: '$$mdi:bluetooth-connect$$'}
   l: [Fn]
-- p: [7, 8]
+- p: [6, 7]
   k: $$mdi:play-pause$$
   l: [L1, L2]

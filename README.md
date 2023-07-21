@@ -1,17 +1,21 @@
-<img align="right" src="img/Zen_R3_sticker.png" alt="Corne-ish Zen" width="160"/>
 
 # ZMK Config
 
+<img src="img/corneish_zen.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
+
 > Drawn with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
 
-![minusfive's keymap](img/corneish_zen.svg)
+---
+
+![minusfive's Corne-ish Zen](img/corneish_zen.png)
 
 ## Resources
 
+- [Darryl's amazing Corne-ish Zen](https://lowprokb.ca/collections/keyboards/products/corne-ish-zen)
 - [ZMK Firmware GitHub](https://github.com/zmkfirmware/zmk)
 - [ZMK Documentation](https://zmk.dev/docs)
 - [ZMK Discord Server](https://zmk.dev/community/discord/invite)
-- [@caksoylar's Display improvements for Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a) and [ZMK config](https://github.com/caksoylar/zmk-config)
+- [@caksoylar's Keymap Drawer](https://github.com/caksoylar/keymap-drawer), [ZMK config](https://github.com/caksoylar/zmk-config) and [Display improvements for Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a)
 - [@urob's ZMK config](https://github.com/urob/zmk-config/tree/main#user-content-fnref-2-d3679a99d5e7e01f223977affdb47938)
 
 ## Instructions

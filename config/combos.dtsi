@@ -28,11 +28,6 @@
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT)
     COMBO(to_3, &to Fn, 38 39, L2, COMBO_TERM_DEFAULT)
 
-    /* Whitespace */
-    // Left
-    COMBO(tab, &kp TAB, 15 16, L1 L2, COMBO_TERM_DEFAULT)
-    // Right
-
     /* Symbols */
     // Left
     COMBO(excl, &kp EXCL, 1 13, L1, COMBO_TERM_DEFAULT)
@@ -50,7 +45,6 @@
     COMBO(equal, &kp EQUAL, 8 20, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(lbkt, &kp LBKT, 19 31, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(rbkt, &kp RBKT, 20 32, L1 L2, COMBO_TERM_DEFAULT)
-    COMBO(semi, &kp SEMI, 19 20, L1 L2, COMBO_TERM_DEFAULT)
     COMBO(backslash, &kp BACKSLASH, 21 33, L1 L2, COMBO_TERM_DEFAULT)
 
     /* Bluetooth */
@@ -62,6 +56,6 @@
     COMBO(bt_sel_4, &bt BT_SEL 4, 5 17, Fn, COMBO_TERM_DEFAULT)
 
     /* Media */
-    COMBO(play, &kp C_PP, 7 8, L1 L2, COMBO_TERM_DEFAULT)
+    COMBO(play, &kp C_PP, 6 7, L1 L2, COMBO_TERM_DEFAULT)
   };
 };
