@@ -18,8 +18,8 @@
 // -----------------------------------------------------------------------------------------
 //     |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  \   |
 //     | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT/ESC |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT/ENT  |
-//                        | ALT | LWR |SPC/RSE| | SPC/LWR | SHFT/ENT | BKSPC|
+//     |  GUI |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT/ENT  |
+//                 | ALT | SHFT/ESC |SPC/RSE|   | SPC/LWR | SHFT/ENT | BKSPC|
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH 
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -35,10 +35,10 @@
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | BACK|  |> || |   NEXT |       |       |      |
 //                    | GUI |     | SPC |   | ENT |        | ALT |
                         bindings = <
-   &bt BT_CLR &kp N1       &kp N2       &kp N3       &kp N4       &kp N5               &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
-   &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &bt END              &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp C_BRI_UP &kp C_BRI_DN &trans
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp C_PREV &kp C_PP   &kp C_NEXT &trans    &trans &trans
-                          	            &kp LGUI     &trans       &kp SPACE            &kp RET  &trans   &kp RALT
+   &bt BT_CLR &kp N1       &kp N2       &kp N3       &kp N4       &kp N5               &kp N6     &kp N7        &kp N8         &kp N9        &kp N0        &kp DEL
+   &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &bt END              &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP   &kp C_BRI_UP  &kp C_BRI_DN  &trans
+   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp C_PREV &kp C_PP      &kp C_NEXT     &trans        &trans        &trans
+                          	            &kp LGUI     &trans       &kp SPACE            &kp RET  &trans   &kp RALT  
                         >;
                 };
 
@@ -48,12 +48,12 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | CTRL+BKSP |      ***left half middle row is numbers, nav below, 
 // | CTRL |     |     |     |     |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |              fix up trans and thumb keys
 // | SHFT |     |     |     |     |     |   |  ~  |  _  |  +  |  {  |  }  | "|"  |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+//                    | GUI |     | SPC |   | ENT |     | DEL |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR &kp LC(BSPC)
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH 
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp TILDE &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE 
-                    	       &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	       &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp DEL
                         >;
                 };
         };
