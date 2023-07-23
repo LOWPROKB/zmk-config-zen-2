@@ -53,7 +53,7 @@
    &bt BT_CLR &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR &kp LC(DEL)
    &trans     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans         &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH 
    &trans     &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans         &kp TILDE &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE 
-                    	           &trans    &trans    &trans         &mt RCTLR SPACE    &kp DEL    &kp LC(BSPC)
+                    	           &trans    &trans    &trans         &mt RCTLR SPACE    &kp DEL    &kp LCTRL(BSPC)
                         >;
                 };
         };
