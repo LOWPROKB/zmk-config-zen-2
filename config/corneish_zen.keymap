@@ -30,8 +30,8 @@
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |      | F1  | F2  | F3  | F4  | F5  |   | F6  |   F7   |   F8   |  F9   |  F10  |      | ***make middle row numbers, top row functions, add alt f4 macro,
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |    7   |    8   |   9   |   0   |      |    get rid of arrows, could possibly make third BT layer
+// |      | F1  | F2  | F3  | F4  | F5  |   | F6  |   F7   |   F8   |  F9   |  F10  |      | 
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |    7   |    8   |   9   |   0   |      |    
 // |      |BTPR | BACK|  PP | NXT |BTNXT|   | MUTE| VOL DN | VOL UP | BR UP | BR DN |      |
 //                    |     |     | CTRL|   |     |        |        |
                         bindings = <
@@ -45,8 +45,8 @@
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |BLTCLR|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |      ***left half middle row is numbers, nav below, 
-// |      | LFT | DWN |  UP | RGT |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |              fix up trans and thumb keys
+// |BLTCLR|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |      
+// |      | LFT | DWN |  UP | RGT |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |              
 // |      | HME | PGDN| PGUP| END |     |   |  ~  |  _  |  +  |  {  |  }  | "|"  |
 //                    |     |     |     |   | SPC/CTRL |  DEL  | CTRL+BKSP |
                         bindings = <
