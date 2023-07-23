@@ -18,42 +18,42 @@
 // -----------------------------------------------------------------------------------------
 //     |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  \   |
 //     | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-//     |  GUI |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT/ENT  |
+//     |  GUI |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ALT+TAB |
 //                 | ALT | SHFT/ESC |SPC/RSE|   | SPC/LWR | SHFT/ENT | BKSPC|
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T        &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH 
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G        &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LGUI  &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt LSHIFT RET
+   &kp LGUI  &kp Z &kp X &kp C &kp V &kp B        &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LALT(TAB)
         &kp LALT &mt LSHIFT esc &mt 2 SPACE      &mt 1 SPACE &mt RSHIFT RET &kp BSPC
                         >;
                 };
                 lower_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |BTCLR |  1  |  2  |  3  |  4  |  5  |   |  6  |     7  |     8  |    9  |    0  | DEL  | ***make middle row numbers, top row functions, add alt f4 macro,
-// |      | LFT | DWN |  UP | RGT | END |   | MUTE| VOL-DN | VOL-UP | BR-DN | BR-UP |      |    get rid of arrows, could possibly make third BT layer
-// |      | BT1 | BT2 | BT3 | BT4 | BT5 |   | BACK|  |> || |   NEXT |       |       |      |
-//                    | GUI |     | SPC |   | ENT |        | ALT |
+// |      | F1  | F2  | F3  | F4  | F5  |   | F6  |   F7   |   F8   |  F9   |  F10  |      | ***make middle row numbers, top row functions, add alt f4 macro,
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |    7   |    8   |   9   |   0   |      |    get rid of arrows, could possibly make third BT layer
+// |      |BTPR | BACK|  PP | NXT |BTNXT|   | MUTE| VOL DN | VOL UP | BR UP | BR DN |      |
+//                    |     |     | CTRL|   |     |        |        |
                         bindings = <
-   &bt BT_CLR &kp N1       &kp N2       &kp N3       &kp N4       &kp N5               &kp N6     &kp N7        &kp N8         &kp N9        &kp N0        &kp DEL
-   &trans     &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &bt END              &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP   &kp C_BRI_UP  &kp C_BRI_DN  &trans
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4         &kp C_PREV &kp C_PP      &kp C_NEXT     &trans        &trans        &trans
-                          	            &kp LGUI     &trans       &kp SPACE            &kp RET  &trans   &kp RALT  
+   &trans &kp F1       &kp F2       &kp F3       &kp F4       &kp F5               &kp F6     &kp F7        &kp F8         &kp F9        &kp F10       &trans
+   &trans &kp N1       &kp N2       &kp N3       &kp N4       &kp N5               &kp N6     &kp N7        &kp N8         &kp N9        &kp N0        &trans
+   &trans &bt BT_PRV   &kp C_PREV   &kp C_PP     &kp C_NEXT   &bt BT_NXT           &kp C_MUTE &kp C_VOL_DN  &kp C_VOL_UP   &kp C_BRI_UP  &kp C_BRI_DN  &trans
+                          	        &trans       &trans       &kp LCTRL            &trans     &trans        &trans  
                         >;
                 };
 
                 raise_layer {
                         label = "SYMBOL";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | CTRL+BKSP |      ***left half middle row is numbers, nav below, 
-// | CTRL |     |     |     |     |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |              fix up trans and thumb keys
-// | SHFT |     |     |     |     |     |   |  ~  |  _  |  +  |  {  |  }  | "|"  |
-//                    | GUI |     | SPC |   | ENT |     | DEL |
+// |BLTCLR|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | DEL |      ***left half middle row is numbers, nav below, 
+// |      | LFT | DWN |  UP | RGT |     |   |  `  |  -  |  =  |  [  |  ]  |  \   |              fix up trans and thumb keys
+// |      | HME | PGDN| PGUP| END |     |   |  ~  |  _  |  +  |  {  |  }  | "|"  |
+//                    |     |     |     |   | SPC/CTRL |  DEL  | CTRL+BKSP |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR &kp LC(BSPC)
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH 
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp TILDE &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE 
-                    	       &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp DEL
+   &bt BT_CLR &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET &kp AMPS  &kp STAR  &kp LPAR &kp RPAR &kp LC(DEL)
+   &trans     &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans         &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH 
+   &trans     &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans         &kp TILDE &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE 
+                    	           &trans    &trans    &trans         &mt RCTLR SPACE    &kp DEL    &kp LC(BSPC)
                         >;
                 };
         };
