@@ -26,7 +26,6 @@
 
     /* Layers */
     COMBO(to_2, &to L2, 38 39, L1, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
-    COMBO(to_3, &to Fn, 38 39, L2, COMBO_TERM_DEFAULT, COMBO_QUICK_TAP_MS)
 
     /* Symbols */
     // Left

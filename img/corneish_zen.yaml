@@ -82,8 +82,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Fn, h: '$$mdi:gesture-tap-hold$$'}
-  - {t: Fn, h: '$$mdi:gesture-tap-hold$$'}
+  - L1
+  - L1
   - {t: '$$mdi:circle-off-outline$$', s: '$$mdi:alpha-w-box$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
@@ -94,12 +94,12 @@ layers:
   - $$mdi:keyboard-f4$$
   - $$mdi:keyboard-f5$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:brightness-7$$
-  - $$mdi:brightness-5$$
+  - $$mdi:lock$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backup-restore$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - $$mdi:keyboard-f6$$
   - $$mdi:keyboard-f7$$
   - $$mdi:keyboard-f8$$
@@ -110,33 +110,29 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backup-restore$$
   - $$mdi:progress-download$$
+  - $$mdi:backup-restore$$
   - $$mdi:keyboard-f11$$
   - $$mdi:keyboard-f12$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: zoom, h: '$$mdi:microphone-off$$', s: '$$mdi:microphone$$'}
-  - {t: zoom, h: '$$mdi:video-off$$', s: '$$mdi:video$$'}
+  - {t: '$$mdi:microphone$$', h: zoom}
+  - {t: '$$mdi:video$$', h: zoom}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:progress-download$$', type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: L1, type: held}
-  - {t: L1, type: held}
+  - {t: '$$mdi:backup-restore$$', type: held}
+  - $$mdi:brightness-7$$
+  - $$mdi:brightness-5$$
+  - L1
+  - L1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [38, 39]
   k: L2
   l: [L1]
-  a: top
-- p: [38, 39]
-  k: Fn
-  l: [L2]
   a: top
 - p: [1, 13]
   k: '!'
