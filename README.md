@@ -1,13 +1,10 @@
 
 # ZMK Config
 
+![minusfive's Corne-ish Zen](img/corneish_zen.png)
 <img src="img/corneish_zen.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
 
 > Drawn with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
-
----
-
-![minusfive's Corne-ish Zen](img/corneish_zen.png)
 
 ## Resources
 
@@ -17,6 +14,8 @@
 - [ZMK Discord Server](https://zmk.dev/community/discord/invite)
 - [@caksoylar's Keymap Drawer](https://github.com/caksoylar/keymap-drawer), [ZMK config](https://github.com/caksoylar/zmk-config) and [Display improvements for Corne-ish Zen](https://gist.github.com/caksoylar/c411313990978e1903c244f03039187a)
 - [@urob's ZMK config](https://github.com/urob/zmk-config/tree/main#user-content-fnref-2-d3679a99d5e7e01f223977affdb47938)
+- ["Callum-style Mods"](https://github.com/qmk/qmk_firmware/blob/master/users/callum/readme.md)
+- [Colemak-DH](https://colemakmods.github.io/mod-dh/) and the [Effort Grid](https://colemakmods.github.io/mod-dh/model.html)
 
 ## Instructions
 
