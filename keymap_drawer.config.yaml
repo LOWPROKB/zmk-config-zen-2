@@ -475,7 +475,6 @@ parse_config:
     # Locks
     CAPSLOCK: $$mdi:apple-keyboard-caps$$
     CAPS: $$mdi:apple-keyboard-caps$$
-    C_AL_LOCK: $$mdi:lock$$
 
     # Sound
     C_MUTE: $$mdi:volume-off$$
@@ -508,6 +507,10 @@ parse_config:
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
     C_BRI_DN: $$mdi:brightness-7$$
+
+    # System
+    C_POWER: $$mdi:power$$
+    C_AL_LOCK: $$mdi:lock$$
 
     # Zoom
     RG(RS(A)):

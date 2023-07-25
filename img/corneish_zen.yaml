@@ -94,11 +94,11 @@ layers:
   - $$mdi:keyboard-f4$$
   - $$mdi:keyboard-f5$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:lock$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:power$$
   - $$mdi:progress-download$$
   - $$mdi:keyboard-f6$$
   - $$mdi:keyboard-f7$$
