@@ -50,7 +50,7 @@ Knucklehead is a mnemonic-heavy, macOS-optimized, 42-key[^1] ergo/columnar keybo
   - `U`: `+` ("up")
   - `P`: `$` ("peso")
   - `~`, which is a reference to your user's "home" directory on 'nix systems is near the `H`
-- A 4th `Meh` modifier is added to the cluster which corresponds to pressing `Control`, `Option` and `Shift` but with a single key, instead of 3. This makes several shortcuts and customizations (works great for window managers, app launchers, ets.), significantly more comfortable.
+- A 4th `Meh` modifier is added to the cluster which corresponds to pressing `Control`, `Option` and `Shift` but with a single key, instead of 3. This makes complex shortcuts significantly more comfortable (works great for window managers, app launchers, etc.).
 
 ## F.A.Q.s
 
