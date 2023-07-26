@@ -56,17 +56,17 @@ Knucklehead is a mnemonic, macOS-optimized, 42-key[^1] ergo/columnar keyboard la
 
 #### Why "Knucklehead"?
 
-While searching for mnemonic-related names I saw the primary image on the [Wikipedia article for "mnemonic"](https://en.wikipedia.org/wiki/Mnemonic) (a representation of the method for remembering which are the shorter/longer months by using your knuckles), and it occurred to me it'd be a relevant and ***funny*** name.
+While searching for mnemonic-related names I saw the primary image on the [Wikipedia article for "mnemonic"](https://en.wikipedia.org/wiki/Mnemonic) (a representation of the [Knuckle mnemonic](https://en.wikipedia.org/wiki/Knuckle_mnemonic)), and it occurred to me it'd be a relevant and ***funny*** name (like a slightly more rude version of "a layout for dummies").
 
 #### Why no "home row mods"?
 
 A few reasons:
 
-- I wanted to keep them in the same position across layers without dictating the position nor interfering with other typically held keys, like the arrows.
+- I wanted to keep them in the same position across layers without dictating the position of nor interfering with other typically held keys (e.g. arrows).
 - I wanted to diminish their interference with normal/fast typing without over-complicating their implementation, timing configuration, etc. Putting them on "less used" keys helps.
 - Decades of muscle memory for I don't know how many shortcuts across who knows how many apps had me unconsciously reaching for those positions anyway.
 - I feel like the deliberate, paused, "non-rolly" way I tend to use mods makes home position unnecessary.
-- While they don't require `0` hand movement like HMRs do, on this new position they still greatly minimize movement/effort, improve comfort when compared to their traditional Apple keyboard position, with the added benefit of leveraging some of your muscle memory.
+- While they don't eliminate hand movement like HMRs, on this new position they still greatly minimize movement/effort, improve comfort when compared to their traditional Apple keyboard position, with the added benefit of leveraging some of your muscle memory.
 
 ## Resources
 
