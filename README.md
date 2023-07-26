@@ -56,7 +56,7 @@ Knucklehead is a mnemonic-heavy, macOS-optimized, 42-key[^1] ergo/columnar keybo
 
 #### Why "Knucklehead"?
 
-Was looking for mnemonic-related names and came across the primary image on the Wikipedia article for "mnemonic" (a representation of the method for remembering which months are longer by using your knuckles), and it occurred to me it'd be a relevant and funny name. "A layout for knuckleheads" if you will.
+Was looking for mnemonic-related names and came across the primary image on the Wikipedia article for "mnemonic" (a representation of the method for remembering which months are longer by using your knuckles), and it occurred to me it'd be a relevant and, most importantly, ***funny*** name.
 
 ## Resources
 
