@@ -2,10 +2,10 @@
 
 A keyboard layout for knuckleheads.
 
-> [!WARNING]  
+> [!WARNING]\
 > Under ***active development***, use at your own risk.
 
-Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboard layout, designed to ease the transition to this style of board for those coming from traditional Apple keyboards.
+Knucklehead is a mnemonic, macOS-optimized, 42-key[^1] ergo/columnar keyboard layout, designed to ease the transition to this style of board for those coming from traditional Apple keyboards.
 
 ![minusfive's Corne-ish Zen](img/corneish_zen.png)
 <img src="img/corneish_zen.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
@@ -14,10 +14,11 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
 
 ## Features
 
-> [!NOTE]  
-> I use Colemak-DH, but it should work practically the same way with QWERTY.
+> [!NOTE]\
+> I use Colemak-DH, but it should work identically with QWERTY.
 
-- Most keys are moved in clusters to either [relatively] "familiar" positions, or otherwise logical ones, e.g.
+- Minimal and intuitive layer switching
+- Keys are repositioned in clusters to either "familiar" relative positions, or otherwise logical ones, e.g.
   - `[{` `]}` `\|` `-_` `=+` keys retain their order/position relative to each other, but are moved as a cluster to vertical combos more easily accessible to stronger fingers.
   - `;:` is accessible as a combo on a stronger finger, but retains its own relative position to the `'"` key.
   - `1–5` numbers retain their familiar "left, upper-row" position on `Layer 2`; `6–0` are moved to the left hand, though, right below `1–5`. This not only feels natural for single handed numeric typing, but also moves the most used symbols [for programming] to more accessible positions.
@@ -55,16 +56,17 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
 
 #### Why "Knucklehead"?
 
-Was looking for mnemonic-related names and came across the primary image on the Wikipedia article for "mnemonic" (a representation of the method for remembering which months are longer by using your knuckles), and it occurred to me it'd be a relevant and, most importantly, ***funny*** name.
+While searching for mnemonic-related names I saw the primary image on the [Wikipedia article for "mnemonic"](https://en.wikipedia.org/wiki/Mnemonic) (a representation of the method for remembering which are the shorter/longer months by using your knuckles), and it occurred to me it'd be a relevant and ***funny*** name.
 
 #### Why no "home row mods"?
 
 A few reasons:
 
-- I wanted to keep them in the same position across layers without interfering with other typically held keys, like the arrows.
-- I wanted to diminish their interference with normal/fast typing without over-complicating their implementation timing configuration, etc. Putting them on "less used" keys helps.
+- I wanted to keep them in the same position across layers without dictating the position nor interfering with other typically held keys, like the arrows.
+- I wanted to diminish their interference with normal/fast typing without over-complicating their implementation, timing configuration, etc. Putting them on "less used" keys helps.
 - Decades of muscle memory for I don't know how many shortcuts across who knows how many apps had me unconsciously reaching for those positions anyway.
 - I feel like the deliberate, paused, "non-rolly" way I tend to use mods makes home position unnecessary.
+- While they don't require `0` hand movement like HMRs do, on this new position they still greatly minimize movement/effort, improve comfort when compared to their traditional Apple keyboard position, with the added benefit of leveraging some of your muscle memory.
 
 ## Resources
 
