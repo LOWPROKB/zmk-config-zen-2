@@ -2,7 +2,7 @@
 
 A keyboard layout for knuckleheads.
 
-> [!Warning]
+> [!WARNING]
 > Under ***active development***, use at your own risk.
 
 Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboard layout, designed to ease the transition to this style of board for those coming from traditional Apple keyboards.
@@ -14,7 +14,7 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
 
 ## Features
 
-> [!Note]
+> [!NOTE]
 > I use Colemak-DH, but it should work practically the same way with QWERTY.
 
 - Most keys are moved in clusters to either [relatively] "familiar" positions, or otherwise logical ones, e.g.
