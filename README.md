@@ -28,8 +28,8 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
   - `Control`, `Option` and `Command` also keep their relative positions but are moved to "mod-tap" keys on `Layer 1`, and on the same position but as "sticky keys" on `Layer 2`. This allows for easy 2 handed or 1 handed shortcuts.
   - Arrow keys are moved to `Layer 2` onto the traditional VIM position.
   - `Tab` and ``` `~ ``` are moved to inner thumbs on each hand, where their proximity to the `Command` key makes typical App/Window switching a more comfortable, symmetrical "pinch" 🤏 motion.
-  - `Fn` key is moved to the right bottom corner, and it activates the, well, `Fn` layer, which has all `F` keys organized in the same position as their corresponding numbers on `Layer 2` (plus 2 extra ones which go where you imagine they would).
-  - Bluetooth profile selectors can also be found on the `Fn` layer, aligned with their corresponding numeric positions.
+  - `Fn` key is moved to the right bottom corner, and it activates the `Fn` layer, which has all `F` keys organized in the same position as their corresponding numbers on `Layer 2` (plus 2 extra ones which go where you imagine they would).
+  - Bluetooth profile selectors can also be found on the `Fn` layer, as combos aligned with their corresponding numeric positions.
   - Media keys retain almost their relative position, except they're re-arranged a bit so:
     - `volume up / down` align with `+ / -` and `Up / Down` arrows, and `U` ("up") and `L` ("low") keys.
     - `back / forward` align with `Left / Right` arrows.
