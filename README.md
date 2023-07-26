@@ -1,4 +1,3 @@
-
 # 👊 Knucklehead
 
 A keyboard layout for knuckleheads.
@@ -57,6 +56,15 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
 #### Why "Knucklehead"?
 
 Was looking for mnemonic-related names and came across the primary image on the Wikipedia article for "mnemonic" (a representation of the method for remembering which months are longer by using your knuckles), and it occurred to me it'd be a relevant and, most importantly, ***funny*** name.
+
+#### Why no "home row mods"?
+
+A few reasons:
+
+- I wanted to keep them in the same position across layers without interfering with other typically held keys, like the arrows.
+- I wanted to diminish their interference with normal/fast typing without over-complicating their implementation timing configuration, etc. Putting them on "less used" keys helps.
+- Decades of muscle memory for I don't know how many shortcuts across who knows how many apps had me unconsciously reaching those positions anyway.
+- I feel like the deliberate, paused, "non-rolly" way I tend to use mods use makes home position unnecessary.
 
 ## Resources
 
