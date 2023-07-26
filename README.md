@@ -48,7 +48,7 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
   - `E`: `=` ("equals")
   - `U`: `+` ("up")
   - `P`: `$` ("peso")
-  - `~`, which is a reference to your user's "home" directory on 'nix systems is near the `H`
+  - `~`, a reference to the "home" directory on 'nix systems is near the `H`
 - A 4th `Meh` modifier is added to the cluster which corresponds to pressing `Control`, `Option` and `Shift` but with a single key, instead of 3. This makes complex shortcuts significantly more comfortable (works great for window managers, app launchers, etc.).
 
 ## F.A.Q.s
