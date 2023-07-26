@@ -23,7 +23,7 @@ Knucklehead is a mnemonic-rich, macOS-optimized, 42-key[^1] ergo/columnar keyboa
   - `;:` is accessible as a combo on a stronger finger, but retains its own relative position to the `'"` key.
   - `1–5` numbers retain their familiar "left, upper-row" position on `Layer 2`; `6–0` are moved to the left hand, though, right below `1–5`. This not only feels natural for single handed numeric typing, but also moves the most used symbols [for programming] to more accessible positions.
   - Speaking of symbols, they're duplicated as combos on `Layer 1` in almost exactly the same position as their corresponding numbers on `Layer 2`, so if you already associate symbol positions with numbers you don't have to relearn them nor force disassociation.
-  - Now logical operator symbols `&` and `|` are now on the same finger, opposite hands.
+  - Now logical operator symbols `&` and `|` are on the same finger/position, opposite hands.
   - Also now `\` and `/` are next to each other.
   - `Control`, `Option` and `Command` also keep their relative positions but are moved to "mod-tap" keys on `Layer 1`, and on the same position but as "sticky keys" on `Layer 2`. This allows for easy 2 handed or 1 handed shortcuts.
   - Arrow keys are moved to `Layer 2` onto the traditional VIM position.
