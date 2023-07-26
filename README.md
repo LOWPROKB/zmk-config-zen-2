@@ -1,10 +1,62 @@
 
-# ZMK Config
+# 👊 Knucklehead
+
+A keyboard layout for knuckleheads.
+
+> **Warning**
+> Under ***active development***, use at your own risk.
+
+Knucklehead is a mnemonic-heavy, macOS-optimized, 42-key[^1] ergo/columnar keyboard layout, optimized to ease the transition to this style of board to those coming from traditional Apple-style keyboard layouts.
 
 ![minusfive's Corne-ish Zen](img/corneish_zen.png)
 <img src="img/corneish_zen.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
 
 > Drawn with [Keymap Drawer](https://github.com/caksoylar/keymap-drawer)
+
+## Features
+
+> **Note**
+> I use Colemak-DH, but it should work practically the same way with QWERTY.
+
+- Most keys are moved in clusters to either [relatively] "familiar" positions, or otherwise logical ones, e.g.
+  - `[{` `]}` `\|` `-_` `=+` keys retain their order/position relative to each other, but are moved as a cluster to vertical combos more easily accessible to stronger fingers.
+  - `;:` is accessible as a combo on a stronger finger, but retains its own relative position to the `'"` key.
+  - `1–5` numbers retain their familiar "left, upper-row" position on `Layer 2`; `6–0` are moved to the left hand, though, right below `1–5`. This not only feels natural for single handed numeric typing, but also moves the most used symbols [for programming] to more accessible positions.
+  - Speaking of symbols, they're duplicated as combos on `Layer 1` in almost exactly the same position as their corresponding numbers on `Layer 2`, so if you already associate symbol positions with numbers you don't have to relearn them nor force disassociation.
+  - Now logical operator symbols `&` and `|` are now on the same finger, opposite hands.
+  - Also now `\` and `/` are next to each other.
+  - `Control`, `Option` and `Command` also keep their relative positions but are moved to "mod-tap" keys on `Layer 1`, and on the same position but as "sticky keys" on `Layer 2`. This allows for easy 2 handed or 1 handed shortcuts.
+  - Arrow keys are moved to `Layer 2` onto the traditional VIM position.
+  - `Tab` and ``` `~ ``` are moved to inner thumbs on each hand, where their proximity to the `Command` key makes typical App/Window switching a more comfortable, symmetrical "pinch" 🤏 motion.
+  - `Fn` key is moved to the right bottom corner, and it activates the, well, `Fn` layer, which has all `F` keys organized in the same position as their corresponding numbers on `Layer 2` (plus 2 extra ones which go where you imagine they would).
+  - Bluetooth profile selectors can also be found on the `Fn` layer, aligned with their corresponding numeric positions.
+  - Media keys retain almost their relative position, except they're re-arranged a bit so:
+    - `volume up / down` align with `+ / -` and `Up / Down` arrows, and `U` ("up") and `L` ("low") keys.
+    - `back / forward` align with `Left / Right` arrows.
+- Other mnemonics:
+  - `C`: `Command`
+  - `Comma`: `Command`
+  - `Control` aligns with the `^` symbol, and the `A` (which also kinda looks like a caret, amirite?)
+  - `X`: `Option` — alright, I'm reaching, but its symbol kinda looks like an "x"? If you squint? No?
+    - And doesn't the `&` also kinda have a tiny `x` on its bottom-right? 'cause it's also aligned here
+  - `S`: `*` ("star")
+  - `R`: `&` which, again, kinda similar, no?
+  - `I`: `|`, same finger/position as `&` but on the opposite hand
+  - `Tab` is next to `Space`
+  - `H`: `{` ("hash table" or "hash map")
+  - `N`: `-` ("negative")
+  - `L`: `-` and `_` ("low")
+  - `E`: `=` ("equals")
+  - `U`: `+` ("up")
+  - `P`: `$` ("peso")
+  - `~`, which is a reference to your user's "home" directory on 'nix systems is near the `H`
+- A 4th `Meh` modifier is added to the cluster which corresponds to pressing `Control`, `Option` and `Shift` but with a single key, instead of 3. This makes several shortcuts and customizations (works great for window managers, app launchers, ets.), significantly more comfortable.
+
+## F.A.Q.s
+
+#### Why "Knucklehead"?
+
+Was looking for mnemonic-related names and came across the primary image on the Wikipedia article for "mnemonic" (a representation of the method for remembering which months are longer by using your knuckles), and it occurred to me it'd be a relevant and funny name. "A layout for knuckleheads" if you will.
 
 ## Resources
 
@@ -37,3 +89,5 @@ To locate your firmware files...
     - If you changed [the conf file](/config/corneish_zen.conf) you should flash both sides their respective files.
 
 Your keyboard is now ready to use.
+
+[^1]: Currently 42 keys because that's what I have/use, but honestly sometimes I feels like I have a few keys I don't know what to do with; though I often go back to re-adding them when I try removing them, so :shrug:.
