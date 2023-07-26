@@ -63,7 +63,7 @@ A few reasons:
 
 - I wanted to keep them in the same position across layers without interfering with other typically held keys, like the arrows.
 - I wanted to diminish their interference with normal/fast typing without over-complicating their implementation timing configuration, etc. Putting them on "less used" keys helps.
-- Decades of muscle memory for I don't know how many shortcuts across who knows how many apps had me unconsciously reaching those positions anyway.
+- Decades of muscle memory for I don't know how many shortcuts across who knows how many apps had me unconsciously reaching for those positions anyway.
 - I feel like the deliberate, paused, "non-rolly" way I tend to use mods use makes home position unnecessary.
 
 ## Resources
