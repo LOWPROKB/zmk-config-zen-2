@@ -33,7 +33,7 @@
 // num-word, requires PR https://github.com/zmkfirmware/zmk/pull/1451
 &num_word {
   layers = <L2>;
-  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL RIGHT LEFT UP DOWN>;
+  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
 };
 
 / {

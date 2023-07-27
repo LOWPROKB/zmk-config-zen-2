@@ -3,13 +3,36 @@ draw_config:
   key_ry: 4.0
   inner_pad_w: 1.0
   inner_pad_h: 1.0
-  outer_pad_w: 0.0
-  outer_pad_h: 0.0
+  outer_pad_w: 10.0
+  outer_pad_h: 16.0
   line_spacing: 1.0
-  arc_radius: 4.0
+  combo_h: 24.0
   append_colon_to_layer_header: false
   small_pad: 4.0
+  shrink_wide_legends: 5
+  glyph_tap_size: 18
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
   svg_style: |
+    /* latin-ext */
+    @font-face {
+      font-family: 'REM';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/rem/v2/WnzgHAIoSDyHbRjfsYumpRvUPPDqnTMea6iNbBRekzKm.woff) format('woff');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+    @font-face {
+      font-family: 'REM';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/rem/v2/WnzgHAIoSDyHbRjfsYumpRvUPPDqnT0ea6iNbBRekw.woff) format('woff');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
     /* inherit to force styles through use tags */
     svg path {
         fill: inherit;
@@ -27,37 +50,37 @@ draw_config:
         --logo-position: 49.5% 5%;
 
         /* === Colors === */
-        --color--material--blue-gray--50: #eceff1;
-        --color--material--blue-gray--100: #cfd8dc;
-        --color--material--blue-gray--200: #b0bec5;
-        --color--material--blue-gray--300: #90a4ae;
-        --color--material--blue-gray--400: #78909c;
-        --color--material--blue-gray--500: #607d8b;
-        --color--material--blue-gray--600: #546e7a;
-        --color--material--blue-gray--700: #455a64;
-        --color--material--blue-gray--800: #37474f;
-        --color--material--blue-gray--900: #263238;
+        --color--material--blue-gray--50: rgb(236, 239, 241);
+        --color--material--blue-gray--100: rgb(207, 216, 220);
+        --color--material--blue-gray--200: rgb(176, 190, 197);
+        --color--material--blue-gray--300: rgb(144, 164, 174);
+        --color--material--blue-gray--400: rgb(120, 144, 156);
+        --color--material--blue-gray--500: rgb(96, 125, 139);
+        --color--material--blue-gray--600: rgb(84, 110, 122);
+        --color--material--blue-gray--700: rgb(69, 90, 100);
+        --color--material--blue-gray--800: rgb(55, 71, 79);
+        --color--material--blue-gray--900: rgb(38, 50, 56);
 
-        --color--bg: transparent;
+        --color--bg: rgb(35, 40, 46);
         --color--text: var(--color--material--blue-gray--900);
 
         --color--layer--text: #90a4ae;
 
         --color--key--bg: var(--color--material--blue-gray--50);
-        --color--key--border: var(--color--key--bg);
+        --color--key--border: white;
         --color--key--text--tap: var(--color--text);
         --color--key--text--shifted: var(--color--material--blue-gray--400);
         --color--key--text--hold: var(--color--layer--text);
 
-        --color--combo--bg: var(--color--material--blue-gray--300);
+        --color--combo--bg: rgba(251, 216, 93, 0.9);
         --color--combo--border: transparent;
-        --color--combo--dendron: var(--color--combo--bg);
-        --color--combo--text--tap: var(--color--key--bg);
+        --color--combo--dendron: var(--color--material--blue-gray--300);
+        --color--combo--text--tap: var(--color--text);
         --color--combo--text--shifted: var(--color--combo--text--tap);
         --color--combo--text--hold: var(--color--combo--text--tap);
 
         --color--trans--bg: var(--color--material--blue-gray--100);
-        --color--trans--border: transparent;
+        --color--trans--border: var(--color--material--blue-gray--200);
         --color--trans--text--tap: var(--color--material--blue-gray--200);
         --color--trans--text--shifted: var(--color--trans--text--tap);
         --color--trans--text--hold: var(--color--trans--text--tap);
@@ -81,8 +104,8 @@ draw_config:
          */
 
 
-        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
-        font-size: 14px;
+        font-family: REM,SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 16px;
         font-kerning: normal;
         text-rendering: optimizeLegibility;
         fill: var(--color--text);
@@ -159,11 +182,11 @@ draw_config:
     }
     .combo.shifted {
         fill: var(--color--combo--text--shifted);
+        dominant-baseline: mathematical;
     }
     .combo.hold {
         fill: var(--color--combo--text--hold);
     }
-
 
     /*
      * Transparent, None, and Ghost Keys
@@ -174,6 +197,7 @@ draw_config:
      */
     .key.trans {
         fill: var(--color--trans--bg);
+        stroke: var(--color--trans--border);
     }
     .trans.tap {
         font-size: 11px;
@@ -191,6 +215,7 @@ draw_config:
      */
     .key.none {
         fill: var(--color--none--bg);
+        stroke: var(--color--none--border);
     }
     .none.tap {
         font-size: 11px;
@@ -208,6 +233,7 @@ draw_config:
      */
     .key.ghost {
         fill: var(--color--ghost--bg);
+        stroke: var(--color--ghost--border);
     }
     .ghost.tap {
         font-size: 11px;
@@ -241,11 +267,7 @@ draw_config:
     .icon-tabler > path[stroke="none"][fill="none"] {
         visibility: collapse;
     }
-    /* End Tabler Icons Cleanup
-  shrink_wide_legends: 5
-  glyph_tap_size: 16
-  glyph_hold_size: 12
-  glyph_shifted_size: 10
+    /* End Tabler Icons Cleanup */
 
 parse_config:
   mark_alternate_layer_activators: true
@@ -486,20 +508,6 @@ parse_config:
     # Bluetooth
     BT_CLR: $$mdi:bluetooth-off$$
     BT_SEL: $$mdi:bluetooth-connect$$
-
-    # Function Keys
-    F1: $$mdi:keyboard-f1$$
-    F2: $$mdi:keyboard-f2$$
-    F3: $$mdi:keyboard-f3$$
-    F4: $$mdi:keyboard-f4$$
-    F5: $$mdi:keyboard-f5$$
-    F6: $$mdi:keyboard-f6$$
-    F7: $$mdi:keyboard-f7$$
-    F8: $$mdi:keyboard-f8$$
-    F9: $$mdi:keyboard-f9$$
-    F10: $$mdi:keyboard-f10$$
-    F11: $$mdi:keyboard-f11$$
-    F12: $$mdi:keyboard-f12$$
 
     # Settings
     C_BRI_UP: $$mdi:brightness-5$$
