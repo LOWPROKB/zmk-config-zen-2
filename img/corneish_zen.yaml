@@ -13,7 +13,7 @@ layers:
   - Y
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-caps$$
-  - $$mdi:backspace$$
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - A
   - R
   - S
@@ -25,7 +25,7 @@ layers:
   - I
   - O
   - $$mdi:keyboard-return$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: Fn, h: '$$mdi:gesture-tap-hold$$'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
@@ -66,7 +66,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:toggle-switch$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -111,7 +111,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - $$mdi:backup-restore$$
+  - {t: '$$mdi:backup-restore$$', type: held}
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
