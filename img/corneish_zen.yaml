@@ -182,6 +182,7 @@ combos:
   k: $$mdi:bluetooth-off$$
   l: [Fn]
   a: top
+  o: 0.03
 - p: [1, 13]
   k: {h: '1', s: '$$mdi:bluetooth-connect$$'}
   l: [Fn]
