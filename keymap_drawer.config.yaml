@@ -347,7 +347,7 @@ parse_config:
       hold: 5
     "&out OUT_TOG":
       shifted: $$mdi:usb$$
-      tap: $$mdi:toggle-switch-outline$$
+      tap: $$mdi:toggle-switch-variant$$
       hold: $$mdi:bluetooth$$
 
     # Reset
@@ -544,7 +544,7 @@ parse_config:
     C_BRI_DN: $$mdi:brightness-7$$
 
     # System
-    C_POWER: $$mdi:power$$
+    C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
     K_CANCEL:
       shifted: $$mdi:alpha-w-box$$

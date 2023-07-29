@@ -66,7 +66,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:toggle-switch$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
@@ -87,7 +87,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
-  - {t: '$$mdi:toggle-switch-outline$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: '$$mdi:toggle-switch-variant$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - F1
   - F2
   - F3
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:power$$
+  - $$mdi:power-standby$$
   - $$mdi:progress-download$$
   - F6
   - F7
@@ -162,22 +162,22 @@ combos:
   l: [L1]
 - p: [7, 19]
   k: {h: '-', s: _}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [8, 20]
   k: {h: '=', s: +}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [9, 21]
   k: {h: ;, s: ':'}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [19, 31]
   k: {h: '[', s: '{'}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [20, 32]
   k: {h: ']', s: '}'}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [21, 33]
   k: {h: \, s: '|'}
-  l: [L1, L2]
+  l: [L1, L2, Fn]
 - p: [1, 2, 3, 4]
   k: $$mdi:bluetooth-off$$
   l: [Fn]
@@ -199,4 +199,4 @@ combos:
   l: [Fn]
 - p: [6, 7]
   k: $$mdi:play-pause$$
-  l: [L1, L2]
+  l: [L1, L2, Fn]
