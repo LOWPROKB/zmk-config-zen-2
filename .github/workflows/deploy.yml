@@ -1,14 +1,7 @@
-# Simple workflow for drawing the keymap and deploying static content to GitHub Pages
-name: Draw keymap and deploy to Pages
+name: Deploy to Pages
 
-on:
-  workflow_dispatch: # can be triggered manually
-  push:
-    branches: ["main"]
-    paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
-      - "keymap_drawer.config.yaml"
+# Can only be triggered manually
+on: workflow_dispatch
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
@@ -17,20 +10,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  draw:
-    uses: minusfive/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    permissions:
-      contents: write
-    with:
-      install_branch: "main" # branch to install keymap-drawer from
-      keymap_patterns: "config/*.keymap" # path to the keymaps to parse
-      config_path: "keymap_drawer.config.yaml" # config file, ignored if not exists
-      output_folder: "img" # path to save produced SVGs
-      # commit_message: "Draw: ${{ github.event.head_commit.message }}"
-      amend_commit: true # whether to amend the commit or create a new one
   # Single deploy job since we're just deploying
   deploy:
-    needs: draw
     # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
     permissions:
       contents: read
