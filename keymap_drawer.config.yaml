@@ -15,7 +15,7 @@ draw_config:
   combo_h: 36
 
   # padding from the edge of cap to top and bottom legends
-  small_pad: 2
+  small_pad: 0
 
   # Padding between keys
   inner_pad_w: 1.5
@@ -375,7 +375,7 @@ draw_config:
 
     .tap + .hold.mdi\:apple-keyboard-command + .shifted,
     .tap + .hold.mdi\:apple-keyboard-option + .shifted {
-        translate: 0 16px;
+        translate: 0 18px;
     }
 
     /* Backspace key */
@@ -432,10 +432,10 @@ parse_config:
       hold: $$mdi:gesture-tap-hold$$
     "&csl Fn":
       tap: Fn
-      hold: $$mdi:circle-off-outline$$
+      hold: $$mdi:close-box$$
     "&cmo L2":
       shifted: $$mdi:alpha-w-box$$
-      tap: $$mdi:circle-off-outline$$
+      tap: $$mdi:close-box$$
       hold: L2
 
     # Modifiers

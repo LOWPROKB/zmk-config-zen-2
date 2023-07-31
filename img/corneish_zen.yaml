@@ -25,7 +25,7 @@ layers:
   - I
   - O
   - $$mdi:keyboard-return$$
-  - {t: Fn, h: '$$mdi:circle-off-outline$$'}
+  - {t: Fn, h: '$$mdi:close-box$$'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - {t: C, h: '$$mdi:apple-keyboard-command$$'}
@@ -36,7 +36,7 @@ layers:
   - {t: ',', h: '$$mdi:apple-keyboard-command$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$', s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
-  - {t: Fn, h: '$$mdi:circle-off-outline$$'}
+  - {t: Fn, h: '$$mdi:close-box$$'}
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: L2, h: '$$mdi:gesture-tap-hold$$', s: '$$mdi:alpha-w-box$$'}
@@ -82,8 +82,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:circle-off-outline$$', h: L2, s: '$$mdi:alpha-w-box$$'}
-  - {t: '$$mdi:circle-off-outline$$', h: L2, s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:close-box$$', h: L2, s: '$$mdi:alpha-w-box$$'}
+  - {t: '$$mdi:close-box$$', h: L2, s: '$$mdi:alpha-w-box$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
