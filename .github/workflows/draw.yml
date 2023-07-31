@@ -4,7 +4,6 @@ name: Draw keymap
 on:
   workflow_dispatch: # can be triggered manually
   push:
-    branches: ["main"]
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
