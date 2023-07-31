@@ -7,6 +7,7 @@ on:
     paths:
       - "config/*.keymap"
       - "config/*.dtsi"
+      - "knucklehead/*.dtsi"
       - "keymap_drawer.config.yaml"
 
 # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.

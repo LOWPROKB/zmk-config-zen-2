@@ -3,11 +3,12 @@ on:
   workflow_dispatch: # can be triggered manually
   push:
     paths:
+      - "build.yaml"
       - "config/*.keymap"
       - "config/*.dtsi"
       - "config/*.conf"
       - "config/west.yml"
-      - "build.yaml"
+      - "knucklehead/*.dtsi"
 
 jobs:
   build:
