@@ -12,7 +12,7 @@ layers:
   - U
   - Y
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:close-box$$
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - A
   - R
@@ -127,7 +127,7 @@ layers:
   - $$mdi:brightness-5$$
   - L1
   - L1
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [1, 13]

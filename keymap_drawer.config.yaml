@@ -672,6 +672,7 @@ parse_config:
     # System
     C_POWER: $$mdi:power-standby$$
     C_AL_LOCK: $$mdi:lock$$
+    K_CANCEL: $$mdi:close-box$$
 
     # Zoom
     RG(RS(A)):
