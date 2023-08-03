@@ -380,16 +380,16 @@ draw_config:
     }
 
     /* Backspace key */
-    :nth-child(13 of .key):not(.trans) {
-      fill: var(--color--material--red--300);
-      stroke: var(--color--material--red--200);
+    .backspace {
+      --color--key--bg = var(--color--material--red--300);
+      --color--key--border = var(--color--material--red--200);
     }
-    :nth-child(13 of .key):not(.trans) + .tap + .shifted {
+    .backspace.shifted {
       fill: var(--color--key--tap);
     }
 
     /* Enter key */
-    :nth-child(24 of .key):not(.trans) {
+    .enter {
       fill: var(--color--material--teal--200);
       stroke: var(--color--material--teal--100);
     }
@@ -449,6 +449,12 @@ parse_config:
     "&none":
       tap: $$mdi:minus-circle-outline$$
       type: none
+
+    # Whitespace
+    "&bkspc_del":
+      type: backspace
+      tap: $$mdi:backspace$$
+      shifted: $$mdi:backspace-reverse-outline$$
 
     # Bluetooth
     "&bt BT_SEL 0":
@@ -637,13 +643,19 @@ parse_config:
     RIGHT: $$mdi:arrow-right-bold$$
 
     # Whitespace
-    ENTER: $$mdi:keyboard-return$$
+    ENTER:
+      type: enter
+      tap: $$mdi:keyboard-return$$
     ESC: $$mdi:keyboard-esc$$
     TAB: $$mdi:keyboard-tab$$
     LS(TAB): $$mdi:keyboard-tab-reverse$$
     SPACE: $$mdi:keyboard-space$$
-    BACKSPACE: $$mdi:backspace$$
-    BSPC: $$mdi:backspace$$
+    BACKSPACE:
+      type: backspace
+      tap: $$mdi:backspace$$
+    BSPC:
+      type: backspace
+      tap: $$mdi:backspace$$
     DELETE: $$mdi:backspace-reverse-outline$$
     DEL: $$mdi:backspace-reverse-outline$$
 
