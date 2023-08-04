@@ -2,6 +2,8 @@
 
 Knucklehead is a mnemonic, macOS-optimized, 42[^1] key ergo columnar keyboard layout, designed[^2] to ease the transition [back-and-forth] between corne-style and Apple-style keyboards.
 
+---
+
 > [!WARNING]\
 > Under **_active development_**, expect changes. Scarce/incomplete documentation. Use at your own risk.
 
@@ -14,6 +16,8 @@ Knucklehead is a mnemonic, macOS-optimized, 42[^1] key ergo columnar keyboard la
 > - [Colemak](/minusfive/zmk-config/tree/Colemak)
 >
 > But keep in mind that while many of the mnemonic affordances will work well regardless of layout, many others will be "lost in translation".
+
+---
 
 <img src="img/corneish_zen.svg" alt="minusfive's keymap layout graphical representation" width="100%" />
 
@@ -41,6 +45,9 @@ Knucklehead is a mnemonic, macOS-optimized, 42[^1] key ergo columnar keyboard la
 |   ␣    | Space                                                                                                                               |
 |  `w`   | Smart `w`ord behavior                                                                                                               |
 |  `×`   | Cancel smart `w`ord behavior                                                                                                        |
+|  `L1`  | Layer 1                                                                                                                             |
+|  `L2`  | Layer 2                                                                                                                             |
+|  `Fn`  | Function Layer                                                                                                                      |
 
 <!--  | ⌽         | power       | -->
 <!--  | ⏏         | eject       | -->
@@ -60,30 +67,34 @@ Knucklehead is a mnemonic, macOS-optimized, 42[^1] key ergo columnar keyboard la
 <!--  | ⇢         | right arrow | -->
 <!--  | ⌧         | clear       | -->
 
-## Mnemonic Affordances
+## Features
+
+### Mnemonic Affordances
 
 > [!NOTE]\
 > Incomplete list, still working on documentation.
+>
+> Most will primarily work with the (default) Colemak-DH layout.
 
-| Key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Cue     | Mnemonic Affordance(s)                                                                                                                                          |
-| --------------------------------------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ⌘                                                   | `C`     | `C`ommand                                                                                                                                                       |
-| ⌘                                                   | `,`     | `Comma`nd                                                                                                                                                       |
-| ⌥                                                   | `X`     | shape similarity                                                                                                                                                |
-| ⌃                                                   | `A`     | shape similarity, proximity                                                                                                                                     |
-| ^                                                   | `A + Z` | shape similarity, proximity                                                                                                                                     |
-| ⇥                                                   | `Space` | space multiplier, proximity; also near ⌘ which is combined with for app switching                                                                               |
-| `` ` ~ ``                                           | ⇥       | same position, opposite hand; also near ⌘ which is combined with for window switching; typically found near `Tab` on Apple keyboards                            |
-| `` ` ~ ``                                           | `H`     | `~` a.k.a. "home" directory on 'nix systems; proximity                                                                                                          |
-| `[ {`                                               | `N+H`   | proximity; used to define a `N`ew `H`ash table/map on many programming languages; adjacent to `] }`                                                             |
-| `] }`                                               | `E + ,` | proximity; used to `E`nd hash tables/maps on many programming languages; `,` is also typically used to delimit items within hash tables/maps; adjacent to `[ {` |
-| `= +`                                               | `E + U` | `E`quals, `U`p (`+`)                                                                                                                                            |
-| `- _`                                               | `N + L` | `N`egative, `L`ow                                                                                                                                               |
-| `*`                                                 | `S + C` | `S`tar, wild `C`ard                                                                                                                                             |
-| `&`                                                 | `R + X` | shape similarity; same position, opposite hand of `\|` (logical `OR`)                                                                                           |
-| `\ \|`                                              | `I + .` | shape similarity; logical `OR` — same position, opposite hand of `&` (logical `AND`)                                                                            |
-| `\ \|`                                              | `/ ?`   | proximity                                                                                                                                                       |
-| ▲                                                   | `M`     | `M`eh                                                                                                                                                           |
+<!-- &nbsp;s force column width and prevent unwanted breaks -->
+
+| Key&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Cue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Mnemonic Affordance(s)                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ⌘                                                                                                               | `C` and `,`                                                                                                                                               | `C`ommand, `Comma`nd                                                                                                                                                                                           |
+| ⌥                                                                                                               | `X`                                                                                                                                                       | shape similarity                                                                                                                                                                                               |
+| ⌃                                                                                                               | `A`                                                                                                                                                       | shape similarity, proximity                                                                                                                                                                                    |
+| ^                                                                                                               | `A + Z`                                                                                                                                                   | (Caret) shape similarity, proximity                                                                                                                                                                            |
+| ▲                                                                                                               | `M`                                                                                                                                                       | `M`eh                                                                                                                                                                                                          |
+| ⇥                                                                                                               | ␣ and ⌘                                                                                                                                                   | space multiplier, proximity; also near **⌘** which is combined with for app switching                                                                                                                          |
+| `` ` ~ ``                                                                                                       | `H`, ⇥ and ⌘                                                                                                                                              | `~` a.k.a. "home" directory on 'nix systems; proximity. Same position, opposite hand as **⇥**, typically found near each other on Apple keyboards; also near **⌘** which is combined with for window switching |
+| `[ {`                                                                                                           | `N+H`                                                                                                                                                     | proximity; used to define a `N`ew `H`ash table/map on many programming languages; adjacent to `] }`                                                                                                            |
+| `] }`                                                                                                           | `E + ,`                                                                                                                                                   | proximity; used to `E`nd hash tables/maps on many programming languages; `,` is also typically used to delimit items within hash tables/maps; adjacent to `[ {`                                                |
+| `= +`                                                                                                           | `E + U`                                                                                                                                                   | `E`quals, `U`p (`+`)                                                                                                                                                                                           |
+| `- _`                                                                                                           | `N + L`                                                                                                                                                   | `N`egative, `L`ow                                                                                                                                                                                              |
+| `*`                                                                                                             | `S + C`                                                                                                                                                   | `S`tar, wild `C`ard                                                                                                                                                                                            |
+| `&`                                                                                                             | `R + X`                                                                                                                                                   | shape similarity; logical `AND` — same position, opposite hand as `\|` (logical `OR`)                                                                                                                          |
+| `\ \|`                                                                                                          | `I + .` and `/ ?`                                                                                                                                         | shape similarity, proximity; logical `OR` — same position, opposite hand as `&` (logical `AND`)                                                                                                                |
+| `! @ # $ %`<br/>`^ & * ( )`                                                                                     | `1 – 5`<br/>`6 – 0`                                                                                                                                       | symbols maintain their standard ANSI association with numbers; replicated as combos on `L1` retaining relative position                                                                                        |
 
 ### Other Features
 
