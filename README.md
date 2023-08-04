@@ -10,7 +10,7 @@ Knucklehead is a mnemonic, macOS-optimized, 42[^1] key ergo columnar keyboard la
 > [!NOTE]\
 > This layout was primarily **designed for [Colemak-DH](https://colemakmods.github.io/mod-dh/)** and influenced by decades of muscle memory using ANSI Apple keyboards.
 >
-> By request I've started working on other alpha layouts. such as:
+> By request I've started working on other alpha layouts, such as:
 >
 > - [QWERTY](/minusfive/zmk-config/tree/QWERTY)
 > - [Colemak](/minusfive/zmk-config/tree/Colemak)
