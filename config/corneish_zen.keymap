@@ -1,6 +1,11 @@
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include "keymap_swiss_de.h"
+
+#define DEFAULT 0
+#define LOWER 1
+#define RAISE 2
+#define OSL   3
+#define GAME  4
+#define PAD   5
 
 / {
   chosen {
@@ -9,51 +14,114 @@
   };
 };
 
+&mt {
+    tapping-term-ms = <150>;
+};
+
 / {
+        behaviors {
+          mo_sl: behavior_mo_sl {
+              compatible = "zmk,behavior-hold-tap";
+              label = "mo_sl";
+              #binding-cells = <2>;
+              flavor = "hold-preferred";
+              tapping-term-ms = <150>;
+              bindings = <&mo>, <&sl>;
+          };
+          td0: td_alt_dance {
+              compatible = "zmk,behavior-tap-dance";
+              label = "ALTD";
+              #binding-cells = <0>;
+              tapping-term-ms = <150>;
+              bindings = <&kp LALT>, <&kp RALT>, <&tog PAD>;
+          };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "QWERTY";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+                        label = "MAIN";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &kp TAB      &kp Q        &kp W        &kp E        &kp R        &kp T           &kp CH_Z    &kp U        &kp I      &kp O       &kp P        &kp BSPC
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+&mt LCTRL ESC  &kp A        &kp S        &kp D        &kp F        &kp G           &kp H       &kp J        &kp K      &kp L       &kp SEMI     &kp SQT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp LSHFT    &kp CH_Y     &kp X        &kp C        &kp V        &kp B           &kp N       &kp M        &kp CH_COMM &kp CH_DOT &kp CH_MINS  &kp RSHIFT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &kp LGUI     &mo LOWER    &kp RET         &kp SPACE   &mo_sl RAISE OSL &td0
+                                      //`----------------------------------'      `-----------------------------------'
                         >;
                 };
                 lower_layer {
-                        label = "NUMBER";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        label = "LOWER";
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &kp ESC      &kp N1       &kp N2       &kp N3       &kp N4       &kp N5          &kp N6      &kp N7       &kp N8     &kp N9      &kp N0       &kp CH_QUOT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp LCTRL    &kp F1       &kp F2       &kp F3       &kp F4       &kp F5          &kp F6      &kp F7       &kp F8     &kp F9      &kp F10      &kp F11
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &none       &none        &none      &none       &none        &kp F12
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                          	             &none        &none        &none           &none       &none        &tog GAME
+                                      //`----------------------------------'      `-----------------------------------'
                         >;
                 };
-
                 raise_layer {
-                        label = "SYMBOL";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        label = "RAISE";
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &kp TILDE    &kp CH_BSLS  &kp CH_SLSH  &kp CH_LPRN  &kp CH_RPRN  &none           &kp PG_UP    &kp HOME     &kp UP      &kp END    &kp CH_UDIA  &kp DEL
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp LCTRL    &kp CH_AT    &kp CH_HASH  &kp CH_LCBR  &kp CH_RCBR  &none           &kp PG_DN    &kp LEFT     &kp DOWN    &kp RIGHT  &kp CH_QUES  &kp CH_EXLM
+//|-----------+------------+------------+------------+------------+--------|      |-----------+-----------+------------+----------+------------+----------|
+  &kp LSHFT    &kp CH_LABK  &kp CH_RABK  &kp CH_LBRC  &kp CH_RBRC  &none           &none       &none        &none      &kp CH_GRV  &kp CH_DLR   &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &kp LGUI     &kp LALT     &none           &none       &none        &none
+                                      //`----------------------------------'      `-----------------------------------'
+                        >;
+                };
+                OSL {
+                        label = "OSL";
+                        bindings = <
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &none        &kp CH_PLUS  &kp CH_DQUO  &kp CH_ASTR  &kp CH_CCED  &kp CH_PERC     &kp CH_AMPR &kp CH_SLSH  &kp CH_LPRN &kp CH_RPRN &kp CH_EQL  &kp CH_QUOT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &none        &kp CH_BRKP  &kp CH_AT    &kp CH_EURO  &none        &none           &none       &kp CH_PIPE &none        &none      &kp CH_DLR   &kp CH_ACUT
+//|-----------+------------+------------+------------+------------+--------|      |-----------+-----------+------------+----------+------------+----------|
+  &none        &none        &none        &none        &none        &none           &none      &none         &none      &none       &kp CH_DLR   &kp CH_TILD
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &none        &none        &none           &none       &none        &none
+                                      //`----------------------------------'      `-----------------------------------'
+                        >;
+                };
+                GAME {
+                        label = "GAME";
+                        bindings = <
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &kp TAB      &kp N2       &kp Q        &kp W        &kp E        &kp R           &none       &none        &kp UP     &none       &none        &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp B        &kp N1       &kp A        &kp S        &kp D        &kp F           &none       &kp LEFT     &kp DOWN   &kp RIGHT    &none        &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &kp LSHFT    &kp LCTRL    &mt G Y      &kp X        &kp C        &kp V           &none       &none        &none      &none       &none        &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &kp N3       &kp N4       &kp SPACE       &kp ESC     &none        &tog GAME
+                                      //`----------------------------------'      `-----------------------------------'
+                        >;
+                };
+                PAD {
+                        label = "PAD";
+                        bindings = <
+//,------------------------------------------------------------------------.      ,-----------------------------------------------------------------------.
+  &none        &none        &none        &none        &none        &none      &kp KP_MULTIPLY  &kp N7        &kp N8     &kp N9       &kp PLUS   &kp BSPC
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &none        &none        &none        &none        &none        &none        &kp KP_DIVIDE  &kp N4        &kp N5     &kp N6       &kp MINUS  &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+  &none        &none        &none        &none        &none        &none            &none      &kp N1        &kp N2     &kp N3       &none      &none
+//|-----------+------------+------------+------------+------------+--------|      |-----------+------------+----------+-----------+------------+----------|
+                                         &none        &none        &none           &kp KP_ENTER &kp N0      &tog PAD
+                                      //`----------------------------------'      `-----------------------------------'
                         >;
                 };
         };
