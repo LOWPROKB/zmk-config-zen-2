@@ -870,10 +870,9 @@ path.combo {
 <use href="#mdi:star-three-points" xlink:href="#mdi:star-three-points" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:star-three-points"/>
 <use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:gesture-tap-hold"/>
 </g>
-<g transform="translate(920, 200)" class="key keypos-32">
-<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key"/>
-<use href="#mdi:apple-keyboard-command" xlink:href="#mdi:apple-keyboard-command" x="-13" y="-13" height="26" width="26.0" class="key tap glyph mdi:apple-keyboard-command"/>
-<use href="#mdi:gesture-tap-hold" xlink:href="#mdi:gesture-tap-hold" x="-9" y="16" height="18" width="18.0" class="key hold glyph mdi:gesture-tap-hold"/>
+<g transform="translate(920, 200)" class="key trans keypos-32">
+<rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-13" y="-13" height="26" width="26.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(1000, 210)" class="key trans keypos-33">
 <rect rx="4" ry="4" x="-38" y="-38" width="77" height="77" class="key trans"/>
