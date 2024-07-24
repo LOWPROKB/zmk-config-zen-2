@@ -73,7 +73,7 @@
                                        &trans           &trans  &trans    &trans          &trans    &trans
             >;
 
-            label = "NAV";
+            label = "NAVMOV";
         };
     };
 };
