@@ -47,7 +47,7 @@
                 &kp Q       &kp W      &kp F      &kp P       &kp B             &kp J      &kp L       &kp U      &kp Y      &kp SQT
                 &hm LCTRL A &hm LALT R &hm LCMD S &hm LSHFT T &hm LHYP G        &hm RHYP M &hm RSHFT N &hm RCMD E &hm RALT I &hm RCTRL O
                 &kp Z       &kp X      &kp C      &kp D       &kp V             &kp K      &kp H       &kp COMMA  &kp DOT    &kp FSLH
-                                       &kp ESC    &lt 1 SPACE &lt 1 TAB         &lt 2 RET  &lt 1 BSPC  &lt 1 DEL
+                                       &kp ESC    &lt 3 SPACE &lt 1 TAB         &lt 2 RET  &lt 1 BSPC  &lt 1 DEL
             >;
         };
 
@@ -78,6 +78,21 @@
                 &kp LBRC  &kp DLLR &kp PRCNT &kp CARET &kp RBRC        &kp RHYP &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
                 &none     &kp EXCL &kp AT    &kp HASH  &kp COLON       &none    &none     &none    &none    &none
                                    &kp UNDER &kp RPAR  &kp PLUS        &to 0    &none     &none
+            >;
+        };
+
+        nav_layer {
+            display-name = "NAV";
+            // --------------------------------------------------------------------------
+            // |     |      |     |       |      |               | REDO | PASTE | COPY |  CUT  | UNDO   |
+            // | HYP | SHFT | CMD |  OPT  | CTRL |               | LEFT | DOWN  |  UP  | RIGHT | CAPWRD |
+            // |     |      |     |       |      |               | HOME | PGDN  | PGUP |  END  |  INS   |
+            //              |     | ALPHA |      |               |      |       |      |
+            bindings = <
+                &none    &none     &none    &none    &none        &kp K_REDO &kp K_PASTE &kp K_COPY &kp K_CUT &kp K_UNDO
+                &kp LHYP &kp LSHFT &kp LCMD &kp LALT &kp LCTRL    &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT &caps_word
+                &none    &none     &none    &none    &none        &kp HOME   &kp PG_DN   &kp PG_UP  &kp END   &kp INS
+                                   &none    &to 0    &none        &none      &none       &none
             >;
         };
     };
