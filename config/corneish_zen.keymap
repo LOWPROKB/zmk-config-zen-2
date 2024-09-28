@@ -5,8 +5,8 @@
 *
 */
 
-// #define LHYP LS(LC(LA(LCMD)))
-// #define RHYP RS(RC(RA(RCMD)))
+#define LHYP LS(LC(LA(LCMD)))
+#define RHYP RS(RC(RA(RCMD)))
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -45,7 +45,7 @@
             //             | ESC | SPC | TAB |                 | ENT | BKSP | DEL |
             bindings = <
                 &kp Q       &kp W      &kp F      &kp P       &kp B                       &kp J      &kp L       &kp U      &kp Y      &kp SQT
-                &hm LCTRL A &hm LALT R &hm LCMD S &hm LSHFT T &hm LS(LC(LA(LCMD))) G      &hm RS(RC(RA(RCMD))) M &hm RSHFT N &hm RCMD E &hm RALT I &hm RCTRL O
+                &hm LCTRL A &hm LALT R &hm LCMD S &hm LSHFT T &hm LHYP G                  &hm RHYP M &hm RSHFT N &hm RCMD E &hm RALT I &hm RCTRL O
                 &kp Z       &kp X      &kp C      &kp D       &kp V                       &kp K      &kp H       &kp COMMA  &kp DOT    &kp FSLH
                                        &kp ESC    &lt 1 SPACE &lt 1 TAB                   &lt 1 RET  &lt 1 BSPC  &lt 1 DEL
             >;
