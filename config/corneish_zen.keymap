@@ -47,7 +47,7 @@
                 &kp Q       &kp W      &kp F      &kp P       &kp B             &kp J      &kp L       &kp U      &kp Y      &kp SQT
                 &hm LCTRL A &hm LALT R &hm LCMD S &hm LSHFT T &hm LHYP G        &hm RHYP M &hm RSHFT N &hm RCMD E &hm RALT I &hm RCTRL O
                 &kp Z       &kp X      &kp C      &kp D       &kp V             &kp K      &kp H       &kp COMMA  &kp DOT    &kp FSLH
-                                       &kp ESC    &lt 3 SPACE &lt 1 TAB         &lt 2 RET  &lt 1 BSPC  &lt 1 DEL
+                                       &kp ESC    &lt 3 SPACE &lt 4 TAB         &lt 2 RET  &lt 1 BSPC  &lt 1 DEL
             >;
         };
 
@@ -68,7 +68,7 @@
 
         sym_layer {
             display-name = "SYMBOL";
-            // --------------------------------------------------------------------------
+            // ------------------------------------------------------------------------------------------
             // |  ~  |  &  |  *  |  (  | '|' |                        |       |      |     |     |      |
             // |  {  |  $  |  %  |  ^  |  }  |                        |  HYP  | SHFT | CMD | OPT | CTRL |
             // |     |  !  |  @  |  #  |  :  |                        |       |      |     |     |      |
@@ -83,7 +83,7 @@
 
         nav_layer {
             display-name = "NAV";
-            // --------------------------------------------------------------------------
+            // ------------------------------------------------------------------------------------------
             // |     |      |     |       |      |               | REDO | PASTE | COPY |  CUT  | UNDO   |
             // | HYP | SHFT | CMD |  OPT  | CTRL |               | LEFT | DOWN  |  UP  | RIGHT | CAPWRD |
             // |     |      |     |       |      |               | HOME | PGDN  | PGUP |  END  |  INS   |
@@ -93,6 +93,21 @@
                 &kp LHYP &kp LSHFT &kp LCMD &kp LALT &kp LCTRL    &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT &caps_word
                 &none    &none     &none    &none    &none        &kp HOME   &kp PG_DN   &kp PG_UP  &kp END   &kp INS
                                    &none    &to 0    &none        &none      &none       &none
+            >;
+        };
+
+        media_layer {
+            display-name = "MEDIA";
+            // -----------------------------------------------------------------------------------------
+            // |     |      |     |     |       |                |  BT 1  | BT 2  | BT 3 | BT 4 | BT 5 |
+            // | HYP | SHFT | CMD | OPT | CTRL  |                | BT CLR | PREV  | VOL- | VOL+ | NEXT |
+            // |     |      |     |     |       |                |        |       |      |      |      |
+            //              |     |     | ALPHA |                |  STOP  | PAUSE | MUTE |
+            bindings = <
+                &none    &none     &none    &none    &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+                &kp LHYP &kp LSHFT &kp LCMD &kp LALT &kp LCTRL    &bt BT_CLR   &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
+                &none    &none     &none    &none    &none        &none        &none        &none        &none        &none
+                                   &none    &none    &to 0        &kp C_STOP   &kp C_PP     &kp C_MUTE
             >;
         };
     };
