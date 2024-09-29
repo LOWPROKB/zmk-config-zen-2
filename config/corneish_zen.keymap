@@ -47,7 +47,7 @@
                 &kp Q       &kp W      &kp F      &kp P       &kp B             &kp J      &kp L       &kp U      &kp Y      &kp SQT
                 &hm LCTRL A &hm LALT R &hm LCMD S &hm LSHFT T &hm LHYP G        &hm RHYP M &hm RSHFT N &hm RCMD E &hm RALT I &hm RCTRL O
                 &kp Z       &kp X      &kp C      &kp D       &kp V             &kp K      &kp H       &kp COMMA  &kp DOT    &kp FSLH
-                                       &kp ESC    &lt 3 SPACE &lt 4 TAB         &lt 2 RET  &lt 1 BSPC  &lt 1 DEL
+                                       &kp ESC    &lt 3 SPACE &lt 4 TAB         &lt 2 RET  &lt 1 BSPC  &lt 5 DEL
             >;
         };
 
@@ -108,6 +108,21 @@
                 &kp LHYP &kp LSHFT &kp LCMD &kp LALT &kp LCTRL    &bt BT_CLR   &kp C_PREV   &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT
                 &none    &none     &none    &none    &none        &none        &none        &none        &none        &none
                                    &none    &none    &to 0        &kp C_STOP   &kp C_PP     &kp C_MUTE
+            >;
+        };
+
+         fn_layer {
+            display-name = "FN";
+            // -------------------------------------------------------------------------
+            // | F12 | F7 | F8 | F9 |    |             |     |      |     |     |      |
+            // | F11 | F4 | F5 | F6 |    |             | HYP | SHFT | CMD | OPT | CTRL |
+            // | F10 | F1 | F2 | F3 |    |             |     |      |     |     |      |
+            //            |    |    |    |             |     |      | ALPHA |
+            bindings = <
+                &kp F12 &kp F7 &kp F8 &kp F9 &none      &none    &none     &none    &none    &none
+                &kp F11 &kp F4 &kp F5 &kp F6 &none      &kp RHYP &kp RSHFT &kp RCMD &kp RALT &kp RCTRL
+                &kp F10 &kp F1 &kp F2 &kp F3 &none      &none    &none     &none    &none    &none
+                               &none  &none  &none      &none    &none     &to 0
             >;
         };
     };
