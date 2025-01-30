@@ -10,6 +10,8 @@ If you are looking to dig deeper into ZMK and develop new functionality, it is r
 
 V2 PCBs were only used in the 3rd GB round (R3). To confirm which version you need, remove the bottom from the keyboard and look beside the Corne-ish Zen logo for a version number. Group Buy rounds 1 and 2 have V1 PCBs and R3 has V2 PCBs. (Also V2 PCBs have white power switches... V1 PCBs have black ones.)
 
+If you have a V1 PCB, uncomment the corresponding lines in [`build.yaml`](build.yaml) build and flash firmware for that instead.
+
 ## Resources
 
 - The [official ZMK Firmware GitHub](https://github.com/zmkfirmware/zmk) repository. View the keymaps for other boards and shields as a starting point for your keymap.
