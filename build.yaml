@@ -6,3 +6,5 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: corneish_zen_v2_left_with_studio
+  # - board: corneish_zen_v1_left
+  # - board: corneish_zen_v2_left
