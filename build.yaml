@@ -1,5 +1,6 @@
 include:
   - board: corneish_zen_v2_left
+    # snippet: zmk-usb-logging  # uncomment to enable logging
   - board: corneish_zen_v2_right
   - board: corneish_zen_v2_left
     snippet: studio-rpc-usb-uart
