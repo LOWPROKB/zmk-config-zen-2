@@ -686,7 +686,7 @@ behaviors {
    &kp  Q       &kp  W           &kp F             &kp P           &kp B               &kp J         &kp  L            &kp  U                 &kp  Y         &kp  Z
    &hml LALT A  &hml LGUI R      &hml LSHFT S      &hml LCTRL T    &kp G               &kp M         &hmr RCTRL N      &hmr RSHFT E           &hmr RGUI I    &hmr RALT O
    &APOS_O      &kp X            &kp C             &lt NAV_MOM D   &kp V               &kp K         &kp H             &kp SLASH              &kp DOT        &kp COMMA
-                &sk LSHFT        &lt NAV_MOM BSPC  &lt SYM_MOM TAB                                   &lt NUM_MOM ENTER &kp SPC                &sk RSHFT
+                &kp LSHFT        &lt NAV_MOM BSPC  &lt SYM_MOM TAB                                   &lt NUM_MOM ENTER &kp SPC                &kp RSHFT
                         >;
                 };
 
