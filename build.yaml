@@ -1,3 +1,10 @@
 include:
   - board: corneish_zen_v2_left
+    # snippet: zmk-usb-logging  # uncomment to enable logging
   - board: corneish_zen_v2_right
+  - board: corneish_zen_v2_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: corneish_zen_v2_left_with_studio
+  # - board: corneish_zen_v1_left
+  # - board: corneish_zen_v1_right
