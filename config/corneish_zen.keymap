@@ -177,13 +177,13 @@
 // │  CTRL(OS)│  A   │  R   │  S   │  T   │  G   │   │  M   │  N   │  E   │  I   │  O   │  ENTER   │
 // │ SHIFT(OS)│  Z   │  X   │  C   │  D   │  V   │   │  K   │  H   │  ,   │  .   │  /   │ SHIFT(OS)│
 // ╰──────────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────────╯
-//                          │GUI(OS)│ NAV  │ SPC  │   │ BSPC │ SYM  │ALT(OS)│
+//                          │GUI(OS)│ SPC  │ NAV  │   │ SYM  │ BSPC │ALT(OS)│
 //                          ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
 &skq TAB    &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L &kp U     &kp Y   &kp SEMI &kp ESC
 &skq LCTRL  &kp A &kp R &kp S &kp T &kp G   &kp M &kp N &kp E     &kp I   &kp O    &kp RET
 &skq LSHFT  &kp Z &kp X &kp C &kp D &kp V   &kp K &kp H &kp COMMA &kp DOT &kp FSLH &skq RSHFT
-                  &skq LGUI &mo 1 &kp SPACE &kp BSPC &mo 2 &skq LALT
+                  &skq LGUI &kp SPACE &mo 1 &mo 2 &kp BSPC &skq LALT
             >;
         };
 
@@ -197,13 +197,13 @@
 // │          │GUI(OS)│ALT(OS)│CTRL(OS)│SHFT(OS)│   │   │  ←   │  ↓   │  ↑   │  →   │      │          │
 // │          │ UNDO │ CUT  │ COPY │PASTE │ REDO │   │ INS  │ BSPC │ DEL  │      │      │          │
 // ╰──────────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────────╯
-//                          │      │ ▓▓▓  │      │   │      │ NUM  │      │
+//                          │      │      │ ▓▓▓  │   │ NUM  │      │      │
 //                          ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
 &trans &none     &none     &none      &none      &none      &kp HOME &kp PG_DN &kp PG_UP &kp END   &none &trans
 &trans &skq LGUI &skq LALT &skq LCTRL &skq LSHFT &none      &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none &trans
 &trans &kp LC(Z) &kp LC(X) &kp LC(C)  &kp LC(V)  &kp LC(Y)  &kp INS  &kp BSPC  &kp DEL   &none     &none &trans
-                           &trans     &trans     &trans     &trans   &mo 3     &trans
+                           &trans     &trans     &trans     &mo 3    &trans    &trans
             >;
         };
 
@@ -217,13 +217,13 @@
 // │          │  `   │  -   │  =   │  [   │  ]   │   │  \   │  '   │  ;   │      │      │          │
 // │          │  ~   │  _   │  +   │  {   │  }   │   │  |   │  "   │  :   │  <   │  >   │          │
 // ╰──────────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────────╯
-//                          │      │ NUM  │      │   │      │ ▓▓▓  │      │
+//                          │      │      │ NUM  │   │ ▓▓▓  │      │      │
 //                          ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
 &trans &kp EXCL  &kp AT    &kp HASH  &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR &trans
 &trans &kp GRAVE &kp MINUS &kp EQUAL &kp LBKT &kp RBKT    &kp BSLH  &kp SQT  &kp SEMI  &none    &none    &trans
 &trans &kp TILDE &kp UNDER &kp PLUS  &kp LBRC &kp RBRC    &kp PIPE  &kp DQT  &kp COLON &kp LT   &kp GT   &trans
-                           &trans    &mo 3    &trans      &trans    &trans   &trans
+                           &trans    &trans   &mo 3       &trans    &trans   &trans
             >;
         };
 
@@ -237,7 +237,7 @@
 // │  BTCLR   │  BT1 │  BT2 │  BT3 │  BT4 │  BT5 │   │  .   │  4   │  5   │  6   │  +   │  Studio  │
 // │          │  F11 │  F12 │      │      │      │   │  0   │  1   │  2   │  3   │  -   │    =     │
 // ╰──────────┴──────┴──────┼──────┼──────┼──────┤   ├──────┼──────┼──────┼──────┴──────┴──────────╯
-//                          │      │ ▓▓▓  │      │   │      │ ▓▓▓  │      │
+//                          │      │      │ ▓▓▓  │   │ ▓▓▓  │      │      │
 //                          ╰──────┴──────┴──────╯   ╰──────┴──────┴──────╯
             bindings = <
 &trans     &kp F1       &kp F2       &kp F3       &kp F4       &kp F5         &kp F6  &kp N7 &kp N8 &kp N9 &kp ASTRK &trans
