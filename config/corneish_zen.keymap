@@ -18,6 +18,9 @@
     };
 };
 
+// Combo timeout: 50ms = fast, 75ms = balanced, 100ms = forgiving
+#define COMBO_TERM 50
+
 / {
     behaviors {
         // Smart one-shot sticky key with quick-release
@@ -31,6 +34,133 @@
             release-after-ms = <2000>;
             quick-release;
             bindings = <&kp>;
+        };
+    };
+
+    // ========================================================================
+    // COMBOS - Horizontal combos for quick access without layer switching
+    // ========================================================================
+    // Key positions:
+    //    0   1   2   3   4   5       6   7   8   9  10  11
+    //   12  13  14  15  16  17      18  19  20  21  22  23
+    //   24  25  26  27  28  29      30  31  32  33  34  35
+    //               36  37  38      39  40  41
+    // ========================================================================
+    combos {
+        compatible = "zmk,combos";
+
+        // ====================================================================
+        // NUMBER COMBOS - Top row adjacent keys (1-4 left, 6-9 right)
+        // ====================================================================
+        combo_1 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <1 2>;      // Q + W
+            bindings = <&kp N1>;
+            layers = <0>;
+        };
+        combo_2 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <2 3>;      // W + F
+            bindings = <&kp N2>;
+            layers = <0>;
+        };
+        combo_3 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <3 4>;      // F + P
+            bindings = <&kp N3>;
+            layers = <0>;
+        };
+        combo_4 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <4 5>;      // P + B
+            bindings = <&kp N4>;
+            layers = <0>;
+        };
+        combo_6 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <6 7>;      // J + L
+            bindings = <&kp N6>;
+            layers = <0>;
+        };
+        combo_7 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <7 8>;      // L + U
+            bindings = <&kp N7>;
+            layers = <0>;
+        };
+        combo_8 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <8 9>;      // U + Y
+            bindings = <&kp N8>;
+            layers = <0>;
+        };
+        combo_9 {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <9 10>;     // Y + ;
+            bindings = <&kp N9>;
+            layers = <0>;
+        };
+
+        // ====================================================================
+        // BRACKET COMBOS - Home row for programming
+        // ====================================================================
+        combo_lpar {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <15 16>;    // S + T
+            bindings = <&kp LPAR>;
+            layers = <0>;
+        };
+        combo_rpar {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <16 17>;    // T + G
+            bindings = <&kp RPAR>;
+            layers = <0>;
+        };
+        combo_lbkt {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <19 20>;    // N + E
+            bindings = <&kp LBKT>;
+            layers = <0>;
+        };
+        combo_rbkt {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <20 21>;    // E + I
+            bindings = <&kp RBKT>;
+            layers = <0>;
+        };
+        combo_lbrc {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <21 22>;    // I + O
+            bindings = <&kp LBRC>;
+            layers = <0>;
+        };
+        combo_rbrc {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <31 32>;    // H + ,
+            bindings = <&kp RBRC>;
+            layers = <0>;
+        };
+
+        // ====================================================================
+        // SYMBOL COMBOS - Bottom row for common symbols
+        // ====================================================================
+        combo_minus {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <26 27>;    // X + C
+            bindings = <&kp MINUS>;
+            layers = <0>;
+        };
+        combo_under {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <27 28>;    // C + D
+            bindings = <&kp UNDER>;
+            layers = <0>;
+        };
+        combo_colon {
+            timeout-ms = <COMBO_TERM>;
+            key-positions = <33 34>;    // . + /
+            bindings = <&kp COLON>;
+            layers = <0>;
         };
     };
 
