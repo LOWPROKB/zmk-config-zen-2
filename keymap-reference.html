@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corne-ish Zen Keymap Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4 portrait;
+            margin: 10mm;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-size: 9pt;
+            line-height: 1.2;
+            padding: 10px;
+            max-width: 210mm;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 14pt;
+            text-align: center;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 8pt;
+            margin-bottom: 12px;
+        }
+
+        .layer {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+
+        .layer-title {
+            font-size: 10pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            display: inline-block;
+        }
+
+        .layer-title.base { background: #e3f2fd; color: #1565c0; }
+        .layer-title.nav { background: #e8f5e9; color: #2e7d32; }
+        .layer-title.sym { background: #fff3e0; color: #e65100; }
+        .layer-title.num { background: #fce4ec; color: #c2185b; }
+
+        .keyboard {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 4px 0;
+        }
+
+        .hand {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 2px;
+        }
+
+        .key {
+            width: 38px;
+            height: 32px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 7pt;
+            background: white;
+            position: relative;
+        }
+
+        .key.held {
+            background: #ddd;
+            border-color: #666;
+        }
+
+        .key.modifier {
+            background: #e8eaf6;
+            border-color: #5c6bc0;
+        }
+
+        .key.oneshot {
+            background: #fff8e1;
+            border-color: #ffa000;
+        }
+
+        .key.transparent {
+            background: #fafafa;
+            border-style: dashed;
+            color: #999;
+        }
+
+        .key.none {
+            background: #f5f5f5;
+            border-color: #ddd;
+            color: #bbb;
+        }
+
+        .key .main {
+            font-weight: bold;
+            font-size: 8pt;
+        }
+
+        .key .sub {
+            font-size: 6pt;
+            color: #666;
+        }
+
+        .thumb-cluster {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 2px;
+        }
+
+        .thumb-row {
+            display: flex;
+            gap: 2px;
+            justify-content: center;
+        }
+
+        .thumb-row.left {
+            margin-left: 76px;
+        }
+
+        .thumb-row.right {
+            margin-right: 76px;
+        }
+
+        .combos {
+            margin-top: 12px;
+            page-break-inside: avoid;
+        }
+
+        .combos h2 {
+            font-size: 10pt;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .combo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            font-size: 8pt;
+        }
+
+        .combo-section h3 {
+            font-size: 8pt;
+            color: #666;
+            margin-bottom: 3px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .combo-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1px 0;
+        }
+
+        .combo-keys {
+            font-family: monospace;
+            background: #f5f5f5;
+            padding: 0 4px;
+            border-radius: 2px;
+        }
+
+        .combo-output {
+            font-weight: bold;
+        }
+
+        .legend {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 7pt;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .legend-box {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #999;
+            border-radius: 2px;
+        }
+
+        .legend-box.oneshot { background: #fff8e1; border-color: #ffa000; }
+        .legend-box.modifier { background: #e8eaf6; border-color: #5c6bc0; }
+        .legend-box.held { background: #ddd; border-color: #666; }
+        .legend-box.transparent { background: #fafafa; border-style: dashed; }
+
+        .footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 7pt;
+            color: #999;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .layer { margin-bottom: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Corne-ish Zen - Colemak-DH Layout</h1>
+    <p class="subtitle">Smart One-Shot Modifiers • 50ms Combo Timeout • NAV+SYM = NUM Layer</p>
+
+    <!-- BASE LAYER -->
+    <div class="layer">
+        <span class="layer-title base">BASE - Colemak-DH</span>
+        <div class="keyboard">
+            <div class="hand">
+                <div class="key oneshot"><span class="main">TAB</span><span class="sub">OS</span></div>
+                <div class="key"><span class="main">Q</span></div>
+                <div class="key"><span class="main">W</span></div>
+                <div class="key"><span class="main">F</span></div>
+                <div class="key"><span class="main">P</span></div>
+                <div class="key"><span class="main">B</span></div>
+
+                <div class="key oneshot"><span class="main">CTRL</span><span class="sub">OS</span></div>
+                <div class="key"><span class="main">A</span></div>
+                <div class="key"><span class="main">R</span></div>
+                <div class="key"><span class="main">S</span></div>
+                <div class="key"><span class="main">T</span></div>
+                <div class="key"><span class="main">G</span></div>
+
+                <div class="key oneshot"><span class="main">SHIFT</span><span class="sub">OS</span></div>
+                <div class="key"><span class="main">Z</span></div>
+                <div class="key"><span class="main">X</span></div>
+                <div class="key"><span class="main">C</span></div>
+                <div class="key"><span class="main">D</span></div>
+                <div class="key"><span class="main">V</span></div>
+            </div>
+            <div class="hand">
+                <div class="key"><span class="main">J</span></div>
+                <div class="key"><span class="main">L</span></div>
+                <div class="key"><span class="main">U</span></div>
+                <div class="key"><span class="main">Y</span></div>
+                <div class="key"><span class="main">;</span></div>
+                <div class="key"><span class="main">ESC</span></div>
+
+                <div class="key"><span class="main">M</span></div>
+                <div class="key"><span class="main">N</span></div>
+                <div class="key"><span class="main">E</span></div>
+                <div class="key"><span class="main">I</span></div>
+                <div class="key"><span class="main">O</span></div>
+                <div class="key"><span class="main">RET</span></div>
+
+                <div class="key"><span class="main">K</span></div>
+                <div class="key"><span class="main">H</span></div>
+                <div class="key"><span class="main">,</span></div>
+                <div class="key"><span class="main">.</span></div>
+                <div class="key"><span class="main">/</span></div>
+                <div class="key oneshot"><span class="main">SHIFT</span><span class="sub">OS</span></div>
+            </div>
+        </div>
+        <div class="thumb-cluster">
+            <div class="thumb-row left">
+                <div class="key oneshot"><span class="main">GUI</span><span class="sub">OS</span></div>
+                <div class="key"><span class="main">SPC</span></div>
+                <div class="key modifier"><span class="main">NAV</span><span class="sub">hold</span></div>
+            </div>
+            <div class="thumb-row right">
+                <div class="key modifier"><span class="main">SYM</span><span class="sub">hold</span></div>
+                <div class="key"><span class="main">BSPC</span></div>
+                <div class="key oneshot"><span class="main">ALT</span><span class="sub">OS</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV LAYER -->
+    <div class="layer">
+        <span class="layer-title nav">NAV - Navigation (Hold NAV)</span>
+        <div class="keyboard">
+            <div class="hand">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key oneshot"><span class="main">GUI</span><span class="sub">OS</span></div>
+                <div class="key oneshot"><span class="main">ALT</span><span class="sub">OS</span></div>
+                <div class="key oneshot"><span class="main">CTRL</span><span class="sub">OS</span></div>
+                <div class="key oneshot"><span class="main">SHFT</span><span class="sub">OS</span></div>
+                <div class="key none"></div>
+
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">UNDO</span></div>
+                <div class="key"><span class="main">CUT</span></div>
+                <div class="key"><span class="main">COPY</span></div>
+                <div class="key"><span class="main">PASTE</span></div>
+                <div class="key"><span class="main">REDO</span></div>
+            </div>
+            <div class="hand">
+                <div class="key"><span class="main">HOME</span></div>
+                <div class="key"><span class="main">PGDN</span></div>
+                <div class="key"><span class="main">PGUP</span></div>
+                <div class="key"><span class="main">END</span></div>
+                <div class="key none"></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+
+                <div class="key"><span class="main">←</span></div>
+                <div class="key"><span class="main">↓</span></div>
+                <div class="key"><span class="main">↑</span></div>
+                <div class="key"><span class="main">→</span></div>
+                <div class="key none"></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+
+                <div class="key"><span class="main">INS</span></div>
+                <div class="key"><span class="main">BSPC</span></div>
+                <div class="key"><span class="main">DEL</span></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+            </div>
+        </div>
+        <div class="thumb-cluster">
+            <div class="thumb-row left">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key held"><span class="main">NAV</span></div>
+            </div>
+            <div class="thumb-row right">
+                <div class="key modifier"><span class="main">NUM</span><span class="sub">+NAV</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SYM LAYER -->
+    <div class="layer">
+        <span class="layer-title sym">SYM - Symbols (Hold SYM)</span>
+        <div class="keyboard">
+            <div class="hand">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">!</span></div>
+                <div class="key"><span class="main">@</span></div>
+                <div class="key"><span class="main">#</span></div>
+                <div class="key"><span class="main">$</span></div>
+                <div class="key"><span class="main">%</span></div>
+
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">`</span></div>
+                <div class="key"><span class="main">-</span></div>
+                <div class="key"><span class="main">=</span></div>
+                <div class="key"><span class="main">[</span></div>
+                <div class="key"><span class="main">]</span></div>
+
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">~</span></div>
+                <div class="key"><span class="main">_</span></div>
+                <div class="key"><span class="main">+</span></div>
+                <div class="key"><span class="main">{</span></div>
+                <div class="key"><span class="main">}</span></div>
+            </div>
+            <div class="hand">
+                <div class="key"><span class="main">^</span></div>
+                <div class="key"><span class="main">&</span></div>
+                <div class="key"><span class="main">*</span></div>
+                <div class="key"><span class="main">(</span></div>
+                <div class="key"><span class="main">)</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+
+                <div class="key"><span class="main">\</span></div>
+                <div class="key"><span class="main">'</span></div>
+                <div class="key"><span class="main">;</span></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+
+                <div class="key"><span class="main">|</span></div>
+                <div class="key"><span class="main">"</span></div>
+                <div class="key"><span class="main">:</span></div>
+                <div class="key"><span class="main"><</span></div>
+                <div class="key"><span class="main">></span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+            </div>
+        </div>
+        <div class="thumb-cluster">
+            <div class="thumb-row left">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key modifier"><span class="main">NUM</span><span class="sub">+SYM</span></div>
+            </div>
+            <div class="thumb-row right">
+                <div class="key held"><span class="main">SYM</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NUM LAYER -->
+    <div class="layer">
+        <span class="layer-title num">NUM - Numbers & F-Keys (Hold NAV+SYM)</span>
+        <div class="keyboard">
+            <div class="hand">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">F1</span></div>
+                <div class="key"><span class="main">F2</span></div>
+                <div class="key"><span class="main">F3</span></div>
+                <div class="key"><span class="main">F4</span></div>
+                <div class="key"><span class="main">F5</span></div>
+
+                <div class="key"><span class="main">BT</span><span class="sub">CLR</span></div>
+                <div class="key"><span class="main">BT1</span></div>
+                <div class="key"><span class="main">BT2</span></div>
+                <div class="key"><span class="main">BT3</span></div>
+                <div class="key"><span class="main">BT4</span></div>
+                <div class="key"><span class="main">BT5</span></div>
+
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key"><span class="main">F11</span></div>
+                <div class="key"><span class="main">F12</span></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+                <div class="key none"></div>
+            </div>
+            <div class="hand">
+                <div class="key"><span class="main">F6</span></div>
+                <div class="key"><span class="main">7</span></div>
+                <div class="key"><span class="main">8</span></div>
+                <div class="key"><span class="main">9</span></div>
+                <div class="key"><span class="main">*</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+
+                <div class="key"><span class="main">.</span></div>
+                <div class="key"><span class="main">4</span></div>
+                <div class="key"><span class="main">5</span></div>
+                <div class="key"><span class="main">6</span></div>
+                <div class="key"><span class="main">+</span></div>
+                <div class="key"><span class="main">Studio</span></div>
+
+                <div class="key"><span class="main">0</span></div>
+                <div class="key"><span class="main">1</span></div>
+                <div class="key"><span class="main">2</span></div>
+                <div class="key"><span class="main">3</span></div>
+                <div class="key"><span class="main">-</span></div>
+                <div class="key"><span class="main">=</span></div>
+            </div>
+        </div>
+        <div class="thumb-cluster">
+            <div class="thumb-row left">
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key held"><span class="main">NAV</span></div>
+            </div>
+            <div class="thumb-row right">
+                <div class="key held"><span class="main">SYM</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+                <div class="key transparent"><span class="main">▽</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMBOS -->
+    <div class="combos">
+        <h2>Combos (Base Layer Only)</h2>
+        <div class="combo-grid">
+            <div class="combo-section">
+                <h3>Numbers (Top Row)</h3>
+                <div class="combo-item"><span class="combo-keys">Q+W</span><span class="combo-output">1</span></div>
+                <div class="combo-item"><span class="combo-keys">W+F</span><span class="combo-output">2</span></div>
+                <div class="combo-item"><span class="combo-keys">F+P</span><span class="combo-output">3</span></div>
+                <div class="combo-item"><span class="combo-keys">P+B</span><span class="combo-output">4</span></div>
+                <div class="combo-item"><span class="combo-keys">J+L</span><span class="combo-output">6</span></div>
+                <div class="combo-item"><span class="combo-keys">L+U</span><span class="combo-output">7</span></div>
+                <div class="combo-item"><span class="combo-keys">U+Y</span><span class="combo-output">8</span></div>
+                <div class="combo-item"><span class="combo-keys">Y+;</span><span class="combo-output">9</span></div>
+            </div>
+            <div class="combo-section">
+                <h3>Brackets (Home Row)</h3>
+                <div class="combo-item"><span class="combo-keys">S+T</span><span class="combo-output">(</span></div>
+                <div class="combo-item"><span class="combo-keys">T+G</span><span class="combo-output">)</span></div>
+                <div class="combo-item"><span class="combo-keys">N+E</span><span class="combo-output">[</span></div>
+                <div class="combo-item"><span class="combo-keys">E+I</span><span class="combo-output">]</span></div>
+                <div class="combo-item"><span class="combo-keys">I+O</span><span class="combo-output">{</span></div>
+                <div class="combo-item"><span class="combo-keys">H+,</span><span class="combo-output">}</span></div>
+            </div>
+            <div class="combo-section">
+                <h3>Symbols (Bottom Row)</h3>
+                <div class="combo-item"><span class="combo-keys">X+C</span><span class="combo-output">-</span></div>
+                <div class="combo-item"><span class="combo-keys">C+D</span><span class="combo-output">_</span></div>
+                <div class="combo-item"><span class="combo-keys">.+/</span><span class="combo-output">:</span></div>
+                <h3 style="margin-top: 6px;">Quick Access</h3>
+                <div class="combo-item"><span class="combo-keys">0, 5</span><span class="combo-output">NUM layer</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEGEND -->
+    <div class="legend">
+        <div class="legend-item"><div class="legend-box oneshot"></div> One-Shot (tap=sticky)</div>
+        <div class="legend-item"><div class="legend-box modifier"></div> Layer (hold)</div>
+        <div class="legend-item"><div class="legend-box held"></div> Currently Held</div>
+        <div class="legend-item"><div class="legend-box transparent"></div> Transparent (▽)</div>
+    </div>
+
+    <div class="footer">
+        Corne-ish Zen 3x6 • Colemak-DH • ZMK Firmware • Generated from zmk-config-zen-2
+    </div>
+</body>
+</html>
