@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: SethMilliken
+      url-base: https://github.com/SethMilliken
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: SethMilliken
+      revision: zen-display-patches  # custom branch name
       import: app/west.yml
   self:
     path: config
